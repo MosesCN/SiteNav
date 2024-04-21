@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     BaiduSearchIcon: typeof import('./components/icons/BaiduSearchIcon.vue')['default']
     BingSearchIcon: typeof import('./components/icons/BingSearchIcon.vue')['default']
-    copy: typeof import('./components/icons/BaiduSearchIcon copy.vue')['default']
     DuckduckgoSearchIcon: typeof import('./components/icons/DuckduckgoSearchIcon.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
@@ -27,7 +26,6 @@ declare module 'vue' {
     ElMain: typeof import('element-plus/es')['ElMain']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElPopover: typeof import('element-plus/es')['ElPopover']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
