@@ -26,6 +26,15 @@ npm install
 npm run dev
 ```
 
+# TODO
+
+- [ ] 多屏适配 - 菜单栏，底部 Copyright，每日一句
+- [ ] 封装组件读取 Local SVG
+- [ ] 管理端
+- [ ] 站内搜索
+- [ ] 返回顶部
+- [ ] 多语言支持
+
 # License
 
 Copyright © 2017-2024 Released under the **MIT License** Made with ❤️ by Moses
