@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "Menu",
+    "name": "常用网站",
+    "child": [
+      {
+        "icon": "Document",
+        "name": "在线工具",
+        "anchor": "online-tool"
+      }
+    ]
+  },
+  {
+    "icon": "Monitor",
+    "name": "购物出行",
+    "anchor": "shopping-travelling"
+  },
+  {
+    "icon": "Share",
+    "name": "社交",
+    "anchor": "social-media"
+  },
+  {
+    "icon": "VideoCamera",
+    "name": "视频",
+    "child": [
+      {
+        "icon": "DataBoard",
+        "name": "国内",
+        "anchor": "video-inboard"
+      },
+      {
+        "icon": "DataAnalysis",
+        "name": "国外",
+        "anchor": "video-aboard"
+      }
+    ]
+  },
+  {
+    "icon": "StarFilled",
+    "name": "强烈推荐",
+    "anchor": "strong-recommendation"
+  }
+]

@@ -1,0 +1,5 @@
+export { default as BaiduSearchIcon } from './BaiduSearchIcon.vue'
+export { default as BingSearchIcon } from './BingSearchIcon.vue'
+export { default as DuckduckgoSearchIcon } from './DuckduckgoSearchIcon.vue'
+export { default as GoogleSearchIcon } from './GoogleSearchIcon.vue'
+export { default as SiteNavIcon } from './SiteNavIcon.vue'

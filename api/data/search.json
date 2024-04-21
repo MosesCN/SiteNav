@@ -1,0 +1,26 @@
+[
+  {
+    "name": "谷歌",
+    "icon": "GoogleSearchIcon",
+    "qLink": "https://www.google.com/search?q="
+  },
+  {
+    "name": "必应",
+    "icon": "BingSearchIcon",
+    "qLink": "https://cn.bing.com/search?q="
+  },
+  {
+    "name": "DuckduckGo",
+    "icon": "DuckduckgoSearchIcon",
+    "qLink": "https://duckduckgo.com/?q="
+  },
+  {
+    "name": "百度",
+    "icon": "BaiduSearchIcon",
+    "qLink": "https://www.baidu.com/s?wd="
+  },
+  {
+    "name": "SiteNav",
+    "icon": "SiteNavIcon"
+  }
+]
