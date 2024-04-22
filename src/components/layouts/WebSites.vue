@@ -1,13 +1,56 @@
 <script lang="ts" setup>
-  import { ref } from 'vue'
+  import { ref, h } from 'vue'
   import webs from '/api/data/webs.json'
-  import type { TabPaneName, TabsPaneContext } from 'element-plus'
+  import { TabPaneName, ElMessage, ElMessageBox, ElSwitch } from 'element-plus'
 
   const addTab = (webs: Array<any>, index: number, web: any) => {
-    console.log('add tab', webs, index, web)
+    ElMessage({
+      type: 'info',
+      message: `going to add tab in ${web.label}`,
+    })
   }
   const removeTab = (name: TabPaneName) => {
-    console.log('remove tab', name)
+    ElMessage({
+      type: 'info',
+      message: `removed tabe ${name}`,
+    })
+  }
+
+  const editTabLabel = (web: any, tag: any) => {
+    ElMessage({
+      type: 'info',
+      message: `edit ${web.label} - ${tag.label}`,
+    })
+  }
+
+  const addSite = () => {
+    ElMessageBox({
+      title: 'New Site',
+      message: h('p', null, [
+        h('span', null, 'ON THE WAY'),
+      ]),
+      showCancelButton: true,
+      cancelButtonText: 'Cancel',
+      confirmButtonText: 'Confirm',
+      beforeClose: (action, instance, done) => {
+        if (action === 'confirm') {
+          instance.confirmButtonLoading = true
+          setTimeout(() => {
+            done()
+            setTimeout(() => {
+              instance.confirmButtonLoading = false
+            }, 300)
+          }, 3000)
+        } else {
+          done()
+        }
+      },
+    }).then((action) => {
+      ElMessage({
+        type: 'info',
+        message: `action: ${action}`,
+      })
+    })
   }
 </script>
 
@@ -20,9 +63,15 @@
     <el-tabs type="border-card" :model-value="web.anchor + '$_$' + web.tags[0].anchor" editable @tab-remove="removeTab"
       @tab-add="addTab(webs, webIdx, web)">
       <el-tab-pane v-for="(tag, tagIdx) in web.tags" :name="web.anchor + '$_$' + tag.anchor" :label="tag.label">
+        <template #label>
+          <span @dblclick="editTabLabel(web, tag)">{{ tag.label }}</span>
+        </template>
         <div class="sites-container">
           <SiteNavCard v-for="site in tag.sites" :title="site.title" :description="site.description" :icon="site.icon"
             :link="site.link" />
+          <el-icon class="add-site" @click="addSite">
+            <CirclePlus />
+          </el-icon>
         </div>
       </el-tab-pane>
     </el-tabs>
@@ -33,6 +82,18 @@
   /* x>>>y --> :deep() y */
   :deep() .ep-tabs__new-tab {
     margin: 10px;
+  }
+
+  .add-site {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px 1rem;
+    color: darkgray;
+    cursor: pointer;
+  }
+
+  .add-site:active {
+    color: beige;
   }
 
   .site-box {

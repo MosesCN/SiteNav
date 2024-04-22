@@ -14,6 +14,7 @@ import "uno.css";
 
 // If you want to use ElMessage, import it.
 import "element-plus/theme-chalk/src/message.scss";
+import "element-plus/theme-chalk/src/message-box.scss"
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import * as LocalIcons from './components/icons'
