@@ -1,7 +1,9 @@
 <script lang="ts" setup>
   import { ref, h } from 'vue'
-  import webs from '/api/data/webs.json'
+  import webs_json from '/api/data/webs.json'
   import { TabPaneName, ElMessage, ElMessageBox, ElSwitch } from 'element-plus'
+
+  const webs = ref(webs_json)
 
   const addTab = (webs: Array<any>, index: number, web: any) => {
     ElMessage({
@@ -17,9 +19,23 @@
   }
 
   const editTabLabel = (web: any, tag: any) => {
-    ElMessage({
-      type: 'info',
-      message: `edit ${web.label} - ${tag.label}`,
+    const foundTag = webs.value.filter((w: any) => w == web)[0].tags.filter((t: any) => t == tag)[0];
+    ElMessageBox.prompt('', '请输入新的标签名',
+      {
+        inputValue: foundTag.label,
+        inputValidator: (value) => value.length <= 6,
+        inputErrorMessage: '最多6个字符',
+        cancelButtonText: '取消',
+        confirmButtonText: '确定'
+      }
+    ).then(({ value }) => {
+      foundTag.label = value;
+      ElMessage({
+        type: 'success',
+        message: `${value}`,
+      })
+    }).catch(() => {
+      console.log(`cancelled edit tab label: ${web.label}-${tag.label}`)
     })
   }
 
