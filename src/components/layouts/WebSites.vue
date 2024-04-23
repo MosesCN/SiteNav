@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { ref, h } from 'vue'
   import webs_json from '/api/data/webs.json'
-  import { TabPaneName, ElMessage, ElMessageBox, ElSwitch } from 'element-plus'
+  import { TabPaneName, ElMessage, ElMessageBox } from 'element-plus'
 
   const webs = ref(webs_json)
 
@@ -12,9 +12,33 @@
     })
   }
   const removeTab = (name: TabPaneName) => {
-    ElMessage({
-      type: 'info',
-      message: `removed tabe ${name}`,
+    const anchors = name.toLocaleString().split('$_$')
+    const web = webs.value.filter((w: any) => w.anchor == anchors[0])[0];
+    const tags = web.tags;
+    if (tags.length < 2) {
+      ElMessage({
+        type: 'error',
+        message: `不可再删了，再删就没咯`,
+      })
+      return;
+    }
+    const deletedTagIdx = tags.findIndex((t: any) => t.anchor == anchors[1])
+    const foundTag = tags.filter((t: any) => t.anchor == anchors[1])[0];
+    console.log('going to delete tag', foundTag)
+    ElMessageBox.prompt(`确定删除 ${foundTag.label} ？，删了可就再也没了！`, '重要提示', {
+      showInput: false,
+      icon: 'WarnTriangleFilled',
+      cancelButtonText: '取消',
+      confirmButtonText: '确定'
+    }).then(() => {
+      tags.splice(deletedTagIdx, 1);
+      console.log(`deleted tag : ${web.label} - ${foundTag.label}`)
+      ElMessage({
+        type: 'success',
+        message: `${foundTag.label}`,
+      })
+    }).catch(() => {
+      console.log(`cancelled delete tab : ${web.label} - ${foundTag.label}`)
     })
   }
 
