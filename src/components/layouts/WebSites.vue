@@ -3,12 +3,48 @@
   import webs_json from '/api/data/webs.json'
   import { TabPaneName, ElMessage, ElMessageBox } from 'element-plus'
 
+  const getTabName = (web: any, tag: any) => {
+    return web.anchor + '$_$' + tag.anchor;
+  }
+
+  // initialize the data
+  webs_json.forEach((web: any) => {
+    web.currentTabName = getTabName(web, web.tags[0]);
+  });
+
   const webs = ref(webs_json)
 
-  const addTab = (webs: Array<any>, index: number, web: any) => {
-    ElMessage({
-      type: 'info',
-      message: `going to add tab in ${web.label}`,
+  const getRandomId = () => {
+    return Math.random().toString(36).substring(2);
+  }
+
+  const addTab = (web: any) => {
+    const foundWeb = webs.value.filter((w: any) => w == web)[0];
+    const tagLen = foundWeb.tags.length
+    console.log(`going to add tag in ${foundWeb.label}`)
+    ElMessageBox.prompt('', '请输入新的标签名',
+      {
+        inputValue: `标签${tagLen + 1}`,
+        inputValidator: (value) => value.length < 1 ? '没标签名啦' : value.length > 6 ? '标签名太长啦' : true,
+        cancelButtonText: '取消',
+        confirmButtonText: '确定'
+      }
+    ).then(({ value }) => {
+      const newTab = {
+        label: value,
+        anchor: getRandomId(),
+        sites: []
+      };
+      foundWeb.tags.push(newTab);
+      // switch to new tab
+      foundWeb.currentTabName = getTabName(foundWeb, newTab);
+      ElMessage({
+        type: 'success',
+        message: `${value}`,
+      })
+      console.log(`successfully add tab ${newTab.label} in ${foundWeb.label}`)
+    }).catch(() => {
+      console.log(`cancelled add tab in: ${web.label}`)
     })
   }
   const removeTab = (name: TabPaneName) => {
@@ -31,7 +67,14 @@
       cancelButtonText: '取消',
       confirmButtonText: '确定'
     }).then(() => {
+      // delete the selected tab
       tags.splice(deletedTagIdx, 1);
+
+      const deletedTabName = getTabName(web, foundTag)
+      // switch to previous tab if current tab deleted
+      if (web.currentTabName == deletedTabName) {
+        web.currentTabName = getTabName(web, tags[deletedTagIdx - 1]);
+      }
       console.log(`deleted tag : ${web.label} - ${foundTag.label}`)
       ElMessage({
         type: 'success',
@@ -100,9 +143,8 @@
       <TagIcon />
       <text>{{ web.label }}</text>
     </div>
-    <el-tabs type="border-card" :model-value="web.anchor + '$_$' + web.tags[0].anchor" editable @tab-remove="removeTab"
-      @tab-add="addTab(webs, webIdx, web)">
-      <el-tab-pane v-for="(tag, tagIdx) in web.tags" :name="web.anchor + '$_$' + tag.anchor" :label="tag.label">
+    <el-tabs type="border-card" v-model="web.currentTabName" editable @tab-remove="removeTab" @tab-add="addTab(web)">
+      <el-tab-pane v-for="tag in web.tags" :name="getTabName(web, tag)" :label="tag.label">
         <template #label>
           <span @dblclick="editTabLabel(web, tag)">{{ tag.label }}</span>
         </template>
