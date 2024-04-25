@@ -4,7 +4,7 @@
   import { TabPaneName, ElMessage, ElMessageBox } from 'element-plus'
 
   const getTabName = (web: any, tag: any) => {
-    return web.anchor + '$_$' + tag.anchor;
+    return web.id + '$_$' + tag.id;
   }
 
   // initialize the data
@@ -19,7 +19,7 @@
   }
 
   const addTab = (web: any) => {
-    const foundWeb = webs.value.filter((w: any) => w == web)[0];
+    const foundWeb = webs.value.find((w: any) => w == web);
     const tagLen = foundWeb.tags.length
     console.log(`going to add tag in ${foundWeb.label}`)
     ElMessageBox.prompt('', '请输入新的标签名',
@@ -32,7 +32,7 @@
     ).then(({ value }) => {
       const newTab = {
         label: value,
-        anchor: getRandomId(),
+        id: getRandomId(),
         sites: []
       };
       foundWeb.tags.push(newTab);
@@ -47,9 +47,10 @@
       console.log(`cancelled add tab in: ${web.label}`)
     })
   }
+
   const removeTab = (name: TabPaneName) => {
-    const anchors = name.toLocaleString().split('$_$')
-    const web = webs.value.filter((w: any) => w.anchor == anchors[0])[0];
+    const ids = name.toLocaleString().split('$_$')
+    const web = webs.value.find((w: any) => w.id == ids[0]);
     const tags = web.tags;
     if (tags.length < 2) {
       ElMessage({
@@ -58,10 +59,10 @@
       })
       return;
     }
-    const deletedTagIdx = tags.findIndex((t: any) => t.anchor == anchors[1])
-    const foundTag = tags.filter((t: any) => t.anchor == anchors[1])[0];
+    const deletedTagIdx = tags.findIndex((t: any) => t.id == ids[1])
+    const foundTag = tags.find((t: any) => t.id == ids[1]);
     console.log('going to delete tag', foundTag)
-    ElMessageBox.prompt(`确定删除 ${foundTag.label} ？，删了可就再也没了！`, '重要提示', {
+    ElMessageBox.prompt(`确定删除 ${foundTag.label} ？删了可就再也没了！`, '重要提示', {
       showInput: false,
       icon: 'WarnTriangleFilled',
       cancelButtonText: '取消',
@@ -86,7 +87,7 @@
   }
 
   const editTabLabel = (web: any, tag: any) => {
-    const foundTag = webs.value.filter((w: any) => w == web)[0].tags.filter((t: any) => t == tag)[0];
+    const foundTag = webs.value.find((w: any) => w == web).tags.find((t: any) => t == tag);
     ElMessageBox.prompt('', '请输入新的标签名',
       {
         inputValue: foundTag.label,
@@ -106,39 +107,138 @@
     })
   }
 
-  const addSite = () => {
-    ElMessageBox({
-      title: 'New Site',
-      message: h('p', null, [
-        h('span', null, 'ON THE WAY'),
-      ]),
-      showCancelButton: true,
-      cancelButtonText: 'Cancel',
-      confirmButtonText: 'Confirm',
-      beforeClose: (action, instance, done) => {
-        if (action === 'confirm') {
-          instance.confirmButtonLoading = true
-          setTimeout(() => {
-            done()
-            setTimeout(() => {
-              instance.confirmButtonLoading = false
-            }, 300)
-          }, 3000)
-        } else {
-          done()
-        }
-      },
-    }).then((action) => {
+  const SITE_DIALOG = ref({
+    show: false,
+    type: '',
+    webId: '',
+    tagId: '',
+    siteId: '',
+
+    title: 'title',
+    icon: '',
+    iconLabel: '图标',
+    iconPlaceholder: '网站图标链接',
+    name: '',
+    nameLabel: '名称',
+    namePlaceholder: '网站名称',
+    link: '',
+    linkLabel: '链接',
+    linkPlaceholder: '网站链接',
+    description: '',
+    descriptionLabel: '描述',
+    descriptionPlaceholder: '给网站一些描述信息',
+  })
+
+  const hideSiteDialog = () => {
+    SITE_DIALOG.value.show = false;
+  }
+
+  const confirmSiteDialog = () => {
+    hideSiteDialog();
+    if (SITE_DIALOG.value.type == 'edit') {
+      const editingSite = webs.value.find((w: any) => w.id == SITE_DIALOG.value.webId)
+        .tags.find((t: any) => t.id == SITE_DIALOG.value.tagId)
+        .sites.find((s: any) => s.id == SITE_DIALOG.value.siteId);
+      editingSite.icon = SITE_DIALOG.value.icon;
+      editingSite.name = SITE_DIALOG.value.name;
+      editingSite.description = SITE_DIALOG.value.description;
+      editingSite.link = SITE_DIALOG.value.link;
       ElMessage({
-        type: 'info',
-        message: `action: ${action}`,
+        type: 'success',
+        message: `${editingSite.name}`,
       })
+    } else if (SITE_DIALOG.value.type == 'add') {
+      const foundTag = webs.value.find((w: any) => w.id == SITE_DIALOG.value.webId)
+        .tags.find((t: any) => t.id == SITE_DIALOG.value.tagId);
+      const site = {
+        id: getRandomId(),
+        icon: SITE_DIALOG.value.icon,
+        name: SITE_DIALOG.value.name,
+        description: SITE_DIALOG.value.description,
+        link: SITE_DIALOG.value.link
+      }
+      foundTag.sites.push(site);
+      ElMessage({
+        type: 'success',
+        message: `${site.name}`,
+      })
+    }
+  }
+
+  const addSite = (web: any, tag: any) => {
+    SITE_DIALOG.value.show = true;
+    SITE_DIALOG.value.type = 'add';
+    SITE_DIALOG.value.title = '添加新网站导航';
+    SITE_DIALOG.value.icon = '';
+    SITE_DIALOG.value.name = '';
+    SITE_DIALOG.value.link = '';
+    SITE_DIALOG.value.description = '';
+    SITE_DIALOG.value.webId = web.id;
+    SITE_DIALOG.value.tagId = tag.id;
+  }
+
+  const editSite = (web: any, tag: any, site: any) => {
+    SITE_DIALOG.value.show = true;
+    SITE_DIALOG.value.type = 'edit';
+    SITE_DIALOG.value.title = '编辑网站导航';
+    SITE_DIALOG.value.icon = site.icon;
+    SITE_DIALOG.value.name = site.name;
+    SITE_DIALOG.value.link = site.link;
+    SITE_DIALOG.value.description = site.description;
+    SITE_DIALOG.value.webId = web.id;
+    SITE_DIALOG.value.tagId = tag.id;
+    SITE_DIALOG.value.siteId = site.id;
+  }
+
+  const deleteSite = (web: any, tag: any, site: any) => {
+    console.log(`current tab ${web.currentTabName}`)
+    const _tag = webs.value.find((w: any) => w == web).tags.find((t: any) => t == tag);
+    ElMessageBox.prompt(`确定删除 ${site.name} ？删了可就再也没了！`, '重要提示', {
+      showInput: false,
+      icon: 'WarnTriangleFilled',
+      cancelButtonText: '取消',
+      confirmButtonText: '确定'
+    }).then(() => {
+      const s_idx = _tag.sites.findIndex((s: any) => s.id == site.id)
+      if (s_idx < 0) return;
+      _tag.sites.splice(s_idx, 1);
+      console.log(`deleted site : ${site.name}`)
+      ElMessage({
+        type: 'success',
+        message: `${site.name}`,
+      })
+    }).catch(() => {
+      console.log(`cancelled delete site : ${site.name}`)
     })
   }
 </script>
 
 <template>
-  <div class="site-box" v-for="(web, webIdx) in webs">
+  <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="20%" style="border-radius:.6rem">
+    <el-form>
+      <el-form-item :label="SITE_DIALOG.iconLabel">
+        <el-input v-model="SITE_DIALOG.icon" :placeholder="SITE_DIALOG.iconPlaceholder" />
+      </el-form-item>
+      <el-form-item :label="SITE_DIALOG.nameLabel">
+        <el-input v-model="SITE_DIALOG.name" maxlength="10" minlength="1" show-word-limit
+          :placeholder="SITE_DIALOG.namePlaceholder" />
+      </el-form-item>
+      <el-form-item :label="SITE_DIALOG.linkLabel">
+        <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" />
+      </el-form-item>
+      <el-form-item :label="SITE_DIALOG.descriptionLabel">
+        <el-input type="textarea" rows="6" maxlength="300" :placeholder="SITE_DIALOG.descriptionPlaceholder"
+          show-word-limit v-model="SITE_DIALOG.description" />
+      </el-form-item>
+    </el-form>
+    <template #footer>
+      <div>
+        <el-button @click="hideSiteDialog">取消</el-button>
+        <el-button type="primary" @click="confirmSiteDialog">确定</el-button>
+      </div>
+    </template>
+  </el-dialog>
+  <div class="site-box" v-for="web in webs">
     <div class="site-tag text-gray text-lg mb-4">
       <TagIcon />
       <text>{{ web.label }}</text>
@@ -149,9 +249,9 @@
           <span @dblclick="editTabLabel(web, tag)">{{ tag.label }}</span>
         </template>
         <div class="sites-container">
-          <SiteNavCard v-for="site in tag.sites" :title="site.title" :description="site.description" :icon="site.icon"
-            :link="site.link" />
-          <el-icon class="add-site" @click="addSite">
+          <SiteNavCard v-for="site in tag.sites" :title="site.name" :description="site.description" :icon="site.icon"
+            :link="site.link" @edit="editSite(web, tag, site)" @delete="deleteSite(web, tag, site)" />
+          <el-icon class="add-site" @click="addSite(web, tag)">
             <CirclePlus />
           </el-icon>
         </div>
