@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     BaiduSearchIcon: typeof import('./components/icons/BaiduSearchIcon.vue')['default']
     BingSearchIcon: typeof import('./components/icons/BingSearchIcon.vue')['default']
+    DropdownAction: typeof import('./components/layouts/DropdownAction.vue')['default']
     DuckduckgoSearchIcon: typeof import('./components/icons/DuckduckgoSearchIcon.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']

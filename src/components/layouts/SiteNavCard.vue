@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { ref, computed } from 'vue'
-  const emit = defineEmits(['edit', 'delete'])
+  const emit = defineEmits(['editSite', 'deleteSite', 'addSite'])
 
   const props = defineProps({
     icon: {
@@ -28,29 +28,16 @@
   const openLink = () => {
     if (link.value) window.open(link.value, '_blank');
   }
-  const handleCommand = (command: "edit" | "delete") => {
-    emit(command)
-  }
 </script>
 
 <template>
   <el-card shadow="hover" class="m-10px card-box">
     <div id="action">
-      <el-dropdown trigger="click" @command="handleCommand">
-        <span>
-          <el-icon>
-            <Setting color="darkgray" />
-          </el-icon>
-        </span>
-        <template #dropdown>
-          <el-dropdown-menu>
-            <el-dropdown-item icon="Close" command="delete">删除</el-dropdown-item>
-          </el-dropdown-menu>
-          <el-dropdown-menu>
-            <el-dropdown-item icon="Edit" command="edit">编辑</el-dropdown-item>
-          </el-dropdown-menu>
-        </template>
-      </el-dropdown>
+      <DropdownAction @add="emit('addSite')" @delete="emit('deleteSite')" @edit="emit('editSite')">
+        <el-icon>
+          <Setting color="darkgray" />
+        </el-icon>
+      </DropdownAction>
     </div>
     <div class="card-inner">
       <img :src="imgSrc" @click="openLink" />

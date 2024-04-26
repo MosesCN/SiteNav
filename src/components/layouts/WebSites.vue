@@ -250,10 +250,8 @@
         </template>
         <div class="sites-container">
           <SiteNavCard v-for="site in tag.sites" :title="site.name" :description="site.description" :icon="site.icon"
-            :link="site.link" @edit="editSite(web, tag, site)" @delete="deleteSite(web, tag, site)" />
-          <el-icon class="add-site" @click="addSite(web, tag)">
-            <CirclePlus />
-          </el-icon>
+            :link="site.link" @edit-site="editSite(web, tag, site)" @delete-site="deleteSite(web, tag, site)"
+            @add-site="addSite(web, tag)" />
         </div>
       </el-tab-pane>
     </el-tabs>
