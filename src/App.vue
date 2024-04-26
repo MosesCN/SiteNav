@@ -2,7 +2,7 @@
   <el-config-provider namespace="ep">
     <div class="flex main-container">
       <el-container>
-        <el-aside style="width: fit-content;">
+        <el-aside width="fit-content">
           <SiteNavSide />
         </el-aside>
         <el-container>
