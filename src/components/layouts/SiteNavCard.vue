@@ -34,47 +34,45 @@
 </script>
 
 <template>
-  <div class="m-10px card-box">
-    <el-card shadow="hover">
-      <div id="action">
-        <el-dropdown trigger="click" @command="handleCommand">
-          <span>
-            <el-icon>
-              <Setting color="darkgray" />
-            </el-icon>
-          </span>
-          <template #dropdown>
-            <el-dropdown-menu>
-              <el-dropdown-item icon="Close" command="delete">删除</el-dropdown-item>
-            </el-dropdown-menu>
-            <el-dropdown-menu>
-              <el-dropdown-item icon="Edit" command="edit">编辑</el-dropdown-item>
-            </el-dropdown-menu>
-          </template>
-        </el-dropdown>
-      </div>
-      <div class="card-inner">
-        <img :src="imgSrc" @click="openLink" />
-        <div id="details" @click="openLink">
-          <div class="title">{{ title }}</div>
-          <el-popover trigger="hover" :content="description">
-            <template #reference>
-              <el-text class="description w-10vw" truncated>
-                {{ description }}
-              </el-text>
-            </template>
-          </el-popover>
-        </div>
-        <el-popover trigger="hover" :content="link">
+  <el-card shadow="hover" class="m-10px card-box">
+    <div id="action">
+      <el-dropdown trigger="click" @command="handleCommand">
+        <span>
+          <el-icon>
+            <Setting color="darkgray" />
+          </el-icon>
+        </span>
+        <template #dropdown>
+          <el-dropdown-menu>
+            <el-dropdown-item icon="Close" command="delete">删除</el-dropdown-item>
+          </el-dropdown-menu>
+          <el-dropdown-menu>
+            <el-dropdown-item icon="Edit" command="edit">编辑</el-dropdown-item>
+          </el-dropdown-menu>
+        </template>
+      </el-dropdown>
+    </div>
+    <div class="card-inner">
+      <img :src="imgSrc" @click="openLink" />
+      <div id="details" @click="openLink">
+        <div class="title">{{ title }}</div>
+        <el-popover trigger="hover" :content="description">
           <template #reference>
-            <el-icon @click="openLink">
-              <DArrowRight id="arrow" />
-            </el-icon>
+            <el-text class="description w-10vw" truncated>
+              {{ description }}
+            </el-text>
           </template>
         </el-popover>
       </div>
-    </el-card>
-  </div>
+      <el-popover trigger="hover" :content="link">
+        <template #reference>
+          <el-icon @click="openLink">
+            <DArrowRight id="arrow" />
+          </el-icon>
+        </template>
+      </el-popover>
+    </div>
+  </el-card>
 </template>
 <style scoped>
   .card-box {
