@@ -4,11 +4,7 @@
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item icon="Plus" command="add">添加</el-dropdown-item>
-      </el-dropdown-menu>
-      <el-dropdown-menu>
         <el-dropdown-item icon="Close" command="delete">删除</el-dropdown-item>
-      </el-dropdown-menu>
-      <el-dropdown-menu>
         <el-dropdown-item icon="Edit" command="edit">编辑</el-dropdown-item>
       </el-dropdown-menu>
     </template>
