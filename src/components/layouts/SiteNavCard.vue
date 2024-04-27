@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { ref, computed } from 'vue'
   const emit = defineEmits(['editSite', 'deleteSite', 'addSite'])
-
+  import { ElMessage } from 'element-plus'
   const props = defineProps({
     icon: {
       type: String,
@@ -26,7 +26,11 @@
   const link = computed(() => `${props.link}`)
 
   const openLink = () => {
-    if (link.value) window.open(link.value, '_blank');
+    if (link.value) {
+      window.open(link.value, '_blank');
+    } else {
+      ElMessage.warning('请补充链接')
+    }
   }
 </script>
 
