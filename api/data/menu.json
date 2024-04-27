@@ -1,44 +1,46 @@
 [
   {
+    "id": "DsaSkQW",
     "icon": "Menu",
     "name": "常用网站",
-    "child": [
+    "subMenus": [
       {
+        "id": "Dsa2kQW",
         "icon": "Document",
-        "name": "在线工具",
-        "anchor": "online-tool"
+        "name": "在线工具"
       }
     ]
   },
   {
+    "id": "DsaSk42W",
     "icon": "Monitor",
-    "name": "购物出行",
-    "anchor": "shopping-travelling"
+    "name": "购物出行"
   },
   {
+    "id": "DsaS8xW",
     "icon": "Share",
-    "name": "社交",
-    "anchor": "social-media"
+    "name": "社交"
   },
   {
+    "id": "2YsaSkQW",
     "icon": "VideoCamera",
     "name": "视频",
-    "child": [
+    "subMenus": [
       {
         "icon": "DataBoard",
         "name": "国内",
-        "anchor": "video-inboard"
+        "id": "2YsaSk&X"
       },
       {
         "icon": "DataAnalysis",
         "name": "国外",
-        "anchor": "video-aboard"
+        "id": "2YsaSk8W"
       }
     ]
   },
   {
+    "id": "2Ysa79k8W",
     "icon": "StarFilled",
-    "name": "强烈推荐",
-    "anchor": "strong-recommendation"
+    "name": "强烈推荐"
   }
 ]
