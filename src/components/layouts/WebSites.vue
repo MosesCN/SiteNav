@@ -3,13 +3,9 @@
   import webs_json from '/api/data/webs.json'
   import { TabPaneName, ElMessage, ElMessageBox } from 'element-plus'
 
-  const getTabName = (web: any, tag: any) => {
-    return web.id + '$_$' + tag.id;
-  }
-
   // initialize the data
   webs_json.forEach((web: any) => {
-    web.currentTabName = getTabName(web, web.tags[0]);
+    web.currentTabName = web.tags[0].id;
   });
 
   const webs = ref(webs_json)
@@ -18,7 +14,7 @@
     return Math.random().toString(36).substring(2);
   }
 
-  const addTab = (web: any) => {
+  const addTab = (web: any, tag_arg: any) => {
     const foundWeb = webs.value.find((w: any) => w == web);
     const tagLen = foundWeb.tags.length
     console.log(`going to add tag in ${foundWeb.label}`)
@@ -35,9 +31,12 @@
         id: getRandomId(),
         sites: []
       };
-      foundWeb.tags.push(newTab);
+      const foundTagIdx = web.tags.findIndex((t: any) => t == tag_arg);
+      // insert instead of push
+      foundWeb.tags.splice(foundTagIdx + 1, 0, newTab);
+      // foundWeb.tags.push(newTab);
       // switch to new tab
-      foundWeb.currentTabName = getTabName(foundWeb, newTab);
+      foundWeb.currentTabName = newTab.id;
       ElMessage({
         type: 'success',
         message: `${value}`,
@@ -48,9 +47,8 @@
     })
   }
 
-  const removeTab = (name: TabPaneName) => {
-    const ids = name.toLocaleString().split('$_$')
-    const web = webs.value.find((w: any) => w.id == ids[0]);
+  const removeTab = (web_arg: any, tag_arg: any) => {
+    const web = webs.value.find((w: any) => w == web_arg);
     const tags = web.tags;
     if (tags.length < 2) {
       ElMessage({
@@ -59,8 +57,8 @@
       })
       return;
     }
-    const deletedTagIdx = tags.findIndex((t: any) => t.id == ids[1])
-    const foundTag = tags.find((t: any) => t.id == ids[1]);
+    const foundTagIdx = tags.findIndex((t: any) => t == tag_arg)
+    const foundTag = tags.find((t: any) => t == tag_arg);
     console.log('going to delete tag', foundTag)
     ElMessageBox.prompt(`确定删除 ${foundTag.label} ？删了可就再也没了！`, '重要提示', {
       showInput: false,
@@ -69,12 +67,11 @@
       confirmButtonText: '确定'
     }).then(() => {
       // delete the selected tab
-      tags.splice(deletedTagIdx, 1);
+      tags.splice(foundTagIdx, 1);
 
-      const deletedTabName = getTabName(web, foundTag)
       // switch to previous tab if current tab deleted
-      if (web.currentTabName == deletedTabName) {
-        web.currentTabName = getTabName(web, tags[deletedTagIdx - 1]);
+      if (web.currentTabName == foundTag.id) {
+        web.currentTabName = tags[foundTagIdx - 1].id;
       }
       console.log(`deleted tag : ${web.label} - ${foundTag.label}`)
       ElMessage({
@@ -243,15 +240,20 @@
       <TagIcon />
       <text>{{ web.label }}</text>
     </div>
-    <el-tabs type="border-card" v-model="web.currentTabName" editable @tab-remove="removeTab" @tab-add="addTab(web)">
-      <el-tab-pane v-for="tag in web.tags" :name="getTabName(web, tag)" :label="tag.label">
+    <el-tabs type="border-card" v-model="web.currentTabName">
+      <el-tab-pane v-for="tag in web.tags" :name="tag.id" :label="tag.label">
         <template #label>
-          <span @dblclick="editTabLabel(web, tag)">{{ tag.label }}</span>
+          <DropdownAction @edit="editTabLabel(web, tag)" @delete="removeTab(web, tag)" @add="addTab(web, tag)">
+            <span>{{ tag.label }}</span>
+          </DropdownAction>
         </template>
         <div class="sites-container">
           <SiteNavCard v-for="site in tag.sites" :title="site.name" :description="site.description" :icon="site.icon"
             :link="site.link" @edit-site="editSite(web, tag, site)" @delete-site="deleteSite(web, tag, site)"
             @add-site="addSite(web, tag)" />
+          <el-icon class="add-site" @click="addSite(web, tag)">
+            <CirclePlus />
+          </el-icon>
         </div>
       </el-tab-pane>
     </el-tabs>
