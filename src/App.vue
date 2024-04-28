@@ -1,10 +1,10 @@
 <template>
   <el-config-provider namespace="ep">
     <el-container>
-      <el-aside width="fit-content" class="site-nav-aside">
+      <el-aside width="fit-content">
         <SiteNavSide @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav" @edit-site-nav="editSiteNav" />
       </el-aside>
-      <el-container>
+      <el-container class="main-container">
         <el-header>
           <SiteNavHeader />
         </el-header>
@@ -72,14 +72,16 @@
     color: var(--ep-text-color-primary);
   }
 
-  .site-nav-aside {
-    text-align: center;
+  .main-container {
     position: relative;
+    overflow: hidden;
+    height: 100vh;
   }
 
   .site-nav-main {
     background: #9e9e9e0f;
     text-align: center;
+    overflow-y: scroll;
     /* https://www.colorzilla.com/zh-cn/gradient-editor/ */
     /* background: linear-gradient(135deg, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%); */
     /* background-image: url('./../../assets/images/bg/6.jpg') */
