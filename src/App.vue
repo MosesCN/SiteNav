@@ -63,11 +63,13 @@
     SiteNavData.setWebs(webs.value);
     SiteNavData.setMenus(menus.value);
   }
-  const editSiteNav = (site_nav: any) => {
-    console.log('editSiteNav', site_nav.name, site_nav)
-    const foundWeb = webs.value.find((web: any) => web.id == site_nav.id);
+
+  const editSiteNav = (new_site_nav: any, old_site_nav: any) => {
+    console.log('editSiteNav', new_site_nav)
+    const foundWeb = webs.value.find((web: any) => web.id == old_site_nav.id);
     if (foundWeb) {
-      foundWeb.label = site_nav.name;
+      foundWeb.id = new_site_nav.id;
+      foundWeb.label = new_site_nav.name;
       console.log('edited web', foundWeb)
       SiteNavData.setWebs(webs.value);
       SiteNavData.setMenus(menus.value);

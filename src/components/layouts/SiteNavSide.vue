@@ -286,10 +286,15 @@
         : foundMenu;
       const edited = editingMenu.icon != MENU_DIALOG.value.icon || editingMenu.name != MENU_DIALOG.value.name;
       if (edited) {
-        editingMenu.icon = MENU_DIALOG.value.icon;
-        editingMenu.name = MENU_DIALOG.value.name || DEFAULT_MENU_NAME;
+        const newMenu = {
+          id: editingMenu.id,
+          icon: MENU_DIALOG.value.icon || DEFAULT_MENU_ICON,
+          name: MENU_DIALOG.value.name || DEFAULT_MENU_NAME
+        }
         // publish edit menu event
-        emit("editSiteNav", editingMenu)
+        emit("editSiteNav", newMenu, editingMenu)
+        editingMenu.icon = newMenu.icon;
+        editingMenu.name = newMenu.name;
       }
       if (!eidtingSubMenu && MENU_DIALOG.value.addSubMenu) {
         editingMenu.subMenus = []
@@ -299,8 +304,8 @@
           name: MENU_DIALOG.value.subName || DEFAULT_MENU_NAME,
         };
         editingMenu.subMenus.push(newSubMenu);
-        // publish add menu event
-        emit("addSiteNav", newSubMenu, editingMenu);
+        // publish edit menu event
+        emit("editSiteNav", newSubMenu, editingMenu);
       }
       ElMessage({
         type: "success",

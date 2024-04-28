@@ -12,6 +12,7 @@ declare module 'vue' {
     DropdownAction: typeof import('./components/layouts/DropdownAction.vue')['default']
     DuckduckgoSearchIcon: typeof import('./components/icons/DuckduckgoSearchIcon.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
+    ElBacktop: typeof import('element-plus/es')['ElBacktop']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
