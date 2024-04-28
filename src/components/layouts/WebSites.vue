@@ -1,21 +1,29 @@
 <script lang="ts" setup>
-  import { ref, h } from 'vue'
-  import webs_json from '/api/data/webs.json'
-  import { TabPaneName, ElMessage, ElMessageBox } from 'element-plus'
+  import { ref } from 'vue'
+  import { ElMessage, ElMessageBox } from 'element-plus'
+  import { computed } from 'vue';
 
-  // initialize the data
-  webs_json.forEach((web: any) => {
-    web.currentTabName = web.tags[0].id;
-  });
+  const props = defineProps({
+    webs: {
+      type: Array<any>,
+      require: true,
+    }
+  })
 
-  const webs = ref(webs_json)
+  const webs = computed(() => {
+    if (props.webs == undefined) {
+      throw Error('require webs provide for component WebSites')
+    }
+    props.webs?.forEach((web: any) => { web.currentTabName = web.tags[0].id; });
+    return props.webs;
+  })
 
   const getRandomId = () => {
     return Math.random().toString(36).substring(2);
   }
 
   const addTab = (web: any, tag_arg: any) => {
-    const foundWeb = webs.value.find((w: any) => w == web);
+    const foundWeb = webs.value?.find((w: any) => w == web);
     const tagLen = foundWeb.tags.length
     console.log(`going to add tag in ${foundWeb.label}`)
     ElMessageBox.prompt('', '请输入新的标签名',
@@ -48,7 +56,7 @@
   }
 
   const removeTab = (web_arg: any, tag_arg: any) => {
-    const web = webs.value.find((w: any) => w == web_arg);
+    const web = webs.value?.find((w: any) => w == web_arg);
     const tags = web.tags;
     if (tags.length < 2) {
       ElMessage({
@@ -84,7 +92,7 @@
   }
 
   const editTabLabel = (web: any, tag: any) => {
-    const foundTag = webs.value.find((w: any) => w == web).tags.find((t: any) => t == tag);
+    const foundTag = webs.value?.find((w: any) => w == web).tags.find((t: any) => t == tag);
     ElMessageBox.prompt('', '请输入新的标签名',
       {
         inputValue: foundTag.label,
@@ -133,7 +141,7 @@
   const confirmSiteDialog = () => {
     hideSiteDialog();
     if (SITE_DIALOG.value.type == 'edit') {
-      const editingSite = webs.value.find((w: any) => w.id == SITE_DIALOG.value.webId)
+      const editingSite = webs.value?.find((w: any) => w.id == SITE_DIALOG.value.webId)
         .tags.find((t: any) => t.id == SITE_DIALOG.value.tagId)
         .sites.find((s: any) => s.id == SITE_DIALOG.value.siteId);
       editingSite.icon = SITE_DIALOG.value.icon;
@@ -145,7 +153,7 @@
         message: `${editingSite.name}`,
       })
     } else if (SITE_DIALOG.value.type == 'add') {
-      const foundTag = webs.value.find((w: any) => w.id == SITE_DIALOG.value.webId)
+      const foundTag = webs.value?.find((w: any) => w.id == SITE_DIALOG.value.webId)
         .tags.find((t: any) => t.id == SITE_DIALOG.value.tagId);
       const site = {
         id: getRandomId(),
@@ -189,7 +197,7 @@
 
   const deleteSite = (web: any, tag: any, site: any) => {
     console.log(`current tab ${web.currentTabName}`)
-    const _tag = webs.value.find((w: any) => w == web).tags.find((t: any) => t == tag);
+    const _tag = webs.value?.find((w: any) => w == web).tags.find((t: any) => t == tag);
     ElMessageBox.prompt(`确定删除 ${site.name} ？删了可就再也没了！`, '重要提示', {
       showInput: false,
       icon: 'WarnTriangleFilled',
