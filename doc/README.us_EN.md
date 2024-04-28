@@ -1,6 +1,10 @@
 # SiteNav
 
+everybody could own his websites navigator
+
 a static resposive websites navigator powered by [Vue3](https://vuejs.org) + [Element Plus](https://element-plus.org)
+
+# quickly build a own website nagator
 
 # Data Config
 
