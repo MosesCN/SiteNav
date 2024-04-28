@@ -243,7 +243,7 @@
       </div>
     </template>
   </el-dialog>
-  <div class="site-box" v-for="web in webs">
+  <div class="site-box" v-for="web in webs" :id="web.id">
     <div class="site-tag text-gray text-lg mb-4">
       <TagIcon />
       <text>{{ web.label }}</text>
