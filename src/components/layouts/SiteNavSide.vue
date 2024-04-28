@@ -172,14 +172,14 @@
   };
 
   const delMenu = (menu_arg: any, subMenus: any) => {
-    if (menus.value.length < 2) {
+    const delSubMenu: boolean = subMenus != undefined;
+    if (!delSubMenu && menus.value.length < 2) {
       ElMessage({
         type: "error",
         message: `不可再删了，再删就没咯`,
       });
       return;
     }
-    const delSubMenu: boolean = subMenus != undefined;
     const foundMenu = delSubMenu ? subMenus : menu_arg;
     const foundMenuIdx = delSubMenu
       ? menu_arg.subMenus.findIndex((s: any) => s == subMenus)
