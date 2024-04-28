@@ -109,6 +109,7 @@
   import menu_json from "/api/data/menu.json";
   import ep_icons from "/api/data/ep_icons.json";
 
+  const emit = defineEmits(['addSiteNav', 'deleteSiteNav', 'editSiteNav']);
   const menus = ref(menu_json);
 
   const isCollapse = ref(false);
@@ -149,11 +150,11 @@
     // if add sub-menu
     showAddSubMenu: false,
     addSubMenu: false,
-    addSubMenuLabel: "子菜单",
-    subIconLabel: "子图标",
-    subIconPlaceholder: "子导航图标",
-    subNameLabel: "子名称",
-    subNamePlaceholder: "子导航名称",
+    addSubMenuLabel: "副导航",
+    subIconLabel: "图标",
+    subIconPlaceholder: "副导航图标",
+    subNameLabel: "名称",
+    subNamePlaceholder: "副导航名称",
     subIcon: "",
     subName: "",
   });
@@ -168,20 +169,6 @@
     if (MENU_DIALOG.value.show == false) {
       MENU_DIALOG.value.show = true;
     }
-  };
-
-  const clearMenuDialog = () => {
-    MENU_DIALOG.value.type = "";
-    MENU_DIALOG.value.menuId = "";
-    MENU_DIALOG.value.subMenuId = "";
-
-    MENU_DIALOG.value.icon = "";
-    MENU_DIALOG.value.name = "";
-
-    MENU_DIALOG.value.showAddSubMenu = false;
-    MENU_DIALOG.value.addSubMenu = false;
-    MENU_DIALOG.value.subIcon = "";
-    MENU_DIALOG.value.subName = "";
   };
 
   const delMenu = (menu_arg: any, subMenus: any) => {
@@ -216,6 +203,8 @@
           menus.value.splice(foundMenuIdx, 1);
         }
         console.log(`deleted menu : ${foundMenu.name}`);
+        // publish delete menu event
+        emit("deleteSiteNav", foundMenu)
         ElMessage({
           type: "success",
           message: `${foundMenu.name}`,
@@ -236,7 +225,12 @@
     MENU_DIALOG.value.icon = DEFAULT_MENU_ICON;
     MENU_DIALOG.value.name = "";
 
-    MENU_DIALOG.value.showAddSubMenu = true;
+    const eidtingSubMenu: boolean = subMenus != undefined;
+    if (eidtingSubMenu || (menu_arg.subMenus && menu_arg.subMenus.length > 0)) {
+      MENU_DIALOG.value.showAddSubMenu = false;
+    } else {
+      MENU_DIALOG.value.showAddSubMenu = true;
+    }
     MENU_DIALOG.value.addSubMenu = false;
     MENU_DIALOG.value.subIcon = DEFAULT_MENU_ICON;
     MENU_DIALOG.value.subName = "";
@@ -259,8 +253,8 @@
       MENU_DIALOG.value.showAddSubMenu = false;
     } else {
       MENU_DIALOG.value.showAddSubMenu = true;
-      MENU_DIALOG.value.addSubMenu = false;
     }
+    MENU_DIALOG.value.addSubMenu = false;
     MENU_DIALOG.value.subIcon = DEFAULT_MENU_ICON;
 
 
@@ -270,19 +264,28 @@
     hideMenuDialog();
     const eidtingSubMenu: boolean = MENU_DIALOG.value.subMenuId != undefined;
     const foundMenu = menus.value.find((m: any) => m.id == MENU_DIALOG.value.menuId);
+
     if (MENU_DIALOG.value.type == ACTION_TYPE_EDIT) {
       const editingMenu = eidtingSubMenu
         ? foundMenu.subMenus.find((m: any) => m.id == MENU_DIALOG.value.subMenuId)
         : foundMenu;
-      editingMenu.icon = MENU_DIALOG.value.icon;
-      editingMenu.name = MENU_DIALOG.value.name || DEFAULT_MENU_NAME;
+      const edited = editingMenu.icon != MENU_DIALOG.value.icon || editingMenu.name != MENU_DIALOG.value.name;
+      if (edited) {
+        editingMenu.icon = MENU_DIALOG.value.icon;
+        editingMenu.name = MENU_DIALOG.value.name || DEFAULT_MENU_NAME;
+        // publish edit menu event
+        emit("editSiteNav", editingMenu)
+      }
       if (!eidtingSubMenu && MENU_DIALOG.value.addSubMenu) {
         editingMenu.subMenus = []
-        editingMenu.subMenus.push({
+        const newSubMenu = {
           id: getRandomId(),
           icon: MENU_DIALOG.value.subIcon || DEFAULT_MENU_ICON,
           name: MENU_DIALOG.value.subName || DEFAULT_MENU_NAME,
-        })
+        };
+        editingMenu.subMenus.push(newSubMenu);
+        // publish add menu event
+        emit("addSiteNav", newSubMenu, editingMenu);
       }
       ElMessage({
         type: "success",
@@ -300,8 +303,12 @@
       };
       if (eidtingSubMenu) {
         foundMenu.subMenus.splice(addingIdx + 1, 0, newMenu);
+        // publish add menu event
+        emit("addSiteNav", newMenu, foundMenu.subMenus[addingIdx]);
       } else {
         menus.value.splice(addingIdx + 1, 0, newMenu);
+        // publish add menu event
+        emit("addSiteNav", newMenu, menus.value[addingIdx]);
         if (MENU_DIALOG.value.addSubMenu) {
           const newSubMenu = {
             id: getRandomId(),
@@ -310,6 +317,8 @@
           }
           newMenu.subMenus = []; // need to clear first due to set an empty object above
           newMenu.subMenus.push(newSubMenu)
+          // publish add sub menu event
+          emit("addSiteNav", newSubMenu, newMenu);
         } else {
           newMenu.subMenus = []; // need to clear first due to set an empty object above
         }
@@ -319,6 +328,5 @@
         message: `${newMenu.name}`,
       });
     }
-    clearMenuDialog();
   };
 </script>
