@@ -108,7 +108,6 @@
   import { ElMessage, ElMessageBox } from "element-plus";
   import menu_json from "/api/data/menu.json";
   import ep_icons from "/api/data/ep_icons.json";
-  import { tr } from "element-plus/es/locale";
 
   const menus = ref(menu_json);
 
@@ -255,7 +254,8 @@
     MENU_DIALOG.value.icon = eidtingSubMenu ? subMenus.icon : menu_arg.icon;
     MENU_DIALOG.value.name = eidtingSubMenu ? subMenus.name : menu_arg.name;
 
-    if (!eidtingSubMenu && menu_arg.subMenus && menu_arg.subMenus.length > 0) {
+    // if editing sub menu or the exist sub menus, could not add or remove sub menu any more
+    if (eidtingSubMenu || (menu_arg.subMenus && menu_arg.subMenus.length > 0)) {
       MENU_DIALOG.value.showAddSubMenu = false;
     } else {
       MENU_DIALOG.value.showAddSubMenu = true;
