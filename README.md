@@ -1,4 +1,4 @@
 # README
-[中文](./README.zh_CN.md)
+[中文](./doc/README.zh_CN.md)
 
-[English](./README.us_EN.md)
+[English](./doc/README.us_EN.md)
