@@ -73,6 +73,7 @@
 
   .site-nav-aside {
     text-align: center;
+    position: relative;
   }
 
   .site-nav-main {

@@ -81,7 +81,6 @@
 
 <style>
   #SiteNavSide {
-    position: relative;
     height: calc(99vh);
   }
 
