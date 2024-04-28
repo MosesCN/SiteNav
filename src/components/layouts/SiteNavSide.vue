@@ -105,13 +105,27 @@
 </style>
 
 <script lang="ts" setup>
-  import { ref } from "vue";
+  import { ref, computed } from "vue";
   import { ElMessage, ElMessageBox } from "element-plus";
-  import menu_json from "/api/data/menu.json";
-  import ep_icons from "/api/data/ep_icons.json";
+  import { SiteNavData } from "~/../api/data/SiteNavData";
+
+  const ep_icons = SiteNavData.getEpIcons();
 
   const emit = defineEmits(['addSiteNav', 'deleteSiteNav', 'editSiteNav']);
-  const menus = ref(menu_json);
+
+  const props = defineProps({
+    menus: {
+      type: Array<any>,
+      require: true,
+    }
+  })
+
+  const menus = computed(() => {
+    if (props.menus == undefined) {
+      throw Error('require menus provide for component WebSites')
+    }
+    return props.menus;
+  });
 
   const isCollapse = ref(false);
 

@@ -45,11 +45,12 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
   import { ElMessage } from 'element-plus'
-  import OPTs from '/api/data/search.json'
+  import { SiteNavData } from "~/../api/data/SiteNavData";
 
+  const OPTs = SiteNavData.getSearchEngines();
   const searchInput = ref('')
   const choosenOpt = ref(OPTs[0])
-  const optClick = (item) => {
+  const optClick = (item: any) => {
     choosenOpt.value = item
   }
   const showWarnMessage = (message: string) => {

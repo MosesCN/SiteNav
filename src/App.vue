@@ -2,7 +2,8 @@
   <el-config-provider namespace="ep">
     <el-container>
       <el-aside width="fit-content">
-        <SiteNavSide @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav" @edit-site-nav="editSiteNav" />
+        <SiteNavSide :menus="menus" @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav"
+          @edit-site-nav="editSiteNav" />
       </el-aside>
       <el-container class="main-container">
         <el-header>
@@ -22,8 +23,10 @@
 
 <script lang="ts" setup>
   import { ref } from "vue";
-  import webs_json from '/api/data/webs.json'
-  const webs = ref(webs_json);
+  import { SiteNavData } from "../api/data/SiteNavData";
+
+  const webs = ref(SiteNavData.getWebs());
+  const menus = ref(SiteNavData.getMenus());
 
   const addSiteNav = (new_site_nav: any, previous_site_nav: any) => {
     console.log('addSiteNav', new_site_nav.name, new_site_nav, previous_site_nav)
@@ -46,6 +49,8 @@
       webs.value.push(newWeb);
     }
     console.log('added new web', newWeb);
+    SiteNavData.setWebs(webs.value);
+    SiteNavData.setMenus(menus.value);
   }
 
   const deleteSiteNav = (site_nav: any) => {
@@ -55,6 +60,8 @@
     if (foundIdx > -1) {
       webs.value.splice(foundIdx, 1);
     }
+    SiteNavData.setWebs(webs.value);
+    SiteNavData.setMenus(menus.value);
   }
   const editSiteNav = (site_nav: any) => {
     console.log('editSiteNav', site_nav.name, site_nav)
@@ -62,6 +69,8 @@
     if (foundWeb) {
       foundWeb.label = site_nav.name;
       console.log('edited web', foundWeb)
+      SiteNavData.setWebs(webs.value);
+      SiteNavData.setMenus(menus.value);
     }
   }
 </script>
@@ -86,3 +95,4 @@
     /* background-image: url('./../../assets/images/bg/6.jpg') */
   }
 </style>
+./common/SiteNavData./common/data/SiteNavData../api/data/SiteNavData
