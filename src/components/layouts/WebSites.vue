@@ -2,6 +2,7 @@
   import { ref } from 'vue'
   import { ElMessage, ElMessageBox } from 'element-plus'
   import { computed } from 'vue';
+  import { fetchSiteInfo, SiteInfo } from '../../common/SiteFetcher';
 
   const props = defineProps({
     webs: {
@@ -216,20 +217,29 @@
       console.log(`cancelled delete site : ${site.name}`)
     })
   }
+
+  const siteLinkChanged = (value: string) => {
+    fetchSiteInfo(value)?.then((site_info: SiteInfo) => {
+      console.log('site', site_info);
+      SITE_DIALOG.value.icon = site_info.icon;
+      SITE_DIALOG.value.name = site_info.name;
+      SITE_DIALOG.value.description = site_info.description;
+    })
+  }
 </script>
 
 <template>
   <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="20%" style="border-radius:.6rem">
     <el-form>
+      <el-form-item :label="SITE_DIALOG.linkLabel">
+        <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" @change="siteLinkChanged" />
+      </el-form-item>
       <el-form-item :label="SITE_DIALOG.iconLabel">
         <el-input v-model="SITE_DIALOG.icon" :placeholder="SITE_DIALOG.iconPlaceholder" />
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.nameLabel">
         <el-input v-model="SITE_DIALOG.name" maxlength="10" minlength="1" show-word-limit
           :placeholder="SITE_DIALOG.namePlaceholder" />
-      </el-form-item>
-      <el-form-item :label="SITE_DIALOG.linkLabel">
-        <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" />
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.descriptionLabel">
         <el-input type="textarea" rows="6" maxlength="300" :placeholder="SITE_DIALOG.descriptionPlaceholder"
