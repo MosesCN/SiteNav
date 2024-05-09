@@ -10,7 +10,8 @@ type SiteInfo = {
 const fetchSiteInfo = (url: string) => {
   if (!url) return undefined;
   console.log(`fetching url info, url: ${url}`)
-  return axios.get(url)
+  const proxyUrl = 'https://cros.atmoses.uk/?url='
+  return axios.get(`${proxyUrl}${url}`)
     .then((response) => response.data)
     .then((data) => {
       const site_info: SiteInfo = {
