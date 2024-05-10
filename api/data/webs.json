@@ -1,76 +1,292 @@
 [
   {
-    "id": "OdeDsxI",
-    "label": "购物出行",
+    "id": "2Ysa79k8W",
+    "label": "强烈推荐",
     "tags": [
       {
         "id": "SOwOdsD",
-        "label": "购物",
+        "label": "站点",
         "sites": [
           {
             "id": "DaEadx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/06/jdong.png",
-            "name": "京东",
-            "description": "京东-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。",
-            "link": "https://jd.com"
+            "icon": "https://cloudflare.com/favicon.ico",
+            "name": "Cloudflare",
+            "description": "Make employees, applications and networks faster and more secure everywhere, while reducing complexity and cost.",
+            "link": "https://cloudflare.com/"
           },
           {
             "id": "SdJoXX",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.uEi-BYi_M-Rnv9abB82xqwHaHa?rs=1&pid=ImgDetMain",
+            "name": "Vercel",
+            "description": "Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.",
+            "link": "https://vercel.com/"
+          },
+          {
+            "id": "9ofygn4tsbq",
+            "icon": "https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.59f2e898.png",
+            "name": "MChatGPT",
+            "description": "一个免费国内可用的 OpenAI",
+            "link": "https://chat.atmoses.uk/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "SOwOdsD"
+  },
+  {
+    "id": "clm5gnsiili",
+    "label": "衣食住行",
+    "tags": [
+      {
+        "id": "srived361ti_0",
+        "label": "购物",
+        "sites": [
+          {
+            "id": "l6r2fk8gsag",
+            "icon": "https://www.xieniao.com/wp-content/uploads/2023/06/jdong.png",
+            "name": "京东",
+            "description": "京东-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。",
+            "link": "https://www.jd.com"
+          },
+          {
+            "id": "ugrt302sm5",
             "icon": "https://www.xieniao.com/wp-content/uploads/2023/06/tianmao.png",
             "name": "天猫",
-            "description": "天猫--理想生活上天猫",
-            "link": "https://taobao.com"
+            "description": "天猫tmall.com--理想生活上天猫",
+            "link": "https://www.tmall.com/"
           },
           {
-            "id": "DaEEdx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/11/pinduoduo.png",
-            "name": "拼多多",
+            "id": "zll89xrgsm9",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.5aa2bf2486431079d4c153fbde9fe525?rik=vXT5zUyqt0tZvQ&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f06-17%2f85792%2fwater_85792_698_698_.png&ehk=kKLfBt4c1zrsPgrBa3cDI3XkQaZSJhbXVHCtROFImUs%3d&risl=&pid=ImgRaw&r=0",
+            "name": "拼多多 新电商开创者",
             "description": "拼多多作为新电商开创者，致力于将娱乐社交的元素融入电商运营中，通过“社交+电商”的模式，让更多的用户带着乐趣分享实惠，享受全新的共享式购物体验。",
-            "link": "https://taobao.com"
+            "link": "https://www.pinduoduo.com/"
           },
           {
-            "id": "PaEadx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/08/taobao-1.png",
-            "name": "淘宝网",
-            "description": "淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！",
-            "link": "https://taobao.com"
+            "id": "oucp0m9q7lj",
+            "icon": "https://www.taobao.com/favicon.ico",
+            "name": "淘宝",
+            "description": "淘寶（Taobao）讓您隨心淘超值商品，爲您提供流行服飾、美妝洗護、3C數碼、大小家電、家俬家居、箱包皮具、運動戶外、五金工具、玩具等千萬件熱銷好貨，淘寶支持文字或圖片搜索商品。天貓淘寶海外作爲Taobao面向華人的跨境電商平台，覆蓋200多個國家和地區的消費者，其中核心站點包括：淘寶香港（taobao hk）、淘寶台灣（taobao tw）、淘寶澳門、淘宝新加坡、淘宝马来西亚、淘宝韩国（타오바오 사이트）、淘宝澳洲、淘宝加拿大、taobao world。",
+            "link": "https://www.taobao.com/"
           },
           {
-            "id": "DTUpdx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/10/632a1-www.amazon.com.png",
+            "id": "gnxr2qhvqkj",
+            "icon": "https://www.amazon.com/favicon.ico",
             "name": "Amazon",
-            "description": "亚马逊，全球最大在线购物商城！",
-            "link": "https://taobao.com"
+            "description": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, ...",
+            "link": "https://www.amazon.com/"
           }
         ]
       },
       {
-        "id": "SiDseSDxK",
         "label": "出行",
+        "id": "p3q4s6hdsi",
         "sites": [
           {
-            "id": "DaUIdx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/08/feizhu.png",
-            "name": "飞猪旅行",
+            "id": "tfynokq8oc8",
+            "icon": "https://img.alicdn.com/imgextra/i1/O1CN01XslwqW1rp2BOz0lt4_!!6000000005679-73-tps-64-64.ico",
+            "name": "飞猪",
             "description": "飞猪是阿里巴巴旗下的综合性旅游出行服务平台。飞猪整合数千家机票代理商、航空公司、旅行社、旅行代理商资源，直签酒店，客栈卖家等为广大旅游者提供特价机票，酒店预订，客栈查询，国内外度假信息，门票购买，签证代理，旅游卡券，租车，邮轮等旅游产品的信息搜索，购买及售后服务。全程采用支付宝担保交易，安全、可靠、有保证。",
-            "link": "https://jd.com"
+            "link": "https://www.fliggy.com/"
           },
           {
-            "id": "YTEadx",
+            "id": "a6zskkvr28d",
             "icon": "https://www.xieniao.com/wp-content/uploads/2023/08/quna.png",
             "name": "去哪儿",
-            "description": "去哪儿Qunar.com提供机票,飞机票,特价机票,打折机票的查询预订；99元春秋航空特惠折扣机票，百元南航、海航惊喜特价机票任您挑选,国航、深航1折特价机票和折扣机票一网打尽，更多打折机票尽在Qunar.com。实时提供上百家旅游预订网站机票报价和航空公司直销机票价格，为您找到最实惠的飞机票信息,是你查询特价机票和机票预订的最佳途径。",
-            "link": "https://taobao.com"
+            "description": "【去哪儿网】机票查询,特价机票,打折飞机票-去哪儿网Qunar.com",
+            "link": "https://flight.qunar.com/"
           },
           {
-            "id": "DPuAadx",
-            "icon": "https://www.xieniao.com/wp-content/uploads/2023/08/aibiying.jpg",
+            "id": "lf0f0dof4h9",
+            "icon": "https://z1.muscache.cn/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png",
             "name": "Airbnb",
-            "description": "Airbnb爱彼迎是全球民宿短租公寓预订平台，全球百万特色民宿、短租、酒店、公寓、客栈房源，价格优惠，更有树屋、海景别墅、花园洋房等多种特色住宿预订供您选择。",
-            "link": "https://taobao.com"
+            "description": "Get an Airbnb for every kind of trip → 7 million holiday rentals → 2 million Guest Favourites → 220+ countries and regions worldwide",
+            "link": "https://www.airbnb.com/"
           }
         ]
       }
-    ]
+    ],
+    "currentTabName": "srived361ti_0"
+  },
+  {
+    "id": "na4sczjr9h",
+    "label": "政务服务",
+    "tags": [
+      {
+        "id": "na4sczjr9h_0",
+        "label": "政府门户",
+        "sites": [
+          {
+            "id": "u3iwkwaz7u",
+            "icon": "https://www.gov.cn/images/gtrs_logo_lt.png",
+            "name": "中央人民政府",
+            "description": "中国政府网_中央人民政府门户网站",
+            "link": "https://www.gov.cn/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "na4sczjr9h_0"
+  },
+  {
+    "id": "0191ioqlrpqdn",
+    "label": "社交",
+    "tags": [
+      {
+        "id": "u7c2f77fdw_0",
+        "label": "国内社交",
+        "sites": [
+          {
+            "id": "c502brrg5u5",
+            "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
+            "name": "微信网页版",
+            "description": "微信网页版",
+            "link": "https://wx.qq.com/"
+          }
+        ]
+      },
+      {
+        "label": "国外社交",
+        "id": "llmhyyw4g",
+        "sites": [
+          {
+            "id": "i7qrkvs4rx",
+            "icon": "https://static.vecteezy.com/system/resources/previews/018/910/740/original/telegram-logo-telegram-icon-free-free-vector.jpg",
+            "name": "Telegram",
+            "description": "Telegram will be free forever",
+            "link": "https://telegram.org/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "u7c2f77fdw_0"
+  },
+  {
+    "id": "smmvqd0w6ng",
+    "label": "视频",
+    "tags": [
+      {
+        "id": "smmvqd0w6ng_0",
+        "label": "国内",
+        "sites": [
+          {
+            "id": "gkfy2bgyw7",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.30a8780f6ab4dc03a3375b44882864ad?rik=GR3cXbJR9%2buAWw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2022%2f10-16%2f131909%2fwater_131909_698_698_.png&ehk=QKAFZug9sAWsCcZryzfl70seifASZHe6eOsth07xgP0%3d&risl=&pid=ImgRaw&r=0",
+            "name": "爱奇艺",
+            "description": "爱奇艺-在线视频网站-海量正版高清视频在线观看",
+            "link": "https://www.iqiyi.com/"
+          },
+          {
+            "id": "3nwqeuy1hxk",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.579b23e7f27a3dc8dddc4693369a2404?rik=YJe%2b0EGkgfP4Bg&riu=http%3a%2f%2fp2.img.cctvpic.com%2fnettv%2fnewgame%2fcdn_pic%2f1956%2fmzm.zamlltui.png&ehk=IW1AQHunDugBPKG2znwCSdSwo76CBWvu6nJtvD%2f4Bpw%3d&risl=&pid=ImgRaw&r=0",
+            "name": "腾讯视频",
+            "description": "腾讯视频致力于打造中国领先的在线视频媒体平台，以丰富的内容、极致的观看体验、便捷的登录方式、多平台无缝应用体验以及快捷分享的产品特性，主要满足用户在线观看视频的需求。",
+            "link": "https://v.qq.com/"
+          },
+          {
+            "id": "cjoxl13oy8",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.abde28052343a032202cb6c33b40be88?rik=QDqNlIdCYoHUHQ&riu=http%3a%2f%2fpic.downyi.com%2fupload%2f2017-8%2f2017891621397117.jpg&ehk=HcBnVOWm9Giva2Dh19NdmX%2b%2bAbSmxA9biWAFkXVlArg%3d&risl=&pid=ImgRaw&r=0",
+            "name": "优酷",
+            "description": "视频服务平台,提供视频播放,视频发布,视频搜索,视频分享",
+            "link": "https://youku.com/"
+          },
+          {
+            "id": "7gntdw9w9r3",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.5f7657549f4bd16d08b56ccad794f01a?rik=%2bXBzOkKWIBMU8A&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f07-20%2f89190%2fwater_89190_698_698_.png&ehk=b6FaBHz%2bTBstG7fZg%2fGSVXCcCSqOw3pUcMIZr6QUdZg%3d&risl=&pid=ImgRaw&r=0",
+            "name": "Bilibili",
+            "description": "国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。",
+            "link": "https://www.bilibili.com/"
+          }
+        ]
+      },
+      {
+        "label": "国外",
+        "id": "fluuin8x45",
+        "sites": [
+          {
+            "id": "8b3y0z09lfr",
+            "icon": "https://www.youtube.com/s/desktop/92fdfad2/img/favicon_144x144.png",
+            "name": "YouTube",
+            "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+            "link": "https://www.youtube.com"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "smmvqd0w6ng_0"
+  },
+  {
+    "id": "fzgyt1iva8t",
+    "label": "编程",
+    "tags": [
+      {
+        "id": "7ts8otaa4t_0",
+        "label": "教育平台",
+        "sites": [
+          {
+            "id": "1pbsha1050t",
+            "icon": "https://pic4.zhimg.com/v2-4a640ff141a264c6ac4eb2d3cf55a8fa_xll.jpg",
+            "name": "拉钩教育",
+            "description": "互联网职业教育平台",
+            "link": "https://edu.lagou.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "7ts8otaa4t_0"
+  },
+  {
+    "id": "9ywjink87t",
+    "label": "招聘",
+    "tags": [
+      {
+        "id": "9ywjink87t_0",
+        "label": "招聘App",
+        "sites": [
+          {
+            "id": "65b5lnigkr8",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.7cb4bb3fc18ef32ab594c14eb070a54e?rik=cm2qfVwyVcwEZA&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f11-15%2f112916%2fwater_112916_698_698_.png&ehk=JtG6sCVyeVJSwlPY5c%2bAXLxOl%2fdwkxHlugBejEXX%2fqU%3d&risl=&pid=ImgRaw&r=0",
+            "name": "BOSS直聘",
+            "description": "BOSS直聘是权威领先的招聘网，开启人才网招聘求职新时代，招聘求职找工作，上BOSS直聘，直接谈！",
+            "link": "https://www.zhipin.com/"
+          },
+          {
+            "id": "tjd5glg578",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.094b2521e4467aafc4de85b6acfe260d?rik=8Fjr1ZmHYLS4Hw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f11-15%2f112870%2fwater_112870_698_698_.png&ehk=Ma47lBblxlrdBUM2QNamLxI3CJBQZ1MK6%2b3yia7i0Nc%3d&risl=&pid=ImgRaw&r=0",
+            "name": "猎聘",
+            "description": "猎聘是专业高效的招聘求职平台，为求职者提供海量高薪职位，在线沟通，快速反馈！为企业招聘方提供免费招人服务，优质人才，精准推荐，招人找工作就用猎聘聊！",
+            "link": "https://www.liepin.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "9ywjink87t_0"
+  },
+  {
+    "id": "dq8a5xlml5j",
+    "label": "在线接单",
+    "tags": [
+      {
+        "id": "dq8a5xlml5j_0",
+        "label": "灵活",
+        "sites": [
+          {
+            "id": "yzn5no0l0g",
+            "icon": "https://pageflows.imgix.net/media/logos/upw.png?auto=compress&ixlib=python-1.1.2&s=b8f41836f7a4e25c20e5f6995353c9c1",
+            "name": "Upwork",
+            "description": "Upwork | The World’s Work Marketplace",
+            "link": "https://www.upwork.com/"
+          },
+          {
+            "id": "uiscbhilvv",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.600c5d13f775f72d73ef803eaf379b5d?rik=3Xew9eydp%2fVmtQ&pid=ImgRaw&r=0",
+            "name": "Fiverr",
+            "description": "Complete the task and we'll get you right back into Fiverr.",
+            "link": "https://www.fiverr.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "dq8a5xlml5j_0"
   }
 ]

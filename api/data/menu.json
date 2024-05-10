@@ -1,46 +1,79 @@
 [
   {
-    "id": "DsaSkQW",
-    "icon": "Menu",
-    "name": "常用网站",
-    "subMenus": [
-      {
-        "id": "Dsa2kQW",
-        "icon": "Document",
-        "name": "在线工具"
-      }
-    ]
-  },
-  {
-    "id": "DsaSk42W",
-    "icon": "Monitor",
-    "name": "购物出行"
-  },
-  {
-    "id": "DsaS8xW",
-    "icon": "Share",
-    "name": "社交"
-  },
-  {
-    "id": "2YsaSkQW",
-    "icon": "VideoCamera",
-    "name": "视频",
-    "subMenus": [
-      {
-        "icon": "DataBoard",
-        "name": "国内",
-        "id": "2YsaSk&X"
-      },
-      {
-        "icon": "DataAnalysis",
-        "name": "国外",
-        "id": "2YsaSk8W"
-      }
-    ]
-  },
-  {
     "id": "2Ysa79k8W",
     "icon": "StarFilled",
     "name": "强烈推荐"
+  },
+  {
+    "id": "srived361ti",
+    "icon": "StarFilled",
+    "name": "生活",
+    "subMenus": [
+      {
+        "id": "clm5gnsiili",
+        "icon": "bicycle",
+        "name": "衣食住行"
+      },
+      {
+        "id": "na4sczjr9h",
+        "icon": "bell",
+        "name": "政务服务",
+        "subMenus": [
+          {}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "u7c2f77fdw",
+    "icon": "StarFilled",
+    "name": "社交娱乐",
+    "subMenus": [
+      {
+        "id": "0191ioqlrpqdn",
+        "icon": "link",
+        "name": "社交"
+      },
+      {
+        "id": "smmvqd0w6ng",
+        "icon": "video-play",
+        "name": "视频",
+        "subMenus": [
+          {}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7ts8otaa4t",
+    "icon": "StarFilled",
+    "name": "学习",
+    "subMenus": [
+      {
+        "id": "fzgyt1iva8t",
+        "icon": "promotion",
+        "name": "编程"
+      }
+    ]
+  },
+  {
+    "id": "jkl6rx2k3s",
+    "icon": "StarFilled",
+    "name": "工作兼职",
+    "subMenus": [
+      {
+        "id": "9ywjink87t",
+        "icon": "lollipop",
+        "name": "招聘"
+      },
+      {
+        "id": "dq8a5xlml5j",
+        "icon": "location",
+        "name": "在线接单",
+        "subMenus": [
+          {}
+        ]
+      }
+    ]
   }
 ]
