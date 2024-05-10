@@ -29,6 +29,19 @@
             "link": "https://chat.atmoses.uk/"
           }
         ]
+      },
+      {
+        "label": "AI",
+        "id": "qwjojgmwnhf",
+        "sites": [
+          {
+            "id": "mtvhe2vu8m",
+            "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.N2sO8KYPWuB0cQdjZVbY9gAAAA?rs=1&pid=ImgDetMain",
+            "name": "HuggingChat",
+            "description": "The first open source alternative to ChatGPT. 💪",
+            "link": "https://huggingface.co/chat/"
+          }
+        ]
       }
     ],
     "currentTabName": "SOwOdsD"
@@ -71,7 +84,7 @@
           },
           {
             "id": "gnxr2qhvqkj",
-            "icon": "https://www.amazon.com/favicon.ico",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.0904a56791c7fced65e498d06ee72f95?rik=WhfsvnCT1UJ5%2bg&pid=ImgRaw&r=0",
             "name": "Amazon",
             "description": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, ...",
             "link": "https://www.amazon.com/"
@@ -118,7 +131,7 @@
         "sites": [
           {
             "id": "u3iwkwaz7u",
-            "icon": "https://www.gov.cn/images/gtrs_logo_lt.png",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.6OHvHdk-NElI0zzcxWXjewHaH5?rs=1&pid=ImgDetMain",
             "name": "中央人民政府",
             "description": "中国政府网_中央人民政府门户网站",
             "link": "https://www.gov.cn/"
@@ -288,5 +301,46 @@
       }
     ],
     "currentTabName": "dq8a5xlml5j_0"
+  },
+  {
+    "id": "f3058bsma8c",
+    "label": "工具",
+    "tags": [
+      {
+        "id": "f3058bsma8c_0",
+        "label": "在线工具",
+        "sites": [
+          {
+            "id": "nas7q0lcdvi",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.0493ffd1d986a81e650c756bb460d3ac?rik=tGrWqwkCnla6Yw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f03-13%2f74845%2fwater_74845_698_698_.png&ehk=uSb6aZZOJ2L86586ap36QWxTVcgGDvZZepq6LIYRobA%3d&risl=&pid=ImgRaw&r=0",
+            "name": "地址生成器",
+            "description": "随机生成不同国家地址, 身份信息，信用卡信息，手机号码和其他基本信息。还会随机生成工作信息，财务信息，兴趣爱好等信息。",
+            "link": "https://www.meiguodizhi.com/"
+          },
+          {
+            "id": "wc50w0ukpgh",
+            "icon": "https://email.ml/favicon.ico",
+            "name": "Email.ML",
+            "description": "临时邮箱 Minimalist temporary Email. Privacy friendly, Valid for 1 hour, AD friendly, 100% Run on Cloudflare",
+            "link": "https://email.ml/"
+          },
+          {
+            "id": "e5zca7hvq37",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.c1c903437bc4526fc3197e8428ba86c5?rik=pStWV3dUT%2fjFfQ&pid=ImgRaw&r=0",
+            "name": "FOFA",
+            "description": "白帽汇推出的一款网络空间搜索引擎，它通过进行网络空间测绘，能够帮助研究人员或者企业迅速进行网络资产匹配，例如进行漏洞影响范围分析、应用分布统计、应用流 …",
+            "link": "https://fofa.info/"
+          },
+          {
+            "id": "sd7k6simru",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.67309eab376efff204a1c96b2d733f45?rik=7l6KHBwbRYBy8Q&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f02-18%2f73683%2fwater_73683_698_698_.png&ehk=zH4QlkYFK4OM926KOG7G28e3Vd61TYR%2bgplNOI%2bmI84%3d&risl=&pid=ImgRaw&r=0",
+            "name": "美国地址",
+            "description": "随机生成虚构美国身份，包括姓名，地址，电话，职称，信用卡，身高，体重等信息，获取美国人信息，获取美国人地址",
+            "link": "https://www.dizhishengcheng.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "f3058bsma8c_0"
   }
 ]

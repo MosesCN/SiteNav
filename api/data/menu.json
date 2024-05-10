@@ -6,7 +6,7 @@
   },
   {
     "id": "srived361ti",
-    "icon": "StarFilled",
+    "icon": "goblet",
     "name": "生活",
     "subMenus": [
       {
@@ -26,12 +26,12 @@
   },
   {
     "id": "u7c2f77fdw",
-    "icon": "StarFilled",
+    "icon": "coffee-cup",
     "name": "社交娱乐",
     "subMenus": [
       {
         "id": "0191ioqlrpqdn",
-        "icon": "link",
+        "icon": "chat-dot-round",
         "name": "社交"
       },
       {
@@ -46,7 +46,7 @@
   },
   {
     "id": "7ts8otaa4t",
-    "icon": "StarFilled",
+    "icon": "cold-drink",
     "name": "学习",
     "subMenus": [
       {
@@ -58,7 +58,7 @@
   },
   {
     "id": "jkl6rx2k3s",
-    "icon": "StarFilled",
+    "icon": "dish-dot",
     "name": "工作兼职",
     "subMenus": [
       {
@@ -75,5 +75,11 @@
         ]
       }
     ]
+  },
+  {
+    "id": "f3058bsma8c",
+    "icon": "fork-spoon",
+    "name": "工具",
+    "subMenus": []
   }
 ]

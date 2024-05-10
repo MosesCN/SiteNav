@@ -291,10 +291,10 @@
           icon: MENU_DIALOG.value.icon || DEFAULT_MENU_ICON,
           name: MENU_DIALOG.value.name || DEFAULT_MENU_NAME
         }
-        // publish edit menu event
-        emit("editSiteNav", newMenu, editingMenu)
         editingMenu.icon = newMenu.icon;
         editingMenu.name = newMenu.name;
+        // publish edit menu event
+        emit("editSiteNav", newMenu, editingMenu)
       }
       if (!eidtingSubMenu && MENU_DIALOG.value.addSubMenu) {
         editingMenu.subMenus = []
