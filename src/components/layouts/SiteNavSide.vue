@@ -241,7 +241,7 @@
     MENU_DIALOG.value.name = "";
 
     const eidtingSubMenu: boolean = subMenus != undefined;
-    if (eidtingSubMenu || (menu_arg.subMenus && menu_arg.subMenus.length > 0)) {
+    if (eidtingSubMenu) {
       MENU_DIALOG.value.showAddSubMenu = false;
     } else {
       MENU_DIALOG.value.showAddSubMenu = true;
@@ -327,8 +327,6 @@
         emit("addSiteNav", newMenu, foundMenu.subMenus[addingIdx]);
       } else {
         menus.value.splice(addingIdx + 1, 0, newMenu);
-        // publish add menu event
-        emit("addSiteNav", newMenu, menus.value[addingIdx]);
         if (MENU_DIALOG.value.addSubMenu) {
           const newSubMenu = {
             id: getRandomId(),
@@ -340,6 +338,8 @@
           // publish add sub menu event
           emit("addSiteNav", newSubMenu, newMenu);
         } else {
+          // publish add menu event
+          emit("addSiteNav", newMenu, menus.value[addingIdx]);
           newMenu.subMenus = []; // need to clear first due to set an empty object above
         }
       }

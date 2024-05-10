@@ -3,6 +3,7 @@
   import { ElMessage, ElMessageBox } from 'element-plus'
   import { computed } from 'vue';
   import { fetchSiteInfo, SiteInfo } from '../../common/SiteFetcher';
+  const emit = defineEmits(['updated'])
 
   const props = defineProps({
     webs: {
@@ -50,6 +51,7 @@
         type: 'success',
         message: `${value}`,
       })
+      emit('updated');
       console.log(`successfully add tab ${newTab.label} in ${foundWeb.label}`)
     }).catch(() => {
       console.log(`cancelled add tab in: ${web.label}`)
@@ -82,6 +84,7 @@
       if (web.currentTabName == foundTag.id) {
         web.currentTabName = tags[foundTagIdx - 1].id;
       }
+      emit('updated');
       console.log(`deleted tag : ${web.label} - ${foundTag.label}`)
       ElMessage({
         type: 'success',
@@ -108,6 +111,7 @@
         type: 'success',
         message: `${value}`,
       })
+      emit('updated');
     }).catch(() => {
       console.log(`cancelled edit tab label: ${web.label}-${tag.label}`)
     })
@@ -169,6 +173,7 @@
         message: `${site.name}`,
       })
     }
+    emit('updated');
   }
 
   const addSite = (web: any, tag: any) => {
@@ -208,6 +213,7 @@
       const s_idx = _tag.sites.findIndex((s: any) => s.id == site.id)
       if (s_idx < 0) return;
       _tag.sites.splice(s_idx, 1);
+      emit('updated');
       console.log(`deleted site : ${site.name}`)
       ElMessage({
         type: 'success',

@@ -11,7 +11,7 @@
         </el-header>
         <el-main class="site-nav-main">
           <SiteNavSearch />
-          <WebSites :webs="webs" />
+          <WebSites :webs="webs" @updated="updatedWebs" />
         </el-main>
         <el-footer>
           <SiteNavCopyright />
@@ -27,6 +27,10 @@
 
   const webs = ref(SiteNavData.getWebs());
   const menus = ref(SiteNavData.getMenus());
+
+  const updatedWebs = () => {
+    SiteNavData.setWebs(webs.value);
+  }
 
   const addSiteNav = (new_site_nav: any, previous_site_nav: any) => {
     console.log('addSiteNav', new_site_nav.name, new_site_nav, previous_site_nav)
