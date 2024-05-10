@@ -135,6 +135,20 @@
             "name": "中央人民政府",
             "description": "中国政府网_中央人民政府门户网站",
             "link": "https://www.gov.cn/"
+          },
+          {
+            "id": "jexuobideaj",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.6OHvHdk-NElI0zzcxWXjewHaH5?rs=1&pid=ImgDetMain",
+            "name": "广东省教育考试院",
+            "description": "广东省教育考试院",
+            "link": "https://eea.gd.gov.cn/"
+          },
+          {
+            "id": "pdpe6wypvm",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.6OHvHdk-NElI0zzcxWXjewHaH5?rs=1&pid=ImgDetMain",
+            "name": "中国教育考试网",
+            "description": "中国教育考试网",
+            "link": "https://www.neea.edu.cn/"
           }
         ]
       }
@@ -155,6 +169,13 @@
             "name": "微信网页版",
             "description": "微信网页版",
             "link": "https://wx.qq.com/"
+          },
+          {
+            "id": "qdd3corqgk",
+            "icon": "https://logotaglines.com/wp-content/uploads/2017/09/QQ-Logo-768x768.jpg",
+            "name": "QQ",
+            "description": "轻松做自己",
+            "link": "https://im.qq.com/"
           }
         ]
       },
@@ -173,6 +194,26 @@
       }
     ],
     "currentTabName": "u7c2f77fdw_0"
+  },
+  {
+    "id": "b1c8vc11eu8",
+    "label": "音乐",
+    "tags": [
+      {
+        "id": "b1c8vc11eu8_0",
+        "label": "在线",
+        "sites": [
+          {
+            "id": "z4ohaxdeotg",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.f2a3f230e8413f570c7b3890e30b7647?rik=C0CRcCS6VCcSAQ&pid=ImgRaw&r=0&sres=1&sresct=1",
+            "name": "网易云音乐",
+            "description": "网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。",
+            "link": "http://music.163.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "b1c8vc11eu8_0"
   },
   {
     "id": "smmvqd0w6ng",
@@ -209,6 +250,13 @@
             "name": "Bilibili",
             "description": "国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。",
             "link": "https://www.bilibili.com/"
+          },
+          {
+            "id": "8zk74f7fewr",
+            "icon": "https://upload-up.qtfm.cn/device/aa1856e4a10b4d5f81066cf33674cd82/1548829568751_v0ev0XaIm.png!/fh/800",
+            "name": "一席",
+            "description": "剧场式演讲、结合网络视频传播的媒体平台",
+            "link": "https://yixi.tv/"
           }
         ]
       },
@@ -222,11 +270,18 @@
             "name": "YouTube",
             "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
             "link": "https://www.youtube.com"
+          },
+          {
+            "id": "1bsfymp36jr",
+            "icon": "https://assets-global.website-files.com/60798d77be760776081d5988/643fdaa85b5256cf67864238_TED-Logo.png",
+            "name": "TED",
+            "description": " Ideas change everything",
+            "link": "https://www.ted.com/"
           }
         ]
       }
     ],
-    "currentTabName": "smmvqd0w6ng_0"
+    "currentTabName": "fluuin8x45"
   },
   {
     "id": "fzgyt1iva8t",
@@ -244,9 +299,103 @@
             "link": "https://edu.lagou.com/"
           }
         ]
+      },
+      {
+        "label": "前端",
+        "id": "h0ce89itqgh",
+        "sites": [
+          {
+            "id": "l89us6sjlsq",
+            "icon": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
+            "name": "MDN",
+            "description": "The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.",
+            "link": "https://developer.mozilla.org/en-US/docs/Web"
+          }
+        ]
+      },
+      {
+        "label": "仓库",
+        "id": "8e11ng6ejpc",
+        "sites": [
+          {
+            "id": "md8qooj048",
+            "icon": "https://github.com/favicons/favicon.svg",
+            "name": "GitHub",
+            "description": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.",
+            "link": "https://github.com/"
+          },
+          {
+            "id": "ainwhn7d61m",
+            "icon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.yH5pwuDaHCClrhLbTq1QRAAAAA?rs=1&pid=ImgDetMain",
+            "name": "Gitee",
+            "description": "面向企业提供一站式研发管理解决方案，包括代码管理、项目管理、文档协作、测试管理、CICD、效能度量等多个模块，支持SaaS、私有化等多种部署方式，帮助企业有序规划和管理研发过程，提升研发效率和质量。",
+            "link": "https://gitee.com/"
+          },
+          {
+            "id": "de79ygfnxej",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.JtEmHkIXfEKpWE9MFnXJUwHaG2?rs=1&pid=ImgDetMain",
+            "name": "Gitlab",
+            "description": "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster.",
+            "link": "https://gitlab.com"
+          }
+        ]
       }
     ],
     "currentTabName": "7ts8otaa4t_0"
+  },
+  {
+    "id": "r618obm8x8a",
+    "label": "投资理财",
+    "tags": [
+      {
+        "id": "r618obm8x8a_0",
+        "label": "行情",
+        "sites": [
+          {
+            "id": "ex7yfgzgmg",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.819117b9ea722495bd087d7b74cd3d2b?rik=xJP56eOmaeQwJA&riu=http%3a%2f%2fpic.downcc.com%2fupload%2f2015-1%2f20151161462.png&ehk=HHyE7DuyOQ5uj%2fQXPHVhhGVAINtrS7EXXUV68oA%2bq4g%3d&risl=&pid=ImgRaw&r=0",
+            "name": "东方财富网",
+            "description": "东方财富网，专业的互联网财经媒体，提供7*24小时财经资讯及全球金融市场报价，汇聚全方位的综合财经资讯和金融市场资讯，覆盖股票、财经、证券、金融、美股、港股、行情、基金、债券、期货、外汇、科创板、保险、信托、黄金、理财、商业、银行、博客、股吧、财迷、论坛等财经综合信息",
+            "link": "https://www.eastmoney.com/"
+          },
+          {
+            "id": "w2u8bntkcv",
+            "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.GD0DZjfcqG27RW0cURPrjQAAAA?rs=1&pid=ImgDetMain",
+            "name": "集思录",
+            "description": "集思录，一个以数据为本的投资社区",
+            "link": "https://www.jisilu.cn/"
+          },
+          {
+            "id": "mznn614bdjc",
+            "icon": "http://static.cninfo.com.cn/new/img/favicon.ico",
+            "name": "巨潮资讯网",
+            "description": "巨潮资讯网是中国证监会指定的上市公司信息披露网站，平台提供上市公司公告、公司资讯、公司互动、股东大会网络投票等内容功能，一站式服务资本市场投资者。",
+            "link": "http://www.cninfo.com.cn/"
+          }
+        ]
+      },
+      {
+        "label": "WEB3",
+        "id": "mzyv0jot4um",
+        "sites": [
+          {
+            "id": "f26dhvo81a7",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.iWpawV-D5FVF1Oyp_NMm9gHaFp?rs=1&pid=ImgDetMain",
+            "name": "币安",
+            "description": "世界上最大的比特币交易所和altcoin加密货币交易所.",
+            "link": "https://www.binance.me/"
+          },
+          {
+            "id": "ysuyshgbynl",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.61f2984ce5d705394dd91ee48e40bfbd?rik=1Z%2b9jxrBnUk4bQ&pid=ImgRaw&r=0",
+            "name": "欧易 OKX",
+            "description": "Buy BTC, ETH, XRP and more on OKX, a leading crypto exchange – explore Web3, invest in DeFi and NFTs. Register now and experience the future of finance.",
+            "link": "https://www.okx.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "r618obm8x8a_0"
   },
   {
     "id": "9ywjink87t",
@@ -337,10 +486,139 @@
             "name": "美国地址",
             "description": "随机生成虚构美国身份，包括姓名，地址，电话，职称，信用卡，身高，体重等信息，获取美国人信息，获取美国人地址",
             "link": "https://www.dizhishengcheng.com/"
+          },
+          {
+            "id": "3xfobg3fm9",
+            "icon": "https://www.itdog.cn/favicon.ico",
+            "name": "ITDOG",
+            "description": "本站为IT运维人员提供实用的工具，多地ping测试、多地tcping测试、网站测速、HTTP测速、API测速、路由追踪、在线MTR 、DNS查询等。",
+            "link": "https://www.itdog.cn/"
+          },
+          {
+            "id": "igokeuuj5e",
+            "icon": "https://static.jyshare.com/images/c-runoob-logo.ico",
+            "name": "菜鸟工具",
+            "description": "菜鸟工具，为开发设计人员提供在线工具，网址导航，提供在线PHP、Python、 CSS、JS 调试，中文简繁体转换，进制转换等工具。致力于打造国内专业WEB开发工具，集成开发环境，WEB开发教程。..",
+            "link": "https://c.runoob.com/"
           }
         ]
       }
     ],
     "currentTabName": "f3058bsma8c_0"
+  },
+  {
+    "id": "smgs19taxo8",
+    "label": "资源",
+    "tags": [
+      {
+        "id": "smgs19taxo8_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "9jpszlk2w9",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.0e5f8035eb730081afcc410679292a98?rik=mUOYPbM6tNY0hA&pid=ImgRaw&r=0",
+            "name": "Internet Archive",
+            "description": "互联网记忆 Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine",
+            "link": "https://archive.org/"
+          }
+        ]
+      },
+      {
+        "label": "综合",
+        "id": "5igq26acafs",
+        "sites": [
+          {
+            "id": "r522fm430ws",
+            "icon": "https://iui.su/2024.ico",
+            "name": "不死鸟",
+            "description": "不死鸟:专注分享优质资源",
+            "link": "https://iui.su/"
+          },
+          {
+            "id": "utub4v2eyxl",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.d83013e64c603607db7afef7b0dca538?rik=7qx1bwNU4huynA&pid=ImgRaw&r=0",
+            "name": "玩Android",
+            "description": "玩Android是一个每日推荐20~30篇Android优质文章的站点，提供Android常用工具和常用网站，并以知识体系的形式展现所有的文章分类。",
+            "link": "https://www.wanandroid.com/"
+          },
+          {
+            "id": "v5gy7540uon",
+            "icon": "https://ai-bot.cn/wp-content/uploads/2023/07/ai-bot-favicon.png",
+            "name": "AI工具集",
+            "description": "AI工具集导航官网收录了国内外数百个AI工具，包括AI写作工具、AI图像生成和背景移除、AI视频制作、AI音频转录、AI辅助编程、AI音乐生成、AI绘画设计、AI对话聊天等AI工具集合大全，以及AI学习开发的常用网站、框架和模型，帮助你加入人工智能浪潮，自动化高效完成任务！",
+            "link": "https://ai-bot.cn/"
+          },
+          {
+            "id": "pe601b5x8h",
+            "icon": "https://www.toolai.io/favicon.ico",
+            "name": "ToolAI",
+            "description": "全球最佳人工智能AI工具聚合网站",
+            "link": "https://www.toolai.io/"
+          }
+        ]
+      },
+      {
+        "label": "图书",
+        "id": "6m2ltrvzot",
+        "sites": [
+          {
+            "id": "ltdqv33k46",
+            "icon": "https://www.manning.com/assets/manningLogoBlack-4ce2f7a38da67c986590975d7769f389.svg",
+            "name": "Manning",
+            "description": "publishes books and videos on various topics related to programming, software development, and technology. Browse the latest releases, bestsellers, and reviews of …",
+            "link": "https://www.manning.com/"
+          },
+          {
+            "id": "xwhnogudypc",
+            "icon": "https://www.jiumodiary.com/images/apple/apple-144.png",
+            "name": "Jiumo Search 鸠摩搜索",
+            "description": "鸠摩搜索引擎",
+            "link": "https://www.jiumodiary.com/"
+          },
+          {
+            "id": "drccckae46m",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.6OHvHdk-NElI0zzcxWXjewHaH5?rs=1&pid=ImgDetMain",
+            "name": "上海研发公共服务平台",
+            "description": "上海市科技创新服务的综合门户网站，提供大型科学仪器设施、科技研发基地、外国人才等方面的信息查询、申报、审核、评估等服务。平台还提供上海 …",
+            "link": "https://www.sgst.cn/"
+          }
+        ]
+      },
+      {
+        "label": "ICON",
+        "id": "av1wkrf3whl",
+        "sites": [
+          {
+            "id": "wxxi65pwrya",
+            "icon": "https://yesicon.app/favicon.svg",
+            "name": "Yesicon",
+            "description": "172 组开源、免费的图标库\n开发者 和 设计师 的 CV 好帮手 172 icon sets with 220k+ icons, search across icon sets in multiple languages, rich filtering by type and style, quick customization of icon colors, sizes and code styles, one-click copy and download for developers and designers",
+            "link": "https://yesicon.app/"
+          },
+          {
+            "id": "fdle5ug3pbg",
+            "icon": "https://iconify.design/favicon.svg",
+            "name": "Iconify Desig",
+            "description": "All popular icon sets, one framework",
+            "link": "https://iconify.design/"
+          },
+          {
+            "id": "j4e6g1fhyz",
+            "icon": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg",
+            "name": "iconfont",
+            "description": "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具",
+            "link": "https://www.iconfont.cn/"
+          },
+          {
+            "id": "vx4db5ly9zo",
+            "icon": "https://feathericons.com/favicon-32x32.png",
+            "name": "Feather",
+            "description": "Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.",
+            "link": "https://feathericons.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "av1wkrf3whl"
   }
 ]

@@ -35,6 +35,14 @@
         "name": "社交"
       },
       {
+        "id": "b1c8vc11eu8",
+        "icon": "mute",
+        "name": "音乐",
+        "subMenus": [
+          {}
+        ]
+      },
+      {
         "id": "smmvqd0w6ng",
         "icon": "video-play",
         "name": "视频",
@@ -53,6 +61,14 @@
         "id": "fzgyt1iva8t",
         "icon": "promotion",
         "name": "编程"
+      },
+      {
+        "id": "r618obm8x8a",
+        "icon": "school",
+        "name": "投资理财",
+        "subMenus": [
+          {}
+        ]
       }
     ]
   },
@@ -80,6 +96,12 @@
     "id": "f3058bsma8c",
     "icon": "fork-spoon",
     "name": "工具",
+    "subMenus": []
+  },
+  {
+    "id": "smgs19taxo8",
+    "icon": "fries",
+    "name": "资源",
     "subMenus": []
   }
 ]
