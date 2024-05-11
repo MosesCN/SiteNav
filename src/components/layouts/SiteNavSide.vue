@@ -338,9 +338,11 @@
           // publish add sub menu event
           emit("addSiteNav", newSubMenu, newMenu);
         } else {
-          // publish add menu event
-          emit("addSiteNav", newMenu, menus.value[addingIdx]);
           newMenu.subMenus = []; // need to clear first due to set an empty object above
+          const previous_menu = menus.value[addingIdx];
+          const previous = previous_menu.subMenus && previous_menu.subMenus.length > 0 ? previous_menu.subMenus[previous_menu.subMenus.length - 1] : previous_menu;
+          // publish add menu event
+          emit("addSiteNav", newMenu, previous);
         }
       }
       ElMessage({
