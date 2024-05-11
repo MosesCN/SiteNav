@@ -8,7 +8,7 @@ a static resposive websites navigator powered by [Vue3](https://vuejs.org) + [El
 
 # Data Config
 
-the app data config in [/api/data](./api/data/), including
+the app data config in [/api/data](/api/data/), including
 
 - menu
 - search engine options
