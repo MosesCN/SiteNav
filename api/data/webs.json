@@ -149,6 +149,13 @@
             "name": "中国教育考试网",
             "description": "中国教育考试网",
             "link": "https://www.neea.edu.cn/"
+          },
+          {
+            "id": "envnp0kpokn",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.6OHvHdk-NElI0zzcxWXjewHaH5?rs=1&pid=ImgDetMain",
+            "name": "国家数据",
+            "description": "月度数据季度数据年度数据普查数据地区数据部门数据国际数据可视化产品出版物",
+            "link": "https://data.stats.gov.cn/index.htm"
           }
         ]
       }
@@ -189,6 +196,13 @@
             "name": "Telegram",
             "description": "Telegram will be free forever",
             "link": "https://telegram.org/"
+          },
+          {
+            "id": "il520s5z0sh",
+            "icon": "https://www.linkedin.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca",
+            "name": "LinkedIn",
+            "description": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+            "link": "https://www.linkedin.com/"
           }
         ]
       }
@@ -209,6 +223,13 @@
             "name": "网易云音乐",
             "description": "网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。",
             "link": "http://music.163.com/"
+          },
+          {
+            "id": "oy4dy6x6ci",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.7559eb3e2baf30ccca761ebae518a3c9?rik=yqvUhtjLMKZZQA&riu=http%3a%2f%2fis4.mzstatic.com%2fimage%2fthumb%2fPurple127%2fv4%2fec%2fae%2f00%2fecae0039-e542-d368-8cb8-fdb401907aa4%2fsource%2f512x512bb.png&ehk=UXpHzu9%2f7YYbXbdPlgHRocy1FxO6igy78pe66Aony0g%3d&risl=&pid=ImgRaw&r=0",
+            "name": "QQ音乐",
+            "description": "QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。",
+            "link": "https://y.qq.com/"
           }
         ]
       }
@@ -257,6 +278,13 @@
             "name": "一席",
             "description": "剧场式演讲、结合网络视频传播的媒体平台",
             "link": "https://yixi.tv/"
+          },
+          {
+            "id": "3as2nfqamvf",
+            "icon": "https://www.yangshipin.cn/favicon.ico",
+            "name": "央视频",
+            "description": "在线看电视",
+            "link": "https://www.yangshipin.cn/"
           }
         ]
       },
@@ -281,7 +309,7 @@
         ]
       }
     ],
-    "currentTabName": "fluuin8x45"
+    "currentTabName": "smmvqd0w6ng_0"
   },
   {
     "id": "fzgyt1iva8t",
@@ -297,6 +325,20 @@
             "name": "拉钩教育",
             "description": "互联网职业教育平台",
             "link": "https://edu.lagou.com/"
+          },
+          {
+            "id": "29kc617smnf",
+            "icon": "https://static001.geekbang.org/static/time/icon/apple-touch-icon.jpg",
+            "name": "极客时间",
+            "description": "提供多种编程语言、技术领域的视频课程、直播课程、训练营等学习资源，帮助开发者轻松学习，高效学习。",
+            "link": "https://time.geekbang.org/"
+          },
+          {
+            "id": "ah7y9f3cqwn",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.bc7eb40fc3bebc22c47ad2f40d3dff40?rik=M6GQ5xbrKE5CSQ&pid=ImgRaw&r=0&sres=1&sresct=1",
+            "name": "黑马",
+            "description": "IT培训,IT培训机构,java培训,鸿蒙开发培训,鸿蒙培训,嵌入式培训,嵌入式开发培训,java培训学校,python培训,python培训班,编程培训机构,大数据培训,人工智能培训,UI设计培训,AIGC培训,web前端培训,软件测试培训,产品经理培训",
+            "link": "https://www.itheima.com/"
           }
         ]
       },
@@ -310,6 +352,46 @@
             "name": "MDN",
             "description": "The open Web presents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Below you'll find links to our Web technology documentation.",
             "link": "https://developer.mozilla.org/en-US/docs/Web"
+          },
+          {
+            "id": "eu0zb3subwh",
+            "icon": "http://www.w3school.com.cn/ui2019/logo-96-red.png",
+            "name": "w3school",
+            "description": "领先的 Web 技术教程",
+            "link": "http://www.w3school.com.cn/"
+          }
+        ]
+      },
+      {
+        "label": "Python",
+        "id": "h444y5o60da",
+        "sites": [
+          {
+            "id": "4wbwhgzkfdk",
+            "icon": "https://docs.pythontab.com/favicon.ico",
+            "name": "在线手册中心",
+            "description": "在线手册，在线中文文档，Python手册，Scrapy手册，Django手册，Redis手册，Flask手册，Github手册，Redis手册，Nodejs手册，Beautifulsoup手册，Tornado手册，Nginx手册，Jinja2手册，TensorFlow手册",
+            "link": "http://docs.pythontab.com/"
+          },
+          {
+            "id": "st9db79htw",
+            "icon": "https://www.python.org/static/favicon.ico",
+            "name": "Python.org",
+            "description": "The official home of the Python Programming Language",
+            "link": "https://www.python.org/"
+          }
+        ]
+      },
+      {
+        "label": "机器学习",
+        "id": "xnspe6tacek",
+        "sites": [
+          {
+            "id": "6qv50qt8xyk",
+            "icon": "https://github.com/favicons/favicon.svg",
+            "name": "Deep Learn",
+            "description": "Deep Learning Book Chinese Translation. Contribute to exacity/deeplearningbook-chinese development by creating an account on GitHub.",
+            "link": "https://github.com/exacity/deeplearningbook-chinese"
           }
         ]
       },
@@ -337,11 +419,86 @@
             "name": "Gitlab",
             "description": "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster.",
             "link": "https://gitlab.com"
+          },
+          {
+            "id": "uc87meefka",
+            "icon": "https://www.flexmind.co/wp-content/uploads/2020/04/logo-git-icon-e1586889963495.png",
+            "name": "Git",
+            "description": "Git 教程",
+            "link": "https://git-scm.com/"
+          },
+          {
+            "id": "b05tkhntw9",
+            "icon": "https://www.flexmind.co/wp-content/uploads/2020/04/logo-git-icon-e1586889963495.png",
+            "name": "ProGit 中文版",
+            "description": "Git 中文教程",
+            "link": "https://gitee.com/progit/index.html"
+          },
+          {
+            "id": "tazh6ptys0k",
+            "icon": "https://help-assets.codehub.cn/enterprise/guanwang/favicon.ico",
+            "name": "coding",
+            "description": "提供一站式研发管理平台及云原生开发工具，让软件研发如同工业生产般简单高效，助力企业提升研发管理效能",
+            "link": "https://coding.net/"
           }
         ]
       }
     ],
-    "currentTabName": "7ts8otaa4t_0"
+    "currentTabName": "8e11ng6ejpc"
+  },
+  {
+    "id": "t0r3vz7xdb8",
+    "label": "英语",
+    "tags": [
+      {
+        "id": "t0r3vz7xdb8_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "szzm1hvoxgl",
+            "icon": "https://lingvist.com/assets/images/favicon/icon-192.png",
+            "name": "Lingvist",
+            "description": "Learn a new language smarter and faster with the help of advanced AI technology. Join today and discover more than 50 language courses to learn from – available on the web or mobile.",
+            "link": "https://lingvist.com/"
+          },
+          {
+            "id": "o2d1iq4bnqs",
+            "icon": "https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png",
+            "name": "Duolingo",
+            "description": "Duolingo is the world's most popular way to learn a language. It's 100% free, fun and science-based. Practice online on duolingo.com or on the apps!",
+            "link": "https://www.duolingo.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "t0r3vz7xdb8_0"
+  },
+  {
+    "id": "raait6bgncl",
+    "label": "产品设计",
+    "tags": [
+      {
+        "id": "raait6bgncl_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "xvgy8cxl08a",
+            "icon": "https://image.woshipm.com/favicon.ico",
+            "name": "人人都是产品经理",
+            "description": "人人都是产品经理致力为产品新人、产品经理等广大产品爱好者打造一个良好的学习交流平台。深度剖析国内外互联网业内动态，分享产品设计、交互设计、视觉设计、用户体验设计、产品运营、产品市场和项目管理等专业产品知识。",
+            "link": "https://www.woshipm.com/"
+          },
+          {
+            "id": "xxx61s6st2h",
+            "icon": "https://zhengxin-pub.cdn.bcebos.com/logopic/ba393a6db63608e7d15bdec0f0390612_fullsize.jpg?x-bce-process=image/resize,m_lfit,w_200",
+            "name": "即时设计",
+            "description": "即时设计是一款支持在线协作的专业级 UI 设计工具，支持 Sketch、Figma、XD 格式导入，海量优质设计资源即拿即用。支持创建交互原型、获取设计标注，为产设研团队提供一站式协同办公体验。",
+            "link": "https://js.design/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "raait6bgncl_0"
   },
   {
     "id": "r618obm8x8a",
@@ -349,7 +506,7 @@
     "tags": [
       {
         "id": "r618obm8x8a_0",
-        "label": "行情",
+        "label": "数据",
         "sites": [
           {
             "id": "ex7yfgzgmg",
@@ -398,8 +555,124 @@
     "currentTabName": "r618obm8x8a_0"
   },
   {
+    "id": "25jjmyvb468",
+    "label": "博客社区",
+    "tags": [
+      {
+        "id": "25jjmyvb468_0",
+        "label": "博客",
+        "sites": [
+          {
+            "id": "ta9wz0kae3r",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "知了",
+            "description": "朝闻道，夕可眠矣。",
+            "link": "https://zhile.io/"
+          },
+          {
+            "id": "sbmmtszm2i",
+            "icon": "https://www.ruanyifeng.com/blog/images/person2_s.jpg",
+            "name": "阮一峰的网络日志",
+            "description": "阮一峰的网络日志",
+            "link": "https://www.ruanyifeng.com/blog/"
+          },
+          {
+            "id": "05rge2pths7f",
+            "icon": "https://dream.ren/wp-content/themes/presence/images/logo.png",
+            "name": "追梦人博客",
+            "description": "追梦人博客Dream.ren | 又一个专注互联网自由与福利的记事式小站",
+            "link": "https://dream.ren/"
+          }
+        ]
+      },
+      {
+        "label": "社群",
+        "id": "vb52bizvyz",
+        "sites": [
+          {
+            "id": "yknixcnqf3c",
+            "icon": "https://wx.zsxq.com/dweb2/assets/images/favicon_32.ico",
+            "name": "知识星球",
+            "description": "知识星球是创作者连接铁杆粉丝，实现知识变现的工具。任何从事创作或艺术的人，例如艺术家、工匠、教师、学术研究、科普等，只要能获得一千位铁杆粉丝，就足够生计无忧，自由创作。社群管理、内容沉淀、链接粉丝等就在知识星球。",
+            "link": "https://wx.zsxq.com/dweb2/login"
+          }
+        ]
+      },
+      {
+        "label": "社区",
+        "id": "ssdruricsjg",
+        "sites": [
+          {
+            "id": "ei2vm24p7qn",
+            "icon": "https://www.cnblogs.com/images/logo.svg?v=2SMrXdIvlZwVoB1akyXm38WIKuTHVqvGD0CweV-B6cY",
+            "name": "博客园",
+            "description": "博客园是一个面向开发者的知识分享社区。自创建以来，博客园一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。博客园的使命是帮助开发者用代码改变世界。",
+            "link": "https://www.cnblogs.com/"
+          },
+          {
+            "id": "jtr9jjjsip",
+            "icon": "https://g.csdnimg.cn/static/logo/favicon32.ico",
+            "name": "CSDN",
+            "description": "全球知名中文IT技术交流平台，提供原创博客、精品问答、职业培训、技术论坛、资源下载等产品服务。",
+            "link": "https://www.csdn.net/"
+          },
+          {
+            "id": "ugp7x2gmk2",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.6ae0b827337178504bfec0fed981450e?rik=nSo7N%2bMLEa6SJA&pid=ImgRaw&r=0",
+            "name": "InfoQ",
+            "description": "InfoQ是一个实践驱动、以社区为中心的技术媒体平台，致力于促进软件开发及相关领域知识与创新的传播，提供架构，云计算，AI，前端，大数据等与软件开发相关的最新技术资讯、解读及技术会议。",
+            "link": "https://www.infoq.cn/"
+          },
+          {
+            "id": "66dam6rtvg3",
+            "icon": "https://www.jb51.net/images/logo.gif",
+            "name": "脚本之家",
+            "description": "网页制作网络编程脚本专栏脚本下载数据库服务器软件下载操作系统网站运营电脑基础",
+            "link": "https://www.jb51.net/"
+          },
+          {
+            "id": "kqwruag594j",
+            "icon": "https://p26-passport.byteacctimg.com/img/user-avatar/d61e6ab21c91064b55ce705b39169302~300x300.image",
+            "name": "掘金",
+            "description": "面向全球中文开发者的技术内容分享与交流平台。我们通过技术文章、沸点、课程、直播等产品和服务，打造一个激发开发者创作灵感，激励开发者沉淀分享，陪伴开发者成长的综合类技术社区。掘金,稀土,Vue.js,前端面试题,Kotlin,ReactNative,Python",
+            "link": "https://juejin.cn/"
+          },
+          {
+            "id": "3bgtghc032a",
+            "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
+            "name": "微信公众平台",
+            "description": "再小的个体，也有自己的品牌",
+            "link": "https://mp.weixin.qq.com/"
+          },
+          {
+            "id": "2kfo310qko7",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.f0bd97564b85fd953f0d3a416650ef32?rik=%2fSDTEtosZK4hIw&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f04-07%2f98963%2fwater_98963_698_698_.png&ehk=8l2O6L%2b3ARFH2w6EYU%2b57FSZ%2fh3noVqeAY4b4%2fZ2%2fr4%3d&risl=&pid=ImgRaw&r=0",
+            "name": "知乎",
+            "description": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见解，找到自己的解答」为品牌使命。知乎凭借认真、专业、友善的社区氛围、独特的产品机制以及结构化和易获得的优质内容，聚集了中文互联网科技、商业、影视、时尚、文化等领域最具创造力的人群，已成为综合性、全品类、在诸多领域具有关键影响力的知识分享社区和创作者聚集的原创内容平台，建立起了以社区驱动的内容变现商业模式。",
+            "link": "https://www.zhihu.com/"
+          },
+          {
+            "id": "8jrlf3xjvre",
+            "icon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.9MrAfv6vpfIwkrGdcLkIAAAAAA?rs=1&pid=ImgDetMain",
+            "name": "吾爱破解",
+            "description": "吾爱破解",
+            "link": "https://www.52pojie.cn/"
+          },
+          {
+            "id": "wjx1q4ubt0q",
+            "icon": "https://pic1.zhimg.com/v2-d12d14ca0cd6876d4d8b80890b7b9584_l.jpg?source=3af55fa1",
+            "name": "OSCHINA",
+            "description": "OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台",
+            "link": "https://www.oschina.net/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "25jjmyvb468_0"
+  },
+  {
     "id": "9ywjink87t",
-    "label": "招聘",
+    "label": "就业",
     "tags": [
       {
         "id": "9ywjink87t_0",
@@ -420,17 +693,71 @@
             "link": "https://www.liepin.com/"
           }
         ]
+      },
+      {
+        "label": "简历面试",
+        "id": "043f5yvrp0p3",
+        "sites": [
+          {
+            "id": "ylpcqbh8nb9",
+            "icon": "https://static.nowcoder.com/fe/file/images/nowpick/web/www-favicon.ico",
+            "name": "牛客网",
+            "description": "求职之前，先上牛客，就业找工作一站解决。互联网IT技术/产品/运营/硬件/汽车机械制造/金融/财务管理/审计/银行/市场营销/地产/快消/管培生等等专业技能学习/备考/求职神器，在线进行企业校招实习笔试面试真题模拟考试练习，全面提升求职竞争力，找到好工作，拿到好offer。_牛客网_牛客在手,offer不愁",
+            "link": "https://www.nowcoder.com/"
+          },
+          {
+            "id": "22o8e0kjxrp",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "乔布简历",
+            "description": "个人空白简历表格|英文简历模板|求职简历模板免费下载。为广大大学生及应届毕业生提供各行业最新最全的中英文个人求职简历模板表格免费下载，以及大量关于简历写作技巧的文章，致力于帮助求职者打造最专业的简历。",
+            "link": "https://cv.qiaobutang.com/"
+          },
+          {
+            "id": "hwm8vfwe2x",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.4fd347f943dcdc59b2c0d666964efc4e?rik=mYH%2f7123OWHeHA&riu=http%3a%2f%2fimg.nesoso.cn%2fweb%2f01%2f1143.gif&ehk=xL%2fE8IkhhhUrD%2bAZiGTEB0Im3nBWq3sMmiSsyador30%3d&risl=&pid=ImgRaw&r=0",
+            "name": "站长简历",
+            "description": "提供各类个人简历模板下载:个人简历封面 个人简历 简历模板 个人简历模板 求职简历模板 个人简历表格 英文简历 简历封面图片等素材。",
+            "link": "https://sc.chinaz.com/jianli/free.html"
+          },
+          {
+            "id": "wvomibxy2q",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.ab49cb923cd43896291e5955e7e673d5?rik=Hvk8EtQzzjCApg&riu=http%3a%2f%2fpic.2265.com%2fupload%2f2017-3%2f201734927214791.png&ehk=vDRSEnrvJU7GDLvBlCt3IoccYzg8bnQQb%2bzRWnneFMo%3d&risl=&pid=ImgRaw&r=0",
+            "name": "海投网",
+            "description": "海投网,校招,校园招聘,宣讲会,2020校园招聘,应届生校园招聘",
+            "link": "https://www.haitou.cc/"
+          }
+        ]
+      },
+      {
+        "label": "企业信息",
+        "id": "38i2vjqdgzv",
+        "sites": [
+          {
+            "id": "kak66ryo5n",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.e6a6b48215fa59454b5213a56061428f?rik=v1rma952LD3RGA&riu=http%3a%2f%2fimg.kxdw.com%2f2019%2f1125%2f20191125042938183.jpg&ehk=yLTRwsvS%2fqP4j6%2bKd0jBwDsA3BOB%2fhw8o2GnlYJqGTY%3d&risl=&pid=ImgRaw&r=0",
+            "name": "天眼查",
+            "description": "查公司，查老板，查关系，都在用的商业查询平台",
+            "link": "https://www.tianyancha.com/"
+          },
+          {
+            "id": "za0x4p68nh",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.3ca4e45dc791ee6ac470d85a8be6df77?rik=Dqy%2b18615jDW3g&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f04-20%2f99486%2fwater_99486_698_619.19_.png&ehk=KsMMpgv2ncOKLf7X1ONvFNeM4Uqs3UAPi790UFixaMo%3d&risl=&pid=ImgRaw&r=0",
+            "name": "企查查",
+            "description": "企查查是官方备案的企业征信机构，为您提供全国企业信息查询，包括企业工商信息查询，信用信息查询，经营状况查询等相关信息。查企业，查老板，查风险就上企查查!",
+            "link": "https://www.qcc.com/"
+          }
+        ]
       }
     ],
     "currentTabName": "9ywjink87t_0"
   },
   {
     "id": "dq8a5xlml5j",
-    "label": "在线接单",
+    "label": "零花钱",
     "tags": [
       {
         "id": "dq8a5xlml5j_0",
-        "label": "灵活",
+        "label": "在线接活",
         "sites": [
           {
             "id": "yzn5no0l0g",
@@ -445,11 +772,72 @@
             "name": "Fiverr",
             "description": "Complete the task and we'll get you right back into Fiverr.",
             "link": "https://www.fiverr.com/"
+          },
+          {
+            "id": "agk00eaypok",
+            "icon": "https://zb.oschina.net/static/images/favicon.ico",
+            "name": "开源众包",
+            "description": "百万专业开发资源",
+            "link": "https://zb.oschina.net/"
+          },
+          {
+            "id": "md0odh1ds5j",
+            "icon": "https://www.jfh.com/logo.png",
+            "name": "解放号",
+            "description": "解放号数智版—伴行数字化转型的软件产业互联网",
+            "link": "https://www.jfh.com/"
+          },
+          {
+            "id": "m2ne7wsc70c",
+            "icon": "http://www.duzikai.com/favicon.ico",
+            "name": "独自开",
+            "description": "建设一个独立、自由、开源的PaaS平台。\n期待各路程序员加入我们的平台",
+            "link": "http://www.duzikai.com/"
+          }
+        ]
+      },
+      {
+        "label": "网赚",
+        "id": "oqzml11yitk",
+        "sites": [
+          {
+            "id": "byve0gnbme",
+            "icon": "https://www.maomp.com/wp-content/uploads/2019/08/bitbug_favicon.ico",
+            "name": "冒泡网赚",
+            "description": "冒泡网赚（创）为您免费分享网络赚钱项目、网创经验、各大网赚论坛VIP教程、创业交流、网赚经验交流、手机赚钱游戏等，帮助大家上网玩手机玩游戏就可以做轻松赚钱！",
+            "link": "https://www.maomp.vin/"
           }
         ]
       }
     ],
     "currentTabName": "dq8a5xlml5j_0"
+  },
+  {
+    "id": "nw352a8hbjc",
+    "label": "协作管理",
+    "tags": [
+      {
+        "id": "nw352a8hbjc_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "pofngqzwj9h",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.21Y_xGgBlH4yiLGHQKxwLgAAAA?rs=1&pid=ImgDetMain",
+            "name": "Teambition",
+            "description": "Teambition 是阿里巴巴旗下团队协作工具，以项目和任务的可视化管理来支撑企业团队协作，适合产品、研发、设计、市场、运营、销售、HR 等各类团队，让企业协同化繁为简，轻松愉悦。",
+            "link": "https://www.teambition.com/"
+          },
+          {
+            "id": "wf5q2bvsp3",
+            "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.6KZsz3XVilk2EUbZABvU2QHaID?rs=1&pid=ImgDetMain",
+            "name": "Jira",
+            "description": "project management tool for high-performing teams, flexible for the work you do and connected to everything. Whether you’re agile or waterfall, writing code or …",
+            "link": "https://www.atlassian.com/software/jira"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "nw352a8hbjc_0"
   },
   {
     "id": "f3058bsma8c",
@@ -496,10 +884,229 @@
           },
           {
             "id": "igokeuuj5e",
-            "icon": "https://static.jyshare.com/images/c-runoob-logo.ico",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
             "name": "菜鸟工具",
             "description": "菜鸟工具，为开发设计人员提供在线工具，网址导航，提供在线PHP、Python、 CSS、JS 调试，中文简繁体转换，进制转换等工具。致力于打造国内专业WEB开发工具，集成开发环境，WEB开发教程。..",
             "link": "https://c.runoob.com/"
+          },
+          {
+            "id": "brkjyxpu429",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "SoJson",
+            "description": "专业的JSON在线工具站，提供JSON解析、格式化、校验、压缩、转义、对比、生成实体等功能，支持JSON/XML互转、JSON转Excel、JSON教程等 …",
+            "link": "https://www.sojson.com/"
+          },
+          {
+            "id": "t5f5yhmuzlg",
+            "icon": "https://pic1.zhimg.com/v2-d12d14ca0cd6876d4d8b80890b7b9584_l.jpg?source=3af55fa1",
+            "name": "OSCHIN 工具",
+            "description": "OSCHINA.NET在线工具,ostools为开发设计人员提供在线工具，提供jsbin在线 CSS、JS 调试，在线 Java API文档,在线 PHP API文档,在线 Node.js API文档,Less CSS编译器，MarkDown编译器等其他在线工具",
+            "link": "https://tool.oschina.net/"
+          },
+          {
+            "id": "tkxvum8yiy",
+            "icon": "https://tool.lu/favicon.ico",
+            "name": "在线工具",
+            "description": "在线工具,开发人员工具,代码格式化、压缩、加密、解密,下载链接转换,json格式化,正则测试工具,favicon在线制作,字帖工具,中文简繁体转换,迅雷下载链接转换,进制转换,二维码,照片压缩,pdf合并",
+            "link": "https://tool.lu/"
+          },
+          {
+            "id": "cnm2x77pnna",
+            "icon": "https://wstatic.apizl.com/tools/upload/201901/1001789531.png",
+            "name": "爱资料工具",
+            "description": "爱资料工具(toolnb.com),为开发运维提供全面的在线工具箱,已开发工具400款,包含开发工具,运维工具,常用工具,SEO站长工具等,是好用,方便的在线工具网站.",
+            "link": "https://www.toolnb.com/"
+          },
+          {
+            "id": "ll1ojps4ss",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "UU在线工具",
+            "description": "丰富多样的工具和功能，包括但不限于图像工具，文本工具，编程开发工具，教学工具，健康工具，理财工具等，工具涵盖工作生活中的多种场景",
+            "link": "https://uutool.cn/"
+          },
+          {
+            "id": "hljgkx7trol",
+            "icon": "https://qncdn.aoscdn.com/local/beecut.cn/img/logo.png",
+            "name": "beecut",
+            "description": "在线免费帮你裁剪视频黑边，视频裁剪画面大小尺寸，放大缩小视频画面，无需下载，即开即用。简单的操作，流畅的使用体验，更有剪辑功能等你探索。",
+            "link": "https://beecut.cn/crop-video-online"
+          }
+        ]
+      },
+      {
+        "label": "转换工具",
+        "id": "djqsezh74cw",
+        "sites": [
+          {
+            "id": "myx9jv8pmi",
+            "icon": "https://cn.office-converter.com/Online-Converter/OnlineConvert16.png",
+            "name": "在线转换器",
+            "description": "免费在线转换器, 文件转换器 . 将PDF, 图像, 视频, 文档, 音频, 电子书及压缩等文件格式转换为其他格式。现支持超过20200多种不同格式转换。",
+            "link": "https://cn.office-converter.com/"
+          },
+          {
+            "id": "yf973jn59ib",
+            "icon": "https://static.convertio.co/img/apple-touch-icon-180x180-precomposed.png",
+            "name": "Convertio",
+            "description": "Convertio - Easy tool to convert files online. More than 309 different document, image, spreadsheet, ebook, archive, presentation, audio and video formats supported. Convertio - 在线转换文件的简单工具。支持超过309种不同的文档、图像、电子表格、电子书、文档、演示文稿、音频和视频格式。",
+            "link": "https://convertio.co/"
+          },
+          {
+            "id": "1wdqmj1olgk",
+            "icon": "https://s.smallpdf.com/static/40d7d8365bc6e925.svg",
+            "name": "Smallpdf",
+            "description": "让您轻松转换和编辑所有PDF文件的平台。一个网站就能解决您所有的PDF问题 – 是的，免费！ the platform that makes it super easy to convert and edit all your PDF files. Solving all your PDF problems in one place - and yes, free. ",
+            "link": "https://smallpdf.com/"
+          },
+          {
+            "id": "wds5vq96cb",
+            "icon": "https://app.xunjiepdf.com/ContentMain/Images/apple-touch-icon_114.png",
+            "name": "迅捷PDF转换器",
+            "description": "pdf转换成word转换器,pdf转word在线,在线word转pdf,在线word转pdf转换器",
+            "link": "https://app.xunjiepdf.com/"
+          },
+          {
+            "id": "ck8kfgnfv8p",
+            "icon": "http://www.pdfdo.com/favicon.ico",
+            "name": "PDFdo.com",
+            "description": "PDFdo提供全套的PDF转换操作，一站式服务，在线转换PDF永久免费，可是实现各种PDF解密去除限制、各种PDF转换、PDF旋转页面、PDF删除页面、提取PDF页面、PDF拼接页面、PDF删除文字、PDF替换文字、PDF添加水印等功能。",
+            "link": "http://www.pdfdo.com/"
+          },
+          {
+            "id": "g0y0j7ara7l",
+            "icon": "https://video-converter.com/static/i/v3/favicon.svg",
+            "name": "Video Conv",
+            "description": "Online Video Converter",
+            "link": "https://video-converter.com/"
+          }
+        ]
+      },
+      {
+        "label": "画图设计",
+        "id": "rclezx2p4s",
+        "sites": [
+          {
+            "id": "lv3n3y6oj8e",
+            "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-Cu_40VKH36ujT-HfU1YwHaHa?rs=1&pid=ImgDetMain",
+            "name": "DrawIo",
+            "description": "create and share diagrams without login or registration. It works with various storage platforms, integrations and features, such as …",
+            "link": "https://www.draw.io/"
+          },
+          {
+            "id": "j91rtakvmo",
+            "icon": "https://pic2.zhimg.com/50/v2-b47cbedac9dd8c6fd5aea32115ee561b_qhd.jpg",
+            "name": "ProcessOn",
+            "description": "ProcessOn是一款专业在线作图工具和知识分享社区，提供AI生成思维导图流程图。支持思维导图、流程图、组织结构图、网络拓扑图、鱼骨图、UML图等多种图形，同时可实现人与人之间的实时协作和共享，提升团队工作效率。",
+            "link": "https://www.processon.com/"
+          },
+          {
+            "id": "b2sfglpbnn6",
+            "icon": "https://mubu.com/favicon.ico",
+            "name": "幕布",
+            "description": "幕布是一款结合了大纲笔记和思维导图的头脑管理工具，帮你用更高效的方式和更清晰的结构来记录笔记、管理任务、制定计划甚至是组织头脑风暴。完整覆盖电脑端和移动端",
+            "link": "https://mubu.com/"
+          },
+          {
+            "id": "l0ottd63bn",
+            "icon": "http://mindmm.com/res/icon.png",
+            "name": "思维导图",
+            "description": "在线免费的思维导图",
+            "link": "http://mindmm.com/webapp"
+          },
+          {
+            "id": "nn00lbiefg9",
+            "icon": "https://wireframe.cc/favicon.ico",
+            "name": "Wireframe",
+            "description": "Wireframe.cc is an innovative low-fidelity wireframing tool. Designers create and share better wireframes with a set of powerful, intuitive tools.",
+            "link": "https://wireframe.cc/"
+          }
+        ]
+      },
+      {
+        "label": "创作笔记",
+        "id": "fk3f7dawlav",
+        "sites": [
+          {
+            "id": "nk6v9xomalf",
+            "icon": "https://pic.baike.soso.com/ugc/baikepic2/483/20200605031633-1393598596_jpeg_480_480_8783.jpg/300",
+            "name": "有道云笔记",
+            "description": "专注办公提效的笔记软件，支持多端同步，用户可以随时随地对线上资料进行编辑、分享以及协同.",
+            "link": "https://note.youdao.com/"
+          },
+          {
+            "id": "cgg4f7z8ril",
+            "icon": "https://pic1.zhimg.com/50/v2-13a5c436985f22a278b0f3bd729963dd_s.jpg?source=54b3c3a5",
+            "name": "石墨文档",
+            "description": "石墨文档是一款轻便、简洁的在线协作文档工具，PC端和移动端全覆盖，支持多人同时对文档编辑和评论，让你与他人轻松完成协作撰稿、方案讨论、会议记录和资料共享等工作。",
+            "link": "https://shimo.im/"
+          },
+          {
+            "id": "dzauzrn9uo",
+            "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
+            "name": "微信公众平台",
+            "description": "再小的个体，也有自己的品牌",
+            "link": "https://mp.weixin.qq.com/"
+          },
+          {
+            "id": "ho17bwc5xt",
+            "icon": "https://dynamic-image.bear20.com/256x256/uploadImages/2022/111/42/Z9KV2WTY4QED.jpg",
+            "name": "Typora",
+            "description": "A markdown editor, markdown reader.",
+            "link": "https://typora.io/"
+          },
+          {
+            "id": "nvun5zhxk7q",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "Md2all",
+            "description": "Markdown排版利器，支持 \"一键排版\" 、自定义css、80多种代码高亮。\n能让Markdown内容，无需作任何调整就能一键复制到微信公众号、博客园、掘金、知乎、csdn、51cto、wordpress、hexo。。。等平台。\n支持把图片自动上传到云图床;\n支持Latex数学公式在公众号等平台完美显示;\n支持生成带样式的html文件;\n甚至支持直接用原生的html,css排版。",
+            "link": "http://md.aclickall.com/"
+          }
+        ]
+      },
+      {
+        "label": "网盘",
+        "id": "4mtjifm6qkr",
+        "sites": [
+          {
+            "id": "fbn5zn3adgw",
+            "icon": "http://yun.baidu.com/m-static/wp-brand/favicon.ico",
+            "name": "百度网盘",
+            "description": "百度网盘是一款国民级产品，已连续9年为超过7亿用户提供稳定、安全的个人云存储服务，已实现电脑、手机、电视等多种终端场景的覆盖和互联，并支持多类型文件的备份、分享、查看和处理",
+            "link": "http://yun.baidu.com/"
+          },
+          {
+            "id": "bs9wpey84vh",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.4cd60fcaeb12b19bbec03968bdc83977?rik=ydDmAs%2ff9WVL2Q&pid=ImgRaw&r=0&sres=1&sresct=1",
+            "name": "七牛云",
+            "description": "在线音视频及存储，基于强大的云边一体化能力和低代码能力，深耕视频点播、互动直播、实时音视频、摄像头上云",
+            "link": "https://www.qiniu.com/"
+          },
+          {
+            "id": "0fv9a2d03duj",
+            "icon": "https://img.36krcdn.com/20210322/v2_ff57972965d84dd49d7421fdda244924_img_000",
+            "name": "阿里云盘",
+            "description": "阿里云盘是一款速度快、不打扰、够安全、易于分享的个人网盘，欢迎你来体验。",
+            "link": "https://www.aliyundrive.com/"
+          },
+          {
+            "id": "19pnzw62gpl",
+            "icon": "https://cdns.pansoso.com/homelogo.png",
+            "name": "网盘搜索,就上盘搜搜",
+            "description": "盘搜搜官网支持百度云搜索、115网盘、360云盘、华为网盘、新浪微盘等搜索服务，是您工作、学习、娱乐的网盘搜索神器。",
+            "link": "https://www.pansoso.com/"
+          }
+        ]
+      },
+      {
+        "label": "代码运行",
+        "id": "4domwzkvzwo",
+        "sites": [
+          {
+            "id": "2q064f6j3eh",
+            "icon": "https://tool.lu/favicon.ico",
+            "name": "coderunner",
+            "description": "在线运行 PHP，JavaScript，C，C++，Python，NodeJs ...",
+            "link": "https://tool.lu/coderunner/"
           }
         ]
       }
@@ -520,6 +1127,75 @@
             "name": "Internet Archive",
             "description": "互联网记忆 Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine",
             "link": "https://archive.org/"
+          }
+        ]
+      },
+      {
+        "label": "数据",
+        "id": "9w29qdbc7ye",
+        "sites": [
+          {
+            "id": "al9kdwfs1t",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.bc91ee50a58989b4dd25f2c53936fee0?rik=UJMNeRX0UgiO8w&pid=ImgRaw&r=0",
+            "name": "QuestMobile",
+            "description": "QuestMobile（北京贵士信息科技有限公司）是中国专业的移动互联网商业智能服务商，提供互联网数据报告，移动大数据分析，数据运营报告等的互联网大数据平台。",
+            "link": "https://www.questmobile.com.cn/"
+          },
+          {
+            "id": "uh0li9dlg0e",
+            "icon": "https://assets-oss.cbndata.com/cbndata-refactor-fe/Fn2iRP4ETkuL1tvuUwLxzeBNZ2ii.ico",
+            "name": "CBNData",
+            "description": "第一财经商业数据中心（CBNData）隶属于上海文化广播影视集团，是国内领先的消费研究机构及数字化增长服务商。CBNData消费站整合中国最大的财经媒体集团（第一财经）优势资源，通过消费数据研究报告、数据指数、新闻、活动、视频/直播等形式丰富的数字化消费行业应用场景，面向品牌企业全面输出消费数据、行业研究、信息聚合、营销传播及商业公关等产品及服务。",
+            "link": "https://www.cbndata.com/"
+          },
+          {
+            "id": "knkcah57vhp",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.a3b47f1cd1aba6a5799de55d78b87b2a?rik=8NdNIb8HgLJbJQ&riu=http%3a%2f%2fkuamarketer.com%2fwp-content%2fuploads%2f2020%2f07%2f%e4%ba%bf%e9%82%a6%e5%8a%a8%e5%8a%9b.jpg&ehk=qc1d9PM3hczDFt5c0M%2bcW6Lz%2f9Jj38NkQv2DOtUvh6w%3d&risl=&pid=ImgRaw&r=0",
+            "name": "亿邦动力",
+            "description": "亿邦动力是国内具有影响力的电子商务及产业数字化知识服务平台，围绕产业互联网、B2B、B2C、C2C、跨境电商、移动电商、电商服务、零售、电商资本、电商政策等领域与方向，提供电商资讯、电商案例、电商数据、电商研究、电商战略咨询、电商会议、互联网广告等业务。",
+            "link": "https://www.ebrun.com/"
+          },
+          {
+            "id": "6aqcp87ws0w",
+            "icon": "https://jscss.askci.com/askci1807/img/logogai.png",
+            "name": "中商情报网",
+            "description": "中商情报网( www.askci.com)是专业的产业咨询服务机构中商产业研究院运营的产业情报分享云平台,主要提供研究报告,行业分析,市场调研,市场调查报告,投资咨询报告,项目可行性研究报告,商业计划书,产业规划,园区规划,产业链图谱，产业招商指引，产业招商地图，产业招商策划,项目定位策划,项目概念性规划设计等服务,免费咨询电话:400-666-1917",
+            "link": "https://www.askci.com/"
+          },
+          {
+            "id": "w4b52wuta0e",
+            "icon": "https://pic1.zhimg.com/v2-de4ba33f91571b76052612f40633d9de_l.jpg?source=3af55fa1",
+            "name": "智研咨询",
+            "description": "原产业信息网，是中国专业的产业情报服务机构，是专业研究产业发展现状及趋势前景的综合型咨询平台。. 主要提供行业分析报告、市场调研 …",
+            "link": "https://www.chyxx.com/"
+          },
+          {
+            "id": "19sb2tp9soag",
+            "icon": "https://assets.opendata.aws/img/AWS-Logo_White-Color_300x180.png",
+            "name": "opendata",
+            "description": "Registry of Open Data on AWS",
+            "link": "https://registry.opendata.aws/"
+          },
+          {
+            "id": "t07arnns08",
+            "icon": "https://www.tiobe.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-1-192x192.png",
+            "name": "TIOBE",
+            "description": "The index can be used to check whether your programming skills are still up to date or to make a strategic decision about what programming language should be adopted when starting to build a new software system",
+            "link": "https://www.tiobe.com/tiobe-index/"
+          },
+          {
+            "id": "toshwcz7las",
+            "icon": "https://img.jiguang.cn/moonfox/logo/favicon.ico",
+            "name": "月狐数据",
+            "description": "月狐数据，中国领先的全场景数据洞察与分析服务专家。凭借移动大数据根基以及精准app数据分析技术，月狐数据先后推出移动应用数据iAPP、品牌洞察数据iBrand、营销洞察数据iMarketing、金融另类数据等产品以及月狐研究院的专业研究咨询服务，旨在用数据帮助企业洞察市场增量，赋能商业精准决策。",
+            "link": "https://www.moonfox.cn/"
+          },
+          {
+            "id": "wfmrk3hsetr",
+            "icon": "https://www.cninfo360.com/static/images/logo.png",
+            "name": "北京博研智尚",
+            "description": "报告,行业报告,市场调研,专项调研,立项可研,企业调研",
+            "link": "https://www.cninfo360.com/"
           }
         ]
       },
@@ -554,6 +1230,20 @@
             "name": "ToolAI",
             "description": "全球最佳人工智能AI工具聚合网站",
             "link": "https://www.toolai.io/"
+          },
+          {
+            "id": "s6ufw1a00gs",
+            "icon": "http://www.duocool.cn/wp-content/uploads/2018/03/2018031022482381.png",
+            "name": "多酷分享",
+            "description": "免费分享网络VIP资源，源码免费下载,淘宝视频免费下载,热门电影,私服架设教程,VIP资源下载,破解软件下载",
+            "link": "http://www.duocool.cn/"
+          },
+          {
+            "id": "qt76igmfyzk",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "资源共享吧",
+            "description": "资源共享吧致力于原创教程有安卓逆向,辅助开发,软件破解,易语言,聘请国内知名讲师讲解，有无数学习破解软件和辅助开发的学者共同学习。易语言论坛、破解论坛 ",
+            "link": "https://www.zygx8.com/forum.php"
           }
         ]
       },
@@ -581,6 +1271,13 @@
             "name": "上海研发公共服务平台",
             "description": "上海市科技创新服务的综合门户网站，提供大型科学仪器设施、科技研发基地、外国人才等方面的信息查询、申报、审核、评估等服务。平台还提供上海 …",
             "link": "https://www.sgst.cn/"
+          },
+          {
+            "id": "932g0nw3wo7",
+            "icon": "https://singlelogin.re/favicon-16x16.svg",
+            "name": "Z-Library",
+            "description": "the world’s largest e-book library. Your gateway to knowledge and culture. | Download books for free. Find books\n需要魔法访问\nhttps://zlibrary-china.se\nhttps://singlelogin.re\n不需要魔法访问\nhttps://zlibrary-east.se\nhttps://singlelogin.se/\nhttps://zlibrary-global.se/",
+            "link": "https://singlelogin.re/"
           }
         ]
       },
@@ -617,8 +1314,198 @@
             "link": "https://feathericons.com/"
           }
         ]
+      },
+      {
+        "label": "图床",
+        "id": "3jap8fuj78e",
+        "sites": [
+          {
+            "id": "y22e10ltwys",
+            "icon": "https://pixabay.com/apple-touch-icon.png",
+            "name": "pixabay",
+            "description": "Stunning royalty-free images & royalty-free stock\nOver 3.9 million+ high quality stock images, videos and music shared by our talented community.",
+            "link": "https://pixabay.com/"
+          },
+          {
+            "id": "nhyc0i4sq7",
+            "icon": "https://www.pexels.com/assets/static/images/meta/pexels-stock-photos.jpg",
+            "name": "Pexels",
+            "description": "The best free stock photos, royalty free images & videos shared by creators.",
+            "link": "https://www.pexels.com/"
+          },
+          {
+            "id": "nrsdq6hhq6m",
+            "icon": "https://visualhunt.com/vh2/img/logo-top-3@2x.png",
+            "name": "Visualhunt",
+            "description": "Visually search the best products and ideas. Curated by experts, powered by community.",
+            "link": "https://visualhunt.com/"
+          },
+          {
+            "id": "fswla7uf1dh",
+            "icon": "https://gratisography.com/wp-content/themes/gratis-v3/favicon.png",
+            "name": "Gratisography",
+            "description": "The world's quirkiest collection of free high-resolution pictures you can use on your personal and commercial projects. All completely free of copyright restrictions. New photos added every week!",
+            "link": "https://gratisography.com/"
+          },
+          {
+            "id": "tg1ub9w75il",
+            "icon": "https://unsplash.com/mstile-144x144.png",
+            "name": "unsplash",
+            "description": "The internet’s source for visuals.\nPowered by creators everywhere.",
+            "link": "https://unsplash.com/"
+          },
+          {
+            "id": "bi6oexnvkzg",
+            "icon": "https://kaboompics.com/assets/images/apple-touch-icon-114x114.png",
+            "name": "kaboompics",
+            "description": "Find the best free stock images. Download all images and use them in your projects.",
+            "link": "https://kaboompics.com/"
+          },
+          {
+            "id": "fv2eqdghvkb",
+            "icon": "http://www.designerspics.com/wp-content/themes/photography/images/fav_icon.png",
+            "name": "Designersp",
+            "description": "FREE Hi-Res photos for your personal & commercial use. Attribution not required!",
+            "link": "http://www.designerspics.com/"
+          }
+        ]
+      },
+      {
+        "label": "长城",
+        "id": "lkurfjwib5",
+        "sites": [
+          {
+            "id": "azpysc6vu6p",
+            "icon": "https://doubibackup.com/0x31x2_s.ico",
+            "name": "逗比根据地",
+            "description": "逗比们的根据地，主要写一些科学上网教程、分享有趣的工具、VPS优惠/评测和分享免费的代理账号，关注逗比，享受科学上网！",
+            "link": "https://doubibackup.com/"
+          },
+          {
+            "id": "cz2hjk0tsnl",
+            "icon": "https://ac.scmor.com/res/aclogo.png",
+            "name": "思谋学术",
+            "description": "思谋学术是提升科研效率的常用工具，自动检测和更新可访问的Google学术镜像网址，并提供学术资源导航，包括论文、电子书等文献的免费下载通道。",
+            "link": "https://ac.scmor.com/"
+          },
+          {
+            "id": "da7utsjpox7",
+            "icon": "https://v2.bujidao.org/favicon.ico",
+            "name": "百慕大里",
+            "description": "百慕大里的小小布吉岛",
+            "link": "https://bujidao302.com/"
+          },
+          {
+            "id": "k0hnvd80bs",
+            "icon": "https://dash.n2ray.dev/favicon.ico",
+            "name": "N2Ray",
+            "description": "提供優化 Google、Netflix、Whatsapp 等上網體驗的解決方案",
+            "link": "https://dash.n2ray.dev/"
+          }
+        ]
       }
     ],
-    "currentTabName": "av1wkrf3whl"
+    "currentTabName": "lkurfjwib5"
+  },
+  {
+    "id": "j5m4ap0rkns",
+    "label": "站长",
+    "tags": [
+      {
+        "id": "j5m4ap0rkns_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "56f8l697alq",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.4fd347f943dcdc59b2c0d666964efc4e?rik=mYH%2f7123OWHeHA&riu=http%3a%2f%2fimg.nesoso.cn%2fweb%2f01%2f1143.gif&ehk=xL%2fE8IkhhhUrD%2bAZiGTEB0Im3nBWq3sMmiSsyador30%3d&risl=&pid=ImgRaw&r=0",
+            "name": "站长之家",
+            "description": "站长之家(中国站长站)为个人站长与企业网络提供全面的站长资讯、源代码程序下载、海量建站素材、强大的搜索优化辅助工具、网络产品设计与运营理念以及一站式网络解决方案，十年来我们一直致力为中文网站提供动力。",
+            "link": "https://www.chinaz.com/"
+          },
+          {
+            "id": "43qdpyt7svl",
+            "icon": "https://static.wetools.com/assets/images/web/favicon.ico",
+            "name": "wetools",
+            "description": "wetools.com微工具致力于打造和收集各种方便、易用、便捷的在线工具。JS加解密 | Base64加解密 | JSON格式化|换算",
+            "link": "https://www.wetools.com/"
+          }
+        ]
+      },
+      {
+        "label": "域名",
+        "id": "n55tnjc4zeo",
+        "sites": [
+          {
+            "id": "d2fxqwc93bj",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "EU.org",
+            "description": "EU.org: free domain names since 1996",
+            "link": "https://nic.eu.org/"
+          },
+          {
+            "id": "acfqxw2nnaf",
+            "icon": "https://www.cloudns.net/images/web/favicon.gif",
+            "name": "ClouDNS",
+            "description": "ClouDNS provides Free DNS, Cloud DNS, Managed DNS, GeoDNS and DDoS Protected DNS hosting with included web redirects, mail forwards and Round-Robin load balancing. Instant updates in Europe, North and South America, Asia and Australia.",
+            "link": "https://www.cloudns.net/"
+          },
+          {
+            "id": "qkc7n2c0tug",
+            "icon": "https://l53.net/favicon.ico",
+            "name": "L53",
+            "description": "L53 is a professional domain service provider offering third-level domain registration for individuals and businesses. Anyone can register a free domain.",
+            "link": "https://l53.net"
+          }
+        ]
+      },
+      {
+        "label": "工具",
+        "id": "wlqzvkr2c7",
+        "sites": [
+          {
+            "id": "cex9lwy8ak8",
+            "icon": "https://ahrefs.com/favicon-16x16.png",
+            "name": "Ahrefs",
+            "description": "You don't have to be an SEO pro to rank higher and get more traffic. Join Ahrefs – we're a powerful but easy to learn SEO toolset with a passionate community.",
+            "link": "https://ahrefs.com/"
+          }
+        ]
+      },
+      {
+        "label": "API",
+        "id": "3iyxxl9twoh",
+        "sites": [
+          {
+            "id": "td3wyfppi5",
+            "icon": "https://www.showapi.com/images/icon.png",
+            "name": "万维易源",
+            "description": "一次接入，调用全部。将一切数据API化。万维易源是一个统一了通讯协议的API总线，互联网接口调用的入口，高度安全，超高性能，海量接口资源。",
+            "link": "https://www.showapi.com/"
+          },
+          {
+            "id": "c0gg99705xt",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.XwsbLz64efJrzMGU267nZgHaHa?rs=1&pid=ImgDetMain",
+            "name": "聚合数据",
+            "description": "聚合数据是一家综合性API数据流通服务商（integrated API-enabled data exchange service provider），提供基于API技术的标准化数据服务和定制化数字化解决方案，以数据技术赋能数字经济发展，最大化数据价值，在日益数据互联的中国，助力以安全的方式链接、探索和释放数据的价值。",
+            "link": "https://www.juhe.cn/"
+          },
+          {
+            "id": "7agsli4cneo",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "api工厂",
+            "description": "前端Paas中台\n全面支持Web & 小程序 & App 开发\n通过中台开发你的应用，你将无需写接口，无需写后台，无需买服务器！\n\n只要你会前端开发，即可轻松集成我们的海量api接口，通过在线云后台管理数据\n\n如果你啥都不懂，直接使用我们推荐的开源项目，依然可以做到开箱即用，学习成本几乎为 “0”",
+            "link": "https://www.it120.cc/"
+          },
+          {
+            "id": "j5x428es5yj",
+            "icon": "https://pic.mksucai.com/00/21/62/7451c6d05deba8fa.webp",
+            "name": "WebXml",
+            "description": "Web Services（WEB 服务） 能够快捷和方便地综合并结合各种系统、商务和任何应用平台。新出现的 Web Services 标准： SOAP、WSDL 和 UDDI 能够使任何系统和系统之间的应用变为更加方便和廉价。WebXml.com.cn 能够并在商业、服务、金融、保健、批发零售、电子电讯、政府机关、教育行业提供一个标准的 XML Web Servicrs 。本页包括：商业和贸易服务、通讯和通信服务、公用事业服务、获得标准数据服务、图像和多媒体服务、计算和单位换算服务、其他 Web Services服务",
+            "link": "http://www.webxml.com.cn/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "3iyxxl9twoh"
   }
 ]

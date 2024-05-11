@@ -63,6 +63,22 @@
         "name": "编程"
       },
       {
+        "id": "t0r3vz7xdb8",
+        "icon": "management",
+        "name": "英语",
+        "subMenus": [
+          {}
+        ]
+      },
+      {
+        "id": "raait6bgncl",
+        "icon": "avatar",
+        "name": "产品设计",
+        "subMenus": [
+          {}
+        ]
+      },
+      {
         "id": "r618obm8x8a",
         "icon": "school",
         "name": "投资理财",
@@ -73,19 +89,33 @@
     ]
   },
   {
+    "id": "25jjmyvb468",
+    "icon": "basketball",
+    "name": "博客社区",
+    "subMenus": []
+  },
+  {
     "id": "jkl6rx2k3s",
     "icon": "dish-dot",
-    "name": "工作兼职",
+    "name": "就业兼职",
     "subMenus": [
       {
         "id": "9ywjink87t",
         "icon": "lollipop",
-        "name": "招聘"
+        "name": "就业"
       },
       {
         "id": "dq8a5xlml5j",
         "icon": "location",
-        "name": "在线接单",
+        "name": "零花钱",
+        "subMenus": [
+          {}
+        ]
+      },
+      {
+        "id": "nw352a8hbjc",
+        "icon": "link",
+        "name": "协作管理",
         "subMenus": [
           {}
         ]
@@ -102,6 +132,12 @@
     "id": "smgs19taxo8",
     "icon": "fries",
     "name": "资源",
+    "subMenus": []
+  },
+  {
+    "id": "j5m4ap0rkns",
+    "icon": "first-aid-kit",
+    "name": "站长",
     "subMenus": []
   }
 ]
