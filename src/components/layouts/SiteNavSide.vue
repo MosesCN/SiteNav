@@ -45,36 +45,39 @@
     <div style="margin: 0.6vh 0">
       <SiteNavIcon style="width: 3rem; height: 3rem" />
     </div>
-    <el-menu v-for="menu in menus" :collapse="isCollapse" class="remove-border-right" @select="handleSelect">
-      <el-sub-menu :index="menu.id" v-if="menu.subMenus && menu.subMenus.length > 0">
-        <template #title>
+
+    <el-menu unique-opened :collapse="isCollapse" class="remove-border-right" @select="handleSelect">
+      <template v-for="menu in menus">
+        <el-sub-menu :index="menu.id" v-if="menu.subMenus && menu.subMenus.length > 0">
+          <template #title>
+            <DropdownAction @add="addMenu(menu, undefined)" @delete="delMenu(menu, undefined)"
+              @edit="editMenu(menu, undefined)">
+              <el-icon>
+                <component :is="menu.icon" />
+              </el-icon>
+            </DropdownAction>
+            <span>{{ menu.name }}</span>
+          </template>
+          <el-menu-item :index="subMenus.id" v-for="subMenus in menu.subMenus">
+            <DropdownAction @add="addMenu(menu, subMenus)" @delete="delMenu(menu, subMenus)"
+              @edit="editMenu(menu, subMenus)">
+              <el-icon>
+                <component :is="subMenus.icon" />
+              </el-icon>
+            </DropdownAction>
+            <template #title>{{ subMenus.name }}</template>
+          </el-menu-item>
+        </el-sub-menu>
+        <el-menu-item :index="menu.id" v-else>
           <DropdownAction @add="addMenu(menu, undefined)" @delete="delMenu(menu, undefined)"
             @edit="editMenu(menu, undefined)">
             <el-icon>
               <component :is="menu.icon" />
             </el-icon>
           </DropdownAction>
-          <span>{{ menu.name }}</span>
-        </template>
-        <el-menu-item :index="subMenus.id" v-for="subMenus in menu.subMenus">
-          <DropdownAction @add="addMenu(menu, subMenus)" @delete="delMenu(menu, subMenus)"
-            @edit="editMenu(menu, subMenus)">
-            <el-icon>
-              <component :is="subMenus.icon" />
-            </el-icon>
-          </DropdownAction>
-          <template #title>{{ subMenus.name }}</template>
+          <template #title>{{ menu.name }}</template>
         </el-menu-item>
-      </el-sub-menu>
-      <el-menu-item :index="menu.id" v-else>
-        <DropdownAction @add="addMenu(menu, undefined)" @delete="delMenu(menu, undefined)"
-          @edit="editMenu(menu, undefined)">
-          <el-icon>
-            <component :is="menu.icon" />
-          </el-icon>
-        </DropdownAction>
-        <template #title>{{ menu.name }}</template>
-      </el-menu-item>
+      </template>
     </el-menu>
   </div>
 </template>
