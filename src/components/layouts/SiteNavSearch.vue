@@ -3,23 +3,27 @@
     <Hitokoto />
   </div>
   <div>
-    <el-input style="width: fit-content" v-model="searchInput" placeholder="输入你想搜的任何东西"
-      :prefix-icon="choosenOpt.icon" />
-    <el-dropdown split-button class="remove-padding margin-left-2">
-      {{ choosenOpt.name }}
-      <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item @click="optClick(item)" v-for="item in OPTs">
-            <el-icon>
-              <component :is="item.icon"></component>
-            </el-icon>
-            <span>{{ item.name }}</span>
-          </el-dropdown-item>
-        </el-dropdown-menu>
+    <el-input style="width: fit-content" size="large" v-model="searchInput" placeholder="输入你想搜的任何东西"
+      :prefix-icon="choosenOpt.icon">
+      <template #append>
+        <el-dropdown class="remove-padding margin-left-2" size="large">
+          {{ choosenOpt.name }}
+          <template #dropdown>
+            <el-dropdown-menu>
+              <el-dropdown-item @click="optClick(item)" v-for="item in OPTs">
+                <el-icon>
+                  <component :is="item.icon"></component>
+                </el-icon>
+                <span>{{ item.name }}</span>
+              </el-dropdown-item>
+            </el-dropdown-menu>
+          </template>
+        </el-dropdown>
       </template>
-    </el-dropdown>
+    </el-input>
+
     <span>
-      <el-button type="primary" class="margin-left-2" @click="doSearch">GO</el-button>
+      <el-button type="primary" size="large" class="margin-left-2" @click="doSearch">GO</el-button>
     </span>
   </div>
 </template>

@@ -322,7 +322,7 @@
   }
 
   .site-box {
-    margin: 2rem 1rem;
+    margin: 1.5rem 0rem;
   }
 
   .site-tag {
