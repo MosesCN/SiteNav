@@ -168,7 +168,12 @@
         description: SITE_DIALOG.value.description,
         link: SITE_DIALOG.value.link
       }
-      foundTag.sites.push(site);
+      if (SITE_DIALOG.value.siteId) {
+        const site_idx = foundTag.sites.findIndex((s: any) => s.id == SITE_DIALOG.value.siteId);
+        foundTag.sites.splice(site_idx + 1, 0, site);
+      } else {
+        foundTag.sites.push(site);
+      }
       ElMessage({
         type: 'success',
         message: `${site.name}`,
@@ -177,7 +182,7 @@
     emit('updated');
   }
 
-  const addSite = (web: any, tag: any) => {
+  const addSite = (web: any, tag: any, site: any) => {
     SITE_DIALOG.value.show = true;
     SITE_DIALOG.value.type = 'add';
     SITE_DIALOG.value.title = '添加新网站导航';
@@ -187,6 +192,7 @@
     SITE_DIALOG.value.description = '';
     SITE_DIALOG.value.webId = web.id;
     SITE_DIALOG.value.tagId = tag.id;
+    SITE_DIALOG.value.siteId = site && site.id;
   }
 
   const editSite = (web: any, tag: any, site: any) => {
@@ -293,8 +299,8 @@
         <div class="sites-container">
           <SiteNavCard v-for="site in tag.sites" :title="site.name" :description="site.description" :icon="site.icon"
             :link="site.link" @edit-site="editSite(web, tag, site)" @delete-site="deleteSite(web, tag, site)"
-            @add-site="addSite(web, tag)" />
-          <el-icon class="add-site" @click="addSite(web, tag)">
+            @add-site="addSite(web, tag, site)" />
+          <el-icon class="add-site" @click="addSite(web, tag, undefined)">
             <CirclePlus />
           </el-icon>
         </div>

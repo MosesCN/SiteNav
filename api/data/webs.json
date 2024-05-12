@@ -11,14 +11,14 @@
             "id": "DaEadx",
             "icon": "https://cloudflare.com/favicon.ico",
             "name": "Cloudflare",
-            "description": "Make employees, applications and networks faster and more secure everywhere, while reducing complexity and cost.",
+            "description": "全球云平台 | 保护任何地方的人员、应用和云. 无论在何处工作，您的员工队伍都需要安全地访问内部应用和工具 | Make employees, applications and networks faster and more secure everywhere, while reducing complexity and cost.",
             "link": "https://cloudflare.com/"
           },
           {
             "id": "SdJoXX",
             "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.uEi-BYi_M-Rnv9abB82xqwHaHa?rs=1&pid=ImgDetMain",
             "name": "Vercel",
-            "description": "Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.",
+            "description": "一个免费的网站托管服务，支持静态和动态网站，自动配置https | Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.",
             "link": "https://vercel.com/"
           },
           {
@@ -38,13 +38,48 @@
             "id": "mtvhe2vu8m",
             "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.N2sO8KYPWuB0cQdjZVbY9gAAAA?rs=1&pid=ImgDetMain",
             "name": "HuggingChat",
-            "description": "The first open source alternative to ChatGPT. 💪",
+            "description": "首个开源 ChatGPT | The first open source alternative to ChatGPT. 💪",
             "link": "https://huggingface.co/chat/"
+          },
+          {
+            "id": "2rjqhic4h9q",
+            "icon": "https://www.anthropic.com/images/icons/favicon-32x32.png",
+            "name": "Claude",
+            "description": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+            "link": "https://www.anthropic.com/claude"
+          },
+          {
+            "id": "mg50dcv7do",
+            "icon": "https://www.redcatai.com/wp-content/uploads/2023/06/ChatGPT-logo.png?x81239",
+            "name": "ChatGPT",
+            "description": "ChatGPT",
+            "link": "https://chat.openai.com/"
+          },
+          {
+            "id": "q48u3iwc35",
+            "icon": "https://ai.tboxn.com/wp-content/uploads/2023/04/O1CN01fbqryd1ZossCmdlga___6000000003242-54-tps-200-200.png",
+            "name": "通义千问",
+            "description": "致力于实现类人智慧的通用智能",
+            "link": "https://qianwen.aliyun.com/"
+          },
+          {
+            "id": "bm33zxlgvlk",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.DcTm-MLUfCUCVVmlZ5BfaAAAAA?rs=1&pid=ImgDetMain",
+            "name": "文心一格",
+            "description": "文心一格，AI艺术和创意辅助平台，依托飞桨、文心大模型的技术创新推出的“AI作画”产品，可轻松驾驭多种风格，人人皆可“一语成画”",
+            "link": "https://yige.baidu.com/"
+          },
+          {
+            "id": "egk92axxjmj",
+            "icon": "https://screenshottocode.com/favicon/main.png",
+            "name": "Screenshot to Code",
+            "description": "截图即可生成代码 | A simple tool to convert screenshots, mockups and Figma designs into clean, functional code using AI. | https://github.com/abi/screenshot-to-code",
+            "link": "https://screenshottocode.com/"
           }
         ]
       }
     ],
-    "currentTabName": "SOwOdsD"
+    "currentTabName": "qwjojgmwnhf"
   },
   {
     "id": "clm5gnsiili",
@@ -71,8 +106,8 @@
           {
             "id": "zll89xrgsm9",
             "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.5aa2bf2486431079d4c153fbde9fe525?rik=vXT5zUyqt0tZvQ&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f06-17%2f85792%2fwater_85792_698_698_.png&ehk=kKLfBt4c1zrsPgrBa3cDI3XkQaZSJhbXVHCtROFImUs%3d&risl=&pid=ImgRaw&r=0",
-            "name": "拼多多 新电商开创者",
-            "description": "拼多多作为新电商开创者，致力于将娱乐社交的元素融入电商运营中，通过“社交+电商”的模式，让更多的用户带着乐趣分享实惠，享受全新的共享式购物体验。",
+            "name": "拼多多",
+            "description": "新电商开创者，致力于将娱乐社交的元素融入电商运营中，通过“社交+电商”的模式，让更多的用户带着乐趣分享实惠，享受全新的共享式购物体验。",
             "link": "https://www.pinduoduo.com/"
           },
           {
@@ -88,6 +123,54 @@
             "name": "Amazon",
             "description": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, ...",
             "link": "https://www.amazon.com/"
+          },
+          {
+            "id": "nicz03p9xp",
+            "icon": "https://www.logo9.net/userfiles/images/838r3.jpg",
+            "name": "苏宁易购(Suning.com)",
+            "description": "苏宁易购苏宁易购-综合网上购物平台，商品涵盖家电、手机、电脑、超市、母婴、服装、百货、海外购等品类。送货更准时、价格更超值、上新货更快，正品行货、全国联保、可门店自提，全网更低价，让您放心去喜欢！",
+            "link": "https://www.suning.com/"
+          },
+          {
+            "id": "lf5854aom8",
+            "icon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.MJ5bIJB2Jk5WTv3vvcmD1gHaHa?rs=1&pid=ImgDetMain",
+            "name": "唯品会",
+            "description": "唯品会vip购物网以1-7折超低折扣对全球各大品牌进行限时特卖，商品囊括服装、化妆品、家居、奢侈品等上千品牌。100%正品、低价、7天无理由退货。",
+            "link": "https://www.vip.com/"
+          }
+        ]
+      },
+      {
+        "label": "住房",
+        "id": "b5jujpuvy",
+        "sites": [
+          {
+            "id": "u6136fvb0wk",
+            "icon": "https://www.ke.com/favicon.ico",
+            "name": "贝壳",
+            "description": "贝壳找房提供真实房源的房产信息平台,买房、二手房、新房购买以及租房需求的用户提供便捷服务.同时有智能找房、VR看房等先进科技找房功能等你来体验，想买房、购买二手房、新房、租房，想了解到一手房产资讯、房价行情，就来贝壳找房吧！",
+            "link": "https://www.ke.com/"
+          },
+          {
+            "id": "do6k149be5l",
+            "icon": "https://www.lianjia.com/favicon.ico",
+            "name": "链家",
+            "description": "北京链家网是提供北京二手房买卖、北京新房、北京租房、北京房价查询等业务的专业房产网站，可为您买卖北京二手房提供帮助,链家网北京站同时具有北京二手房、北京租房及购房问答和百科等频道,还可以在线查询北京二手房价格.买房卖房上北京链家网,让房产交易不再难.",
+            "link": "https://www.lianjia.com/"
+          },
+          {
+            "id": "gt1krct5nx7",
+            "icon": "https://www.anjuke.com/usersite/site/img/global/1/favicon.ico",
+            "name": "安居客",
+            "description": "安居客房产网为用户提供找房信息。包括二手房、新房、租房、商铺、写字楼、海外地产、问答等，挑好房就上安居客",
+            "link": "https://www.anjuke.com/"
+          },
+          {
+            "id": "plltgofm9h",
+            "icon": "https://www.fang.com/homepage/favicon.ico",
+            "name": "房天下",
+            "description": "",
+            "link": "https://www.fang.com/"
           }
         ]
       },
@@ -115,6 +198,13 @@
             "name": "Airbnb",
             "description": "Get an Airbnb for every kind of trip → 7 million holiday rentals → 2 million Guest Favourites → 220+ countries and regions worldwide",
             "link": "https://www.airbnb.com/"
+          },
+          {
+            "id": "7322detwgp8",
+            "icon": "https://img.cnlogo8.com/20211216A/smdavv3bv1r_PSD_cn.png",
+            "name": "携程旅行",
+            "description": "携程旅行网是中国领先的在线旅行服务公司，向超过9000万会员提供酒店预订、酒店点评及特价酒店查询、机票预订、飞机票查询、时刻表、票价查询、航班查询、度假预订、商旅管理、为您的出行提供全方位旅行服务。",
+            "link": "https://www.ctrip.com/"
           }
         ]
       }
@@ -230,6 +320,20 @@
             "name": "QQ音乐",
             "description": "QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。",
             "link": "https://y.qq.com/"
+          },
+          {
+            "id": "kdfcfgi92ud",
+            "icon": "https://android-artworks.25pp.com/fs08/2018/10/24/6/110_bb4b576b966512c8092c44827cbc6ecb_con.png",
+            "name": "酷狗音乐",
+            "description": "酷狗音乐在线正版音乐网站，为您提供酷狗音乐播放器下载 、在线音乐试听下载，提供听书、长音频、频道、听小说和MV播放服务。酷狗音乐，就是歌多！小说相声也很多！场景音乐也很多！",
+            "link": "https://www.kugou.com/"
+          },
+          {
+            "id": "sg0iyu03wk",
+            "icon": "https://www.kuwo.cn/favicon.ico",
+            "name": "酷我音乐",
+            "description": "酷我音乐-无损音质正版在线试听网站",
+            "link": "https://www.kuwo.cn/"
           }
         ]
       }
@@ -259,6 +363,13 @@
             "link": "https://v.qq.com/"
           },
           {
+            "id": "nnji4jl1n5a",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.O8ChLz_oifiFcCie2gfXGwAAAA?rs=1&pid=ImgDetMain",
+            "name": "芒果TV",
+            "description": "MangoTV-大家都在看的在线视频网站-热门综艺最新电影电视剧在线观看",
+            "link": "https://www.mgtv.com/"
+          },
+          {
             "id": "cjoxl13oy8",
             "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.abde28052343a032202cb6c33b40be88?rik=QDqNlIdCYoHUHQ&riu=http%3a%2f%2fpic.downyi.com%2fupload%2f2017-8%2f2017891621397117.jpg&ehk=HcBnVOWm9Giva2Dh19NdmX%2b%2bAbSmxA9biWAFkXVlArg%3d&risl=&pid=ImgRaw&r=0",
             "name": "优酷",
@@ -285,6 +396,27 @@
             "name": "央视频",
             "description": "在线看电视",
             "link": "https://www.yangshipin.cn/"
+          },
+          {
+            "id": "cmkajccqw9",
+            "icon": "https://www.douyu.com/favicon.ico",
+            "name": "斗鱼",
+            "description": "斗鱼 - 每个人的直播平台提供高清、快捷、流畅的视频直播和游戏赛事直播服务，包含英雄联盟lol直播、穿越火线cf直播、dota2直播、美女直播等各类热门游戏赛事直播和各种名家大神游戏直播，内容丰富，推送及时，带给你不一样的视听体验，一切尽在斗鱼 - 每个人的直播平台。",
+            "link": "https://www.douyu.com/"
+          },
+          {
+            "id": "kefyw5cschq",
+            "icon": "https://www.8848seo.cn/zb_users/upload/2022/10/20221018115120_80012.jpeg",
+            "name": "抖音",
+            "description": "记录美好生活",
+            "link": "https://www.douyin.com/"
+          },
+          {
+            "id": "yft7rw32qy",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.9039f3b808d01b726cfef5659e96152d?rik=0QSUGruoTqPwFQ&riu=http%3a%2f%2fwww.lgstatic.com%2fthumbnail_300x300%2fi%2fimage%2fM00%2f67%2f72%2fCgpEMlmfytOAQlGXAAA0T44Me8I833.jpg&ehk=g1rKuOxC9NFXO%2fPKbsWkLtAeKV0lu5UKGSSyIN3eIVI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+            "name": "电影网_1905.com",
+            "description": "1905电影网（电影频道官方网站），涵盖最新电影、好看的电影、经典电影、电影推荐、免费电影、高清电影在线观看及海量最新电影图文视频资讯，看电影就上电影网1905.com。",
+            "link": "https://www.1905.com/"
           }
         ]
       },
@@ -310,6 +442,40 @@
       }
     ],
     "currentTabName": "smmvqd0w6ng_0"
+  },
+  {
+    "id": "3v7tckdnm0n",
+    "label": "游戏",
+    "tags": [
+      {
+        "id": "3v7tckdnm0n_0",
+        "label": "会沉迷",
+        "sites": [
+          {
+            "id": "29nn3zlqsex",
+            "icon": "https://img.onlinedown.net/new_tag/202012/1731.jpg",
+            "name": "4399",
+            "description": "4399 网络小游戏",
+            "link": "https://www.4399.com/"
+          },
+          {
+            "id": "nx30soqid6",
+            "icon": "https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png",
+            "name": "Steam",
+            "description": "a digital platform that offers thousands of games and software for PC users. Browse new releases, special offers, free games, upcoming releases, and more …",
+            "link": "https://store.steampowered.com/"
+          },
+          {
+            "id": "min15lm1mi",
+            "icon": "https://android-artworks.25pp.com/fs08/2018/09/26/7/110_3fd5799fa39fff3593424e35704d4b1e_con.png",
+            "name": "QQ游戏",
+            "description": "QQ游戏大厅官网，下载QQ游戏大厅，玩QQ游戏全游戏；",
+            "link": "https://qqgame.qq.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "3v7tckdnm0n_0"
   },
   {
     "id": "fzgyt1iva8t",
@@ -339,6 +505,13 @@
             "name": "黑马",
             "description": "IT培训,IT培训机构,java培训,鸿蒙开发培训,鸿蒙培训,嵌入式培训,嵌入式开发培训,java培训学校,python培训,python培训班,编程培训机构,大数据培训,人工智能培训,UI设计培训,AIGC培训,web前端培训,软件测试培训,产品经理培训",
             "link": "https://www.itheima.com/"
+          },
+          {
+            "id": "leektx980p",
+            "icon": "https://api.iowen.cn/favicon/www.runoob.com.png",
+            "name": "菜鸟教程",
+            "description": "菜鸟教程(www.runoob.com)提供了编程的基础技术教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。 同时本站中也提供了大量的在线实例，通过实例，您可以更好的学习编程。..",
+            "link": "https://www.runoob.com/"
           }
         ]
       },
@@ -444,7 +617,68 @@
         ]
       }
     ],
-    "currentTabName": "8e11ng6ejpc"
+    "currentTabName": "7ts8otaa4t_0"
+  },
+  {
+    "id": "8m262emsxcn",
+    "label": "平台",
+    "tags": [
+      {
+        "id": "8m262emsxcn_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "ve111oc32n",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.bdab4b3ef262586c0d8b8b4379db12ea?rik=XQUzBkMAwsUz9g&riu=http%3a%2f%2fwww.edusoho.com%2fimages%2fpage%2fmooc_feature_1.png&ehk=0i1zHmHu6%2bJyCQ3DWwatwErrAptMxZWkDrwGnB7fG7Q%3d&risl=&pid=ImgRaw&r=0",
+            "name": "中国大学MOOC",
+            "description": "中国大学MOOC(慕课) 是爱课程网携手网易云课堂打造的在线学习平台，每一个有提升愿望的人，都可以在这里学习中国优质的大学课程，学完还能获得认证证书。中国大学MOOC是国内优质的中文MOOC学习平台，拥有众多985高校的大学课程，与名师零距离。",
+            "link": "https://www.icourse163.org/"
+          },
+          {
+            "id": "sd2g5p4ry5",
+            "icon": "https://android-artworks.25pp.com/fs08/2021/08/30/10/106_9e00d629654aed89f90958af6afd3f8f_con_130x130.png",
+            "name": "网易云课堂",
+            "description": "网易云课堂，一个专注于成人终身学习的在线教育平台。立足于实用性的要求, 与优质的教育内容创作者一起，为您提供全面、有效的在线学习内容。",
+            "link": "https://study.163.com/"
+          },
+          {
+            "id": "57iqcdwhpuf",
+            "icon": "https://open.163.com/favicon.ico",
+            "name": "网易公开课",
+            "description": "网易公开课汇集清华、北大、哈佛、耶鲁等世界名校共上千门课程，覆盖科学、经济、人文、哲学等22个领域，在这里你可以开拓视野看世界，获取有深度的好知识。",
+            "link": "https://open.163.com/"
+          }
+        ]
+      },
+      {
+        "label": "学术",
+        "id": "9gjxxnmc73",
+        "sites": [
+          {
+            "id": "gs0ciep8w5p",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.d80e592c9587efcf1df16cab8264cc52?rik=9B48KwrS4FxcQw&riu=http%3a%2f%2fwww.downxia.com%2fuploadfiles%2f2019%2f1210%2f20191210011338945.png&ehk=EOjR0tScJXJNZeIsRgmDBzD4EpQ3IkQ4vLaH4ia0i7U%3d&risl=&pid=ImgRaw&r=0",
+            "name": "知网",
+            "description": "中国知网知识发现网络平台—面向海内外读者提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源统一检索、统一导航、在线阅读和下载 …",
+            "link": "https://cnki.net/"
+          },
+          {
+            "id": "ms5v67sp7a",
+            "icon": "https://www.wanfangdata.com.cn/favicon.ico",
+            "name": "万方数据知识服务平台",
+            "description": "万方数据知识服务平台-中外学术论文、中外标准、中外专利、科技成果、政策法规等科技文献的在线服务平台。",
+            "link": "https://www.wanfangdata.com.cn/"
+          },
+          {
+            "id": "nlj72qwgdq",
+            "icon": "https://img.ixintu.com/download/jpg/201912/0ec23609f9c4560fdcd179ec4f93a645.jpg!con",
+            "name": "谷歌学术",
+            "description": "谷歌学术",
+            "link": "https://scholar.google.cn/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "8m262emsxcn_0"
   },
   {
     "id": "t0r3vz7xdb8",
@@ -523,6 +757,20 @@
             "link": "https://www.jisilu.cn/"
           },
           {
+            "id": "zi3bjak3ps8",
+            "icon": "https://pic1.zhimg.com/50/9201e56d5a6b9b0ea9b8f874bef96b35_720w.jpg?source=54b3c3a5",
+            "name": "雪球",
+            "description": "雪球，聪明的投资者都在这里 - 4300万投资者都在用的投资社区和财富管理平台，沪深、港股、美股全球市场实时行情，公募私募股票基金债券免费热点资讯，与投资高手实战交流。支持股票基金在线开户，炒股、投资理财低佣金，交易安全、方便、快捷。提供选基工具、基金估值工具、基金定投、基金排名、指数估值、投资组合供投资者使用参考。",
+            "link": "https://xueqiu.com/"
+          },
+          {
+            "id": "4scthpnsw95",
+            "icon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.ALMAxmQWVjw_YvqNbD1aiAAAAA?rs=1&pid=ImgDetMain",
+            "name": "新浪财经",
+            "description": "新浪财经提供7X24小时财经资讯及全球金融市场报价，覆盖股票、债券、基金、期货、信托、理财、管理等多种面向个人和企业的服务。",
+            "link": "https://finance.sina.com.cn/"
+          },
+          {
             "id": "mznn614bdjc",
             "icon": "http://static.cninfo.com.cn/new/img/favicon.ico",
             "name": "巨潮资讯网",
@@ -556,7 +804,7 @@
   },
   {
     "id": "25jjmyvb468",
-    "label": "博客社区",
+    "label": "社区博客",
     "tags": [
       {
         "id": "25jjmyvb468_0",
@@ -610,6 +858,13 @@
             "link": "https://www.cnblogs.com/"
           },
           {
+            "id": "kc5b6tlt7a",
+            "icon": "https://tse2-mm.cn.bing.net/th/id/OIP-C.dKsCms0C9qktPUSrneMyRwHaHa?rs=1&pid=ImgDetMain",
+            "name": "StackoverFlow",
+            "description": "A platform where people can ask, share and learn technical knowledge. It offers products and tools for public Q&A, private collaboration, API access, and …",
+            "link": "https://stackoverflow.com/"
+          },
+          {
             "id": "jtr9jjjsip",
             "icon": "https://g.csdnimg.cn/static/logo/favicon32.ico",
             "name": "CSDN",
@@ -638,6 +893,20 @@
             "link": "https://juejin.cn/"
           },
           {
+            "id": "oag4ovdk408",
+            "icon": "https://img3.doubanio.com/f/frodo/f73ecf95822d9d3e5cc2c03986847693876fd118/pics/douban_icon_320.png",
+            "name": "豆瓣",
+            "description": "一个提供电影、电视剧、书籍、音乐、小组等内容的文化娱乐社区平台，用户可以发表评论、参与讨论、收藏喜欢的作品、发现感兴趣的话题。豆瓣还提供豆瓣小组、豆瓣 …",
+            "link": "https://www.douban.com/"
+          },
+          {
+            "id": "6cc5m011szq",
+            "icon": "https://p1.ssl.qhimg.com/dr/270_500_/t01745b3fd4078d5a9e.jpg?size=512x512",
+            "name": "简书",
+            "description": "简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。",
+            "link": "https://www.jianshu.com/"
+          },
+          {
             "id": "3bgtghc032a",
             "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
             "name": "微信公众平台",
@@ -661,14 +930,35 @@
           {
             "id": "wjx1q4ubt0q",
             "icon": "https://pic1.zhimg.com/v2-d12d14ca0cd6876d4d8b80890b7b9584_l.jpg?source=3af55fa1",
-            "name": "OSCHINA",
+            "name": "开源中国 OSCHINA",
             "description": "OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台",
             "link": "https://www.oschina.net/"
+          },
+          {
+            "id": "bb13ac33df7",
+            "icon": "https://www.ithome.com/favicon.ico",
+            "name": "IT之家",
+            "description": "IT之家，青岛软媒旗下的前沿科技门户网站。快速播报科技行业新闻头条快讯和手机数码产品评测，关注智能车电动车、AR/VR虚拟现实、苹果iOS/iPadOS、鸿蒙OS、谷歌Android、微软Win11/Win10/Win7，紧盯iPhone/iPad、安卓智能设备手机等数码潮流。",
+            "link": "https://www.ithome.com/"
+          },
+          {
+            "id": "ft7yv26u8uh",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.c7eb713f8f3f36b5f97133e13ccd9544?rik=RQmUau7EtKfy1Q&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2021%2f04-07%2f98967%2fwater_98967_698_698_.png&ehk=ifJUPIqwlUs6HrIbnOE2B6lBU3jsTxw9g%2f25%2bokFITc%3d&risl=&pid=ImgRaw&r=0",
+            "name": "百度贴吧",
+            "description": "百度贴吧——全球领先的中文社区。贴吧的使命是让志同道合的人相聚。不论是大众话题还是小众话题，都能精准地聚集大批同好网友，展示自我风采，结交知音，搭建别具特色的“兴趣主题“互动平台。贴吧目录涵盖游戏、地区、文学、动漫、娱乐明星、生活、体育、电脑数码等方方面面，是全球领先的中文交流平台，它为人们提供一个表达和交流思想的自由网络空间，并以此汇集志同道合的网友。",
+            "link": "https://tieba.baidu.com/"
+          },
+          {
+            "id": "g4oklkk79cm",
+            "icon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.xxh13n9QeEII-h2erenw3AHaHa?rs=1&pid=ImgDetMain",
+            "name": "V2EX",
+            "description": "创意工作者的社区。讨论编程、设计、硬件、游戏等令人激动的话题。",
+            "link": "https://www.v2ex.com/"
           }
         ]
       }
     ],
-    "currentTabName": "25jjmyvb468_0"
+    "currentTabName": "ssdruricsjg"
   },
   {
     "id": "9ywjink87t",
@@ -691,6 +981,13 @@
             "name": "猎聘",
             "description": "猎聘是专业高效的招聘求职平台，为求职者提供海量高薪职位，在线沟通，快速反馈！为企业招聘方提供免费招人服务，优质人才，精准推荐，招人找工作就用猎聘聊！",
             "link": "https://www.liepin.com/"
+          },
+          {
+            "id": "6c6vduzjaiy",
+            "icon": "https://img04.51jobcdn.com/fansImg/CompLogo/1/2/1249/122569213748283499406_300.png?1667890646943",
+            "name": "前程无忧",
+            "description": "中国具有广泛影响力的人力资源服务供应商，创立了网站+猎头+RPO+校园招聘+管理软件的全方位招聘方案。",
+            "link": "https://www.51job.com/"
           }
         ]
       },
@@ -704,6 +1001,13 @@
             "name": "牛客网",
             "description": "求职之前，先上牛客，就业找工作一站解决。互联网IT技术/产品/运营/硬件/汽车机械制造/金融/财务管理/审计/银行/市场营销/地产/快消/管培生等等专业技能学习/备考/求职神器，在线进行企业校招实习笔试面试真题模拟考试练习，全面提升求职竞争力，找到好工作，拿到好offer。_牛客网_牛客在手,offer不愁",
             "link": "https://www.nowcoder.com/"
+          },
+          {
+            "id": "paswf59oc9",
+            "icon": "https://pic3.zhimg.com/50/v2-e75b5383a665819f29220b1df311998e_xs.jpg",
+            "name": "力扣 LeetCode",
+            "description": " 全球极客挚爱的技术成长平台 | 海量技术面试题库，拥有算法、数据结构、系统设计等 1000+题目，帮助你高效提升编程技能，轻松拿下世界 IT 名企 Dream Offer。",
+            "link": "https://leetcode.cn/"
           },
           {
             "id": "22o8e0kjxrp",
@@ -745,11 +1049,18 @@
             "name": "企查查",
             "description": "企查查是官方备案的企业征信机构，为您提供全国企业信息查询，包括企业工商信息查询，信用信息查询，经营状况查询等相关信息。查企业，查老板，查风险就上企查查!",
             "link": "https://www.qcc.com/"
+          },
+          {
+            "id": "gdx7k15vacm",
+            "icon": "https://tse3-mm.cn.bing.net/th/id/OIP-C.LKMORDCLibfsv_7wEoYl0QHaHa?rs=1&pid=ImgDetMain",
+            "name": "爱企查",
+            "description": "爱企查是百度推出的企业信用查询工具,提供一站式的企业信息查询服务,能够快速查询浏览工商信息、企业法人股东、主要成员、变更记录、企业风险、企业股权、网站icp备案、对外投资、分支机构、年报、企业财务信息等相关信息,查询信息就到爱企查官网,省时省力！",
+            "link": "https://aiqicha.baidu.com/"
           }
         ]
       }
     ],
-    "currentTabName": "9ywjink87t_0"
+    "currentTabName": "043f5yvrp0p3"
   },
   {
     "id": "dq8a5xlml5j",
@@ -1041,6 +1352,13 @@
             "link": "https://shimo.im/"
           },
           {
+            "id": "eefmsmbehif",
+            "icon": "https://pic3.zhimg.com/50/v2-8139fe41c4f1c40bb5ecd0be8e25d35e_qhd.jpg",
+            "name": "语雀",
+            "description": "十万阿里人都在用的笔记与文档知识库，面向企业、组织或个人，提供全新的体系化知识管理，打造轻松流畅的工作协同。金融级数据安全、丰富的应用场景、强大的知识创作与管理，助力企业、个人轻松拥有云端知识库",
+            "link": "https://www.yuque.com/"
+          },
+          {
             "id": "dzauzrn9uo",
             "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
             "name": "微信公众平台",
@@ -1107,6 +1425,26 @@
             "name": "coderunner",
             "description": "在线运行 PHP，JavaScript，C，C++，Python，NodeJs ...",
             "link": "https://tool.lu/coderunner/"
+          }
+        ]
+      },
+      {
+        "label": "邮箱",
+        "id": "mtk3km5ddn",
+        "sites": [
+          {
+            "id": "9gej46cegxw",
+            "icon": "https://b.zol-img.com.cn/soft/6/824/ceZmO8RWdbNxU.png",
+            "name": "163网易免费邮",
+            "description": "网易163免费邮箱，你的专业电子邮局，注册用户数超10亿，专业稳定安全。网易邮箱官方App“邮箱大师”帮您高效处理邮件，支持所有邮箱，并可在手机、Windows和Mac上多端协同使用。",
+            "link": "https://mail.163.com/"
+          },
+          {
+            "id": "ienvb7abq2l",
+            "icon": "https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_96h.png",
+            "name": "QQ邮箱",
+            "description": "QQ邮箱，为亿万用户提供高效稳定便捷的电子邮件服务。你可以在电脑网页、iOS/iPad客户端、及Android客户端上使用它，通过邮件发送3G的超大附件，体验文件中转站、日历、记事本、漂流瓶等特色功能。QQ邮箱，常联系。",
+            "link": "https://mail.qq.com/"
           }
         ]
       }
@@ -1412,7 +1750,82 @@
         ]
       }
     ],
-    "currentTabName": "lkurfjwib5"
+    "currentTabName": "smgs19taxo8_0"
+  },
+  {
+    "id": "uiwdif5p11",
+    "label": "资讯",
+    "tags": [
+      {
+        "id": "uiwdif5p11_0",
+        "label": "推荐",
+        "sites": [
+          {
+            "id": "c46qlj1t1z",
+            "icon": "https://p1.ssl.qhimg.com/t01a5402697f00923e2.jpg",
+            "name": "新浪网",
+            "description": "新浪网为全球用户24小时提供全面及时的中文资讯，内容覆盖国内外突发新闻事件、体坛赛事、娱乐时尚、产业资讯、实用信息等，设有新闻、体育、娱乐、财经、科技、房产、汽车等30多个内容频道，同时开设博客、视频、论坛等自由互动交流空间。",
+            "link": "https://www.sina.com.cn/"
+          },
+          {
+            "id": "co930qgarlg",
+            "icon": "https://www.thepaper.cn/favicon.ico",
+            "name": "澎湃新闻",
+            "description": "澎湃，澎湃新闻，澎湃新闻网，新闻与思想，澎湃是植根于中国上海的时政思想类互联网平台，以最活跃的原创新闻与最冷静的思想分析为两翼，是互联网技术创新与新闻价值传承的结合体，致力于问答式新闻与新闻追踪功能的实践。",
+            "link": "https://www.thepaper.cn/"
+          },
+          {
+            "id": "w6n657n48pr",
+            "icon": "https://p1.ssl.qhimg.com/dr/270_500_/t019e23cbe285fbdd99.jpg?size=400x400",
+            "name": "虎嗅网",
+            "description": "聚合优质的创新信息与人群，捕获精选|深度|犀利的商业科技资讯。在虎嗅，不错过互联网的每个重要时刻。",
+            "link": "https://www.huxiu.com/"
+          },
+          {
+            "id": "7wg4oiyw9w",
+            "icon": "https://img.zcool.cn/community/01f8ac5c8f3f3ba80121416822fd77.png@1280w_1l_2o_100sh.png",
+            "name": "小红书",
+            "description": "你的生活指南，让你发现全球的美食、旅行、时尚等精彩内容，还能购买心仪的商品，加入小红书，开启你的美好 ...",
+            "link": "https://www.xiaohongshu.com/"
+          },
+          {
+            "id": "eqd4vhu2ln",
+            "icon": "https://android-artworks.25pp.com/fs08/2019/02/01/5/110_84a1f549db4c273e50c1c950a182a1e1_con.png",
+            "name": "学习强国",
+            "description": "学习强国是党中央推出的全国学习平台，提供丰富的政治、文化、技能等学习资源和活动，帮助你提升素质、增强信心、实现 ...",
+            "link": "https://www.xuexi.cn/"
+          },
+          {
+            "id": "3t5fxqjggx3",
+            "icon": "https://current.vc/current/image/deal_logo/547ace2cfc7b6a26d91ac3902df0dd46.jpg",
+            "name": "36氪",
+            "description": "让一部分人先看到未来 | 36氪通过全面，独家的视角为用户深度剖析最前沿的资讯，致力于让一部分人先看到未来，内容涵盖快讯，科技，金融，投资，房产，汽车，互联网，股市，教育，生活，职场等，秉承着新商业媒体人的使命砥砺前行",
+            "link": "https://36kr.com/"
+          }
+        ]
+      },
+      {
+        "label": "汽车",
+        "id": "pyai4ilucjg",
+        "sites": [
+          {
+            "id": "gxwhp4abcco",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.c11b320fc747e586cf9c5856e78ff22f?rik=%2f%2bGWLkHvH%2fvPbg&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f06-24%2f86414%2fwater_86414_698_698_.png&ehk=W2wsCrER23MdAsqphyo96C8rfmMK1ReDoZPW2a%2b4hI0%3d&risl=&pid=ImgRaw&r=0",
+            "name": "汽车之家",
+            "description": "汽车之家为您提供最新汽车报价，汽车图片，汽车价格大全，最精彩的汽车新闻、行情、评测、导购内容，是提供信息最快最全的中国汽车网站。",
+            "link": "https://www.autohome.com.cn/"
+          },
+          {
+            "id": "ttz8hc1v2v",
+            "icon": "https://ts1.cn.mm.bing.net/th/id/R-C.b78d855584c214bec088f720d2a7e5a7?rik=ghypp9Qhix0O1A&riu=http%3a%2f%2fimg.cy-cdn.com%2fw3%2f1071%2flarge%2f15366603315071.png&ehk=ZW2OfbkO3dS1JlTfBWPRwCm7HroMwNlVEC%2b5qwOhJc8%3d&risl=&pid=ImgRaw&r=0",
+            "name": "易车",
+            "description": "作为中国领先的汽车互联网企业，易车公司为中国汽车用户提供专业、丰富的互联网资讯和导购服务，并为汽车厂商和汽车经销商提供卓有成效的互联网营销解决方案。",
+            "link": "https://www.yiche.com/"
+          }
+        ]
+      }
+    ],
+    "currentTabName": "uiwdif5p11_0"
   },
   {
     "id": "j5m4ap0rkns",
@@ -1513,6 +1926,6 @@
         ]
       }
     ],
-    "currentTabName": "3iyxxl9twoh"
+    "currentTabName": "j5m4ap0rkns_0"
   }
 ]

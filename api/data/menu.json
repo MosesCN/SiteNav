@@ -49,6 +49,14 @@
         "subMenus": [
           {}
         ]
+      },
+      {
+        "id": "3v7tckdnm0n",
+        "icon": "sugar",
+        "name": "游戏",
+        "subMenus": [
+          {}
+        ]
       }
     ]
   },
@@ -61,6 +69,14 @@
         "id": "fzgyt1iva8t",
         "icon": "promotion",
         "name": "编程"
+      },
+      {
+        "id": "8m262emsxcn",
+        "icon": "StarFilled",
+        "name": "平台",
+        "subMenus": [
+          {}
+        ]
       },
       {
         "id": "t0r3vz7xdb8",
@@ -91,7 +107,7 @@
   {
     "id": "25jjmyvb468",
     "icon": "basketball",
-    "name": "博客社区",
+    "name": "社区博客",
     "subMenus": []
   },
   {
@@ -132,6 +148,12 @@
     "id": "smgs19taxo8",
     "icon": "fries",
     "name": "资源",
+    "subMenus": []
+  },
+  {
+    "id": "uiwdif5p11",
+    "icon": "message",
+    "name": "资讯",
     "subMenus": []
   },
   {
