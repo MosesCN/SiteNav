@@ -5,24 +5,22 @@
     "name": "强烈推荐"
   },
   {
-    "id": "srived361ti",
-    "icon": "goblet",
-    "name": "生活",
-    "subMenus": [
-      {
-        "id": "clm5gnsiili",
-        "icon": "bicycle",
-        "name": "衣食住行"
-      },
-      {
-        "id": "na4sczjr9h",
-        "icon": "bell",
-        "name": "政务服务",
-        "subMenus": [
-          {}
-        ]
-      }
-    ]
+    "id": "uiwdif5p11",
+    "icon": "message",
+    "name": "资讯",
+    "subMenus": []
+  },
+  {
+    "id": "smgs19taxo8",
+    "icon": "fries",
+    "name": "资源",
+    "subMenus": []
+  },
+  {
+    "id": "f3058bsma8c",
+    "icon": "fork-spoon",
+    "name": "工具",
+    "subMenus": []
   },
   {
     "id": "u7c2f77fdw",
@@ -30,22 +28,17 @@
     "name": "社交娱乐",
     "subMenus": [
       {
-        "id": "0191ioqlrpqdn",
-        "icon": "chat-dot-round",
-        "name": "社交"
-      },
-      {
-        "id": "b1c8vc11eu8",
-        "icon": "mute",
-        "name": "音乐",
+        "id": "smmvqd0w6ng",
+        "icon": "video-play",
+        "name": "视频",
         "subMenus": [
           {}
         ]
       },
       {
-        "id": "smmvqd0w6ng",
-        "icon": "video-play",
-        "name": "视频",
+        "id": "b1c8vc11eu8",
+        "icon": "mute",
+        "name": "音乐",
         "subMenus": [
           {}
         ]
@@ -57,8 +50,19 @@
         "subMenus": [
           {}
         ]
+      },
+      {
+        "id": "0191ioqlrpqdn",
+        "icon": "chat-dot-round",
+        "name": "社交"
       }
     ]
+  },
+  {
+    "id": "25jjmyvb468",
+    "icon": "basketball",
+    "name": "社区",
+    "subMenus": []
   },
   {
     "id": "7ts8otaa4t",
@@ -66,17 +70,17 @@
     "name": "学习",
     "subMenus": [
       {
-        "id": "fzgyt1iva8t",
-        "icon": "promotion",
-        "name": "编程"
-      },
-      {
         "id": "8m262emsxcn",
         "icon": "StarFilled",
         "name": "平台",
         "subMenus": [
           {}
         ]
+      },
+      {
+        "id": "fzgyt1iva8t",
+        "icon": "promotion",
+        "name": "编程"
       },
       {
         "id": "t0r3vz7xdb8",
@@ -105,15 +109,29 @@
     ]
   },
   {
-    "id": "25jjmyvb468",
-    "icon": "basketball",
-    "name": "社区博客",
-    "subMenus": []
+    "id": "srived361ti",
+    "icon": "goblet",
+    "name": "生活",
+    "subMenus": [
+      {
+        "id": "clm5gnsiili",
+        "icon": "bicycle",
+        "name": "衣食住行"
+      },
+      {
+        "id": "na4sczjr9h",
+        "icon": "bell",
+        "name": "政务服务",
+        "subMenus": [
+          {}
+        ]
+      }
+    ]
   },
   {
     "id": "jkl6rx2k3s",
     "icon": "dish-dot",
-    "name": "就业兼职",
+    "name": "工作",
     "subMenus": [
       {
         "id": "9ywjink87t",
@@ -137,24 +155,6 @@
         ]
       }
     ]
-  },
-  {
-    "id": "f3058bsma8c",
-    "icon": "fork-spoon",
-    "name": "工具",
-    "subMenus": []
-  },
-  {
-    "id": "smgs19taxo8",
-    "icon": "fries",
-    "name": "资源",
-    "subMenus": []
-  },
-  {
-    "id": "uiwdif5p11",
-    "icon": "message",
-    "name": "资讯",
-    "subMenus": []
   },
   {
     "id": "j5m4ap0rkns",
