@@ -1,8 +1,9 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import { ElMessage, ElMessageBox } from 'element-plus'
+  import { ElMessage, ElMessageBox, ElNotification } from 'element-plus'
   import { computed } from 'vue';
   import { fetchSiteInfo, SiteInfo } from '../../common/SiteFetcher';
+  import { FolderOpened } from '@element-plus/icons-vue'
   const emit = defineEmits(['updated'])
 
   const props = defineProps({
@@ -133,7 +134,7 @@
     namePlaceholder: '网站名称',
     link: '',
     linkLabel: '链接',
-    linkPlaceholder: '网站链接',
+    linkPlaceholder: '网站链接, 右侧按钮可自动导入网站信息',
     description: '',
     descriptionLabel: '描述',
     descriptionPlaceholder: '给网站一些描述信息',
@@ -224,12 +225,25 @@
     })
   }
 
-  const siteLinkChanged = (value: string) => {
-    fetchSiteInfo(value)?.then((site_info: SiteInfo) => {
+  const fetch_site_info = () => {
+    if (!SITE_DIALOG.value.link) {
+      ElMessage({
+        type: 'warning',
+        message: '请输入网站链接'
+      })
+      return;
+    }
+    fetchSiteInfo(SITE_DIALOG.value.link)?.then((site_info: SiteInfo) => {
       console.log('site', site_info);
       SITE_DIALOG.value.icon = site_info.icon;
       SITE_DIALOG.value.name = site_info.name;
       SITE_DIALOG.value.description = site_info.description;
+    }).catch(e => {
+      ElNotification({
+        title: 'Error',
+        message: `${e}`,
+        type: 'error',
+      })
     })
   }
 </script>
@@ -238,13 +252,18 @@
   <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="20%" style="border-radius:.6rem">
     <el-form>
       <el-form-item :label="SITE_DIALOG.linkLabel">
-        <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" @change="siteLinkChanged" />
+        <el-col :span="22">
+          <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" />
+        </el-col>
+        <el-col :span="2">
+          <el-button :icon="FolderOpened" circle size="small" @click="fetch_site_info" />
+        </el-col>
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.iconLabel">
         <el-input v-model="SITE_DIALOG.icon" :placeholder="SITE_DIALOG.iconPlaceholder" />
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.nameLabel">
-        <el-input v-model="SITE_DIALOG.name" maxlength="10" minlength="1" show-word-limit
+        <el-input v-model="SITE_DIALOG.name" maxlength="20" minlength="1" show-word-limit
           :placeholder="SITE_DIALOG.namePlaceholder" />
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.descriptionLabel">
