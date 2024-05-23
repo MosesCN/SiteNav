@@ -15,6 +15,7 @@ const SECRET_KEY = 'OIJa1s28*&sdIw!*#xS'
 // const PREFIX = config.name + '_' + config.version + '_'
 const PREFIX = config.name.toLocaleUpperCase() + '_';
 const IS_DEV = process.env.NODE_ENV === 'development'
+const DONT_ENCRYPTED = true;
 
 class SiteNavStorage {
   storage: Storage
@@ -53,7 +54,7 @@ class SiteNavStorage {
     const data = JSON.stringify(source)
     this.storage.setItem(
       this.synthesisKey(key),
-      IS_DEV ? data : encryption ? this.encrypt(data) : data
+        DONT_ENCRYPTED ? data : encryption ? this.encrypt(data) : data
     )
   }
 
@@ -61,7 +62,7 @@ class SiteNavStorage {
     const value = this.storage.getItem(this.synthesisKey(key))
     let realValue = ''
     if (value) {
-      if (encryption && !IS_DEV) {
+      if (encryption && !DONT_ENCRYPTED) {
         realValue = this.decrypt(value)
       } else {
         realValue = value
