@@ -2,11 +2,17 @@
   <el-config-provider namespace="ep">
     <el-container>
       <el-aside width="fit-content">
-        <SiteNavSide :menus="menus" @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav"
+        <SiteNavSide :menus="menus" :is-collapse="collapseMenu" @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav"
           @edit-site-nav="editSiteNav" />
       </el-aside>
       <el-container class="main-container">
-        <el-header>
+        <el-header class="override-padding">
+          <!-- aside menu switch -->
+          <div class="menu-switch cursor-pointer" @click="collapseSideMenu">
+            <Expand v-if="collapseMenu" size="6"/>
+            <Fold v-else size="6" />
+          </div>
+
           <SiteNavHeader />
         </el-header>
         <el-main class="site-nav-main">
@@ -24,9 +30,16 @@
 <script lang="ts" setup>
   import { ref } from "vue";
   import { SiteNavData } from "../api/data/SiteNavData";
+  import { Fold, Expand } from "@element-plus/icons-vue";
 
   const webs = ref(SiteNavData.getWebs());
   const menus = ref(SiteNavData.getMenus());
+
+  const collapseMenu = ref(false);
+  const collapseSideMenu = () => {
+    console.log('click collapse')
+    collapseMenu.value = !collapseMenu.value;
+  }
 
   const updatedWebs = () => {
     SiteNavData.setWebs(webs.value);
@@ -80,10 +93,21 @@
     }
   }
 </script>
-
 <style>
-  #app {
-    color: var(--ep-text-color-primary);
+  .override-padding {
+    padding: unset;
+    padding-right: 20px;
+  }
+
+  .menu-switch {
+    float: left;
+    text-align: center;
+    line-height: var(--ep-header-height);
+    width:var(--ep-header-height);
+  }
+
+  .menu-switch:hover {
+    background: rgba(0, 0, 0, .025);
   }
 
   .main-container {

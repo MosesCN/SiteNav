@@ -1,4 +1,5 @@
 <template>
+  <!-- menu dialog -->
   <el-dialog v-model="MENU_DIALOG.show" :title="MENU_DIALOG.title" width="18%" style="border-radius: 0.6rem">
     <el-form>
       <el-form-item :label="MENU_DIALOG.iconLabel">
@@ -37,15 +38,14 @@
       </div>
     </template>
   </el-dialog>
+
   <div id="SiteNavSide">
-    <el-icon @click="toggle" class="toggle-ico" size="2rem">
-      <CaretRight v-if="isCollapse" color="lightgray" />
-      <CaretLeft v-else color="lightgray" />
-    </el-icon>
+    <!--  icon  -->
     <div style="margin: 0.6vh 0">
       <SiteNavIcon style="width: 3rem; height: 3rem" />
     </div>
 
+    <!-- menu -->
     <el-menu unique-opened :collapse="isCollapse" class="remove-border-right" @select="handleSelect">
       <template v-for="menu in menus">
         <el-sub-menu :index="menu.id" v-if="menu.subMenus && menu.subMenus.length > 0">
@@ -85,7 +85,6 @@
 <style>
   #SiteNavSide {
     text-align: center;
-    position: relative;
     height: calc(99vh);
   }
 
@@ -97,13 +96,6 @@
     #SiteNavSide {
       display: none;
     }
-  }
-
-  .toggle-ico {
-    size: 2rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
 </style>
 
@@ -120,21 +112,23 @@
     menus: {
       type: Array<any>,
       require: true,
+    },
+    isCollapse: {
+      type: Boolean,
+      require: true
     }
   })
 
   const menus = computed(() => {
     if (props.menus == undefined) {
-      throw Error('require menus provide for component WebSites')
+      throw Error('require [menus] provided for component WebSites')
     }
     return props.menus;
   });
 
-  const isCollapse = ref(false);
-
-  const toggle = () => {
-    isCollapse.value = !isCollapse.value;
-  };
+  const isCollapse = computed(() => {
+    return props.isCollapse || false;
+  });
 
   const handleSelect = (key: string) => {
     console.log(`menu click ${key}`);
@@ -244,11 +238,7 @@
     MENU_DIALOG.value.name = "";
 
     const eidtingSubMenu: boolean = subMenus != undefined;
-    if (eidtingSubMenu) {
-      MENU_DIALOG.value.showAddSubMenu = false;
-    } else {
-      MENU_DIALOG.value.showAddSubMenu = true;
-    }
+    MENU_DIALOG.value.showAddSubMenu = !eidtingSubMenu;
     MENU_DIALOG.value.addSubMenu = false;
     MENU_DIALOG.value.subIcon = DEFAULT_MENU_ICON;
     MENU_DIALOG.value.subName = "";
@@ -267,11 +257,7 @@
     MENU_DIALOG.value.name = eidtingSubMenu ? subMenus.name : menu_arg.name;
 
     // if editing sub menu or the exist sub menus, could not add or remove sub menu any more
-    if (eidtingSubMenu || (menu_arg.subMenus && menu_arg.subMenus.length > 0)) {
-      MENU_DIALOG.value.showAddSubMenu = false;
-    } else {
-      MENU_DIALOG.value.showAddSubMenu = true;
-    }
+    MENU_DIALOG.value.showAddSubMenu = !(eidtingSubMenu || (menu_arg.subMenus && menu_arg.subMenus.length > 0));
     MENU_DIALOG.value.addSubMenu = false;
     MENU_DIALOG.value.subIcon = DEFAULT_MENU_ICON;
 
