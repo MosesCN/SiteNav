@@ -15,6 +15,20 @@
             "link": "https://huggingface.co/chat/"
           },
           {
+            "id": "4mzhryhwvdk",
+            "icon": "https://llama3.dev/favicon.png",
+            "name": "Llama 3 | Meta AI",
+            "description": "Llama 3 is the latest language model from Meta.Llama 3 comes in two sizes: 8B and 70B.Quickly try out Llama 3 Online with this Llama chatbot.",
+            "link": "https://llama3.dev/"
+          },
+          {
+            "id": "0oph8k4ml5w",
+            "icon": "https://monica.im/logo.png",
+            "name": "Monica",
+            "description": "AI 全能助手，由GPT-4 驱动。回答复杂问题，撰写邮件，阅读文章，智能搜索。随处可用。Monica integrates top AI models (GPT-4, Claude 3, Gemini) for one-click chat, search, writing, coding and more. Try it on Chrome, Edge, or our APP.",
+            "link": "https://monica.im/"
+          },
+          {
             "id": "2rjqhic4h9q",
             "icon": "https://www.anthropic.com/images/icons/favicon-32x32.png",
             "name": "Claude",
@@ -27,6 +41,13 @@
             "name": "ChatGPT",
             "description": "ChatGPT",
             "link": "https://chat.openai.com/"
+          },
+          {
+            "id": "hz84xupuhg",
+            "icon": "https://duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png",
+            "name": "DuckDuckGo AI Chat",
+            "description": "聊天会话由 Anthropic 的 Claude 3 Haiku 提供支持。此处所有聊天内容均为私密，DuckDuckGo 绝不会存储或用于训练 AI 模型。",
+            "link": "https://duckduckgo.com/?q=DuckDuckGo&ia=chat"
           },
           {
             "id": "q48u3iwc35",
@@ -700,6 +721,13 @@
             "link": "https://shimo.im/"
           },
           {
+            "id": "fuf9xz09ida",
+            "icon": "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/84a9f036fe2b44f99b899fff4beeb963~tplv-jbbdkfciu3-image:0:0.image",
+            "name": "飞书",
+            "description": "先进企业协作与管理平台，不仅一站式整合即时沟通、智能日历、音视频会议、飞书文档、云盘等办公协作套件，更提供飞书OKR、飞书招聘、飞书绩效等组织管理产品，让目标更清晰，信息流动更顺畅，每一个人工作更高效更愉悦。先进团队，先用飞书。",
+            "link": "https://www.feishu.cn/"
+          },
+          {
             "id": "eefmsmbehif",
             "icon": "https://pic3.zhimg.com/50/v2-8139fe41c4f1c40bb5ecd0be8e25d35e_qhd.jpg",
             "name": "语雀",
@@ -764,6 +792,19 @@
         ]
       },
       {
+        "label": "局域网传输",
+        "id": "x6j4384f40h",
+        "sites": [
+          {
+            "id": "hns8q32l66g",
+            "icon": "https://snapdrop.net/images/favicon-96x96.png",
+            "name": "Snapdrop",
+            "description": "Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.",
+            "link": "https://snapdrop.net"
+          }
+        ]
+      },
+      {
         "label": "邮箱",
         "id": "mtk3km5ddn",
         "sites": [
@@ -780,6 +821,13 @@
             "name": "QQ邮箱",
             "description": "QQ邮箱，为亿万用户提供高效稳定便捷的电子邮件服务。你可以在电脑网页、iOS/iPad客户端、及Android客户端上使用它，通过邮件发送3G的超大附件，体验文件中转站、日历、记事本、漂流瓶等特色功能。QQ邮箱，常联系。",
             "link": "https://mail.qq.com/"
+          },
+          {
+            "id": "xiv3lmvm59s",
+            "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "name": "Gmail",
+            "description": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access.",
+            "link": "https://mail.google.com/"
           }
         ]
       }
@@ -1159,6 +1207,13 @@
             "link": "https://zhile.io/"
           },
           {
+            "id": "0m2440pewun",
+            "icon": "https://coolshell.cn/coolshell_logo.png",
+            "name": "酷壳 – CoolShell.cn",
+            "description": "左耳朵耗子 | 享受编程和技术所带来的快乐 -https://coolshell.cn",
+            "link": "https://coolshell.cn/"
+          },
+          {
             "id": "sbmmtszm2i",
             "icon": "https://www.ruanyifeng.com/blog/images/person2_s.jpg",
             "name": "阮一峰的网络日志",
@@ -1184,6 +1239,13 @@
             "name": "知识星球",
             "description": "知识星球是创作者连接铁杆粉丝，实现知识变现的工具。任何从事创作或艺术的人，例如艺术家、工匠、教师、学术研究、科普等，只要能获得一千位铁杆粉丝，就足够生计无忧，自由创作。社群管理、内容沉淀、链接粉丝等就在知识星球。",
             "link": "https://wx.zsxq.com/dweb2/login"
+          },
+          {
+            "id": "246l0cuvtxyj",
+            "icon": "https://static.xiaobot.net/resource/xiaobot-web/img/icons/safari-pinned-tab.svg",
+            "name": "小报童",
+            "description": "如果你厌倦了紧追热点来写作，厌倦了作品被植入软广，厌倦了被杠精无脑吐槽，应该来试试小报童，体面而用心地创作。",
+            "link": "https://xiaobot.net/"
           }
         ]
       }
@@ -1733,7 +1795,7 @@
     "tags": [
       {
         "id": "9ywjink87t_0",
-        "label": "招聘App",
+        "label": "招聘",
         "sites": [
           {
             "id": "65b5lnigkr8",
@@ -1755,6 +1817,13 @@
             "name": "前程无忧",
             "description": "中国具有广泛影响力的人力资源服务供应商，创立了网站+猎头+RPO+校园招聘+管理软件的全方位招聘方案。",
             "link": "https://www.51job.com/"
+          },
+          {
+            "id": "qywun7w35v",
+            "icon": "https://github.com/favicons/favicon.svg",
+            "name": "谁在招人",
+            "description": "这里是免费的程序员招聘服务。 如果你们团队正在招人，欢迎把招聘信息发在这个帖子里面。请简要描述，岗位名称、工作地点、岗位要求、团队简介、联系方式等等。 注意：同一个团队如果招聘多个岗位，请写在一起，不要分成多个部分张贴。 读者可以咨询，但请不要发布与招聘无关的内容，禁止对公司或岗位进行评论或抱怨。如果有意应聘，请直接与发帖人联系。 谢绝中介和猎头发帖，违者拉黑。 历史帖 程序员的招聘往往长期有效，大家别忘了查看上月的岗位",
+            "link": "https://github.com/ruanyf/weekly/issues/4204"
           }
         ]
       },
@@ -1875,6 +1944,103 @@
         ]
       },
       {
+        "label": "远程工程",
+        "id": "s2zabcz935",
+        "sites": [
+          {
+            "id": "t0pow5bgod",
+            "icon": "https://s3.eu-west-2.amazonaws.com/remoteworker-live-superbrnds/Shareable/JustRemote_homepage.jpg",
+            "name": "Justremote",
+            "description": "Discover Remote Jobs from around the world. Give up the commute, work remotely and do what you love, daily, from anywhere. Find your perfect remote development, design, sales or marketing job today.",
+            "link": "https://justremote.co"
+          },
+          {
+            "id": "d6vhsxp7tti",
+            "icon": "https://wellfound.com/wellfound.ico",
+            "name": "Wellfound",
+            "description": "Apply privately to 130,000+ remote jobs and startup jobs near you with one application. See salary and equity upfront. Find the latest tech jobs, company overviews, benefits and more at Wellfound (formerly AngelList Talent).",
+            "link": "https://wellfound.com/"
+          },
+          {
+            "id": "wjfblib0lel",
+            "icon": "https://d262ri5vl0r1ym.cloudfront.net/jobs/assets/favicon.ico",
+            "name": "Working Nomads",
+            "description": "Remote jobs for digital working nomads. Start your telecommuting career and work remotely from home or places around the world.",
+            "link": "https://www.workingnomads.com/"
+          },
+          {
+            "id": "dqhrziu9zt",
+            "icon": "https://remote.com/social/default-social-share.png",
+            "name": "Remote",
+            "description": "Hire international talent in minutes. Remote is the most disruptive global payroll, tax, HR and compliance solution for distributed teams.",
+            "link": "https://remote.com/"
+          },
+          {
+            "id": "augtpsndqaf",
+            "icon": "https://www.odeskwork.com/wp-content/uploads/2023/12/cropped-odeskwork-icon-192x192.jpg",
+            "name": "oDeskwork",
+            "description": "oDeskwork.com, Find freelancers to tackle any job, any time and in any budget. Easily find quality freelancers On oDeskwork you’ll find a range of top talent, from programmers to designers, writers, customer support reps, and more. at odeskwork.com Hire the best freelancer.",
+            "link": "https://www.odeskwork.com/"
+          },
+          {
+            "id": "rarcppubvps",
+            "icon": "https://jobboardsearch.com/assets/jobboardsearchlogo.png",
+            "name": "Job Boards",
+            "description": "Discover your next job on our curated list of 418 job boards. Fresh alternatives to StackOverflow Jobs.",
+            "link": "https://jobboardsearch.com/"
+          },
+          {
+            "id": "phbjiopefxf",
+            "icon": "data:image/png;base64,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",
+            "name": "JS Remotely",
+            "description": "Welcome to JS Remotely, the job board with all JavaScript remote jobs in the world. More than 200 picked remote NodeJS, Meteor, Angular, React, Electron and Svetle jobs are waiting for you. Find your perfect remote job now.",
+            "link": "https://jsremotely.com/"
+          },
+          {
+            "id": "efm0qthpvjp",
+            "icon": "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/07/remote_co_twitter.png",
+            "name": "Remote.co",
+            "description": "Remote.co is the definitive remote work job board for online job seekers and companies hiring. Start your remote job search here!",
+            "link": "https://remote.co/"
+          },
+          {
+            "id": "rnubgvnvn5t",
+            "icon": "https://remoteok.com/cdn-cgi/image/format=auto,fit=contain,width=100,height=100,quality=85/https://remoteok.com/assets/logo-square.png?1633381266",
+            "name": "remoteok",
+            "description": "remoteok",
+            "link": " https://remoteok.com"
+          },
+          {
+            "id": "hkud0p6gcqa",
+            "icon": "https://problogger.com/apple-touch-icon.png",
+            "name": "ProBlogger",
+            "description": "Since 2004, ProBlogger has been the home for bloggers wanting to create and grow their blogs, and then go professional to make money blogging",
+            "link": "https://problogger.com/"
+          },
+          {
+            "id": "uxdqc65ypep",
+            "icon": "https://www.freelancewriting.com/wp-content/themes/genesis-flw/images/favicons/favicon-192.png",
+            "name": "Freelance Writing",
+            "description": "Freelance Writing is the most comprehensive hub for both businesses to hire top quality writers, and freelance writers to make more money writing.",
+            "link": "https://www.freelancewriting.com/"
+          },
+          {
+            "id": "qw1bts37xib",
+            "icon": "https://www.flexjobs.com/blobcontent/flexjobs/images/favicon.png",
+            "name": " FlexJobs",
+            "description": "The #1 job site for hand-screened remote jobs (work from home jobs) since 2007. No ads, scams, or junk. Discover a better online job search with FlexJobs!",
+            "link": "https://www.flexjobs.com/"
+          },
+          {
+            "id": "s1w9x7b7tn",
+            "icon": "https://weworkremotely.com/assets/IsotypeV2-1ebe3dd57673f3e8d02b7490bc0faaef55d6a95d3a4aaf17298bd3ed503ae7fe.svg",
+            "name": "We Work Remotely",
+            "description": "Find the most qualified people in the most unexpected places: Hire remote! We Work Remotely is the best place to find and list remote jobs that aren't restricted by commutes or a particular geographic area. Browse thousands of remote work jobs today.",
+            "link": "https://weworkremotely.com/"
+          }
+        ]
+      },
+      {
         "label": "网赚",
         "id": "oqzml11yitk",
         "sites": [
@@ -1911,6 +2077,13 @@
             "name": "Jira",
             "description": "Project management tool for high-performing teams, flexible for the work you do and connected to everything. Whether you’re agile or waterfall, writing code or …",
             "link": "https://www.atlassian.com/software/jira"
+          },
+          {
+            "id": "0pkn1y5khcuk",
+            "icon": "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/84a9f036fe2b44f99b899fff4beeb963~tplv-jbbdkfciu3-image:0:0.image",
+            "name": "飞书",
+            "description": "先进企业协作与管理平台，不仅一站式整合即时沟通、智能日历、音视频会议、飞书文档、云盘等办公协作套件，更提供飞书OKR、飞书招聘、飞书绩效等组织管理产品，让目标更清晰，信息流动更顺畅，每一个人工作更高效更愉悦。先进团队，先用飞书。",
+            "link": "https://www.feishu.cn/"
           }
         ]
       }
@@ -2025,6 +2198,13 @@
             "name": "深度导航",
             "description": "分享互联网最具价值的网站",
             "link": "https://www.deepdh.com/"
+          },
+          {
+            "id": "lcf6v7pg9kk",
+            "icon": "https://fmhy.net/test.png",
+            "name": "freemediaheckyeah",
+            "description": "The largest collection of free stuff on the internet!",
+            "link": "https://fmhy.net/"
           },
           {
             "id": "nqjgh2u58i",
