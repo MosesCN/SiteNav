@@ -39,7 +39,7 @@
     </template>
   </el-dialog>
 
-  <div id="SiteNavSide">
+  <div id="SiteNavSide" :class="{'hidden-aside':isCollapse}">
     <!--  icon  -->
     <div style="margin: 0.6vh 0">
       <SiteNavIcon style="width: 3rem; height: 3rem" />
@@ -85,7 +85,7 @@
 <style>
   #SiteNavSide {
     text-align: center;
-    height: calc(99vh);
+    height: 100vh;
   }
 
   .remove-border-right {
@@ -94,7 +94,18 @@
 
   @media only screen and (max-width: 768px) {
     #SiteNavSide {
-      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: fit-content;
+      height: 100vh;
+      z-index: 999;
+      background: var(--ep-bg-color);
+    }
+
+    .hidden-aside {
+      visibility: hidden;
     }
   }
 </style>

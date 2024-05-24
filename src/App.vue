@@ -8,7 +8,7 @@
       <el-container class="main-container">
         <el-header class="override-padding">
           <!-- aside menu switch -->
-          <div class="menu-switch cursor-pointer" @click="collapseSideMenu">
+          <div :class="{'collapseBtn':!collapseMenu}" class="menu-switch cursor-pointer" @click="collapseSideMenu">
             <Expand v-if="collapseMenu" size="6"/>
             <Fold v-else size="6" />
           </div>
@@ -94,6 +94,11 @@
   }
 </script>
 <style>
+@media only screen and (max-width: 768px) {
+  .collapseBtn {
+   margin-left: 150px;
+  }
+}
   .override-padding {
     padding: unset;
     padding-right: 20px;
@@ -125,4 +130,3 @@
     /* background-image: url('./../../assets/images/bg/6.jpg') */
   }
 </style>
-./common/SiteNavData./common/data/SiteNavData../api/data/SiteNavData
