@@ -46,19 +46,21 @@
     <div class="card-inner">
       <img :src="imgSrc" @click="openLink" />
       <div id="details" @click="openLink">
-        <div class="title">{{ title }}</div>
+        <el-text class="title">{{ title }}</el-text>
         <el-popover trigger="hover" :content="description">
           <template #reference>
-            <el-text class="description w-10vw" truncated>
+            <el-text class="description" truncated>
               {{ description }}
             </el-text>
           </template>
         </el-popover>
       </div>
+    </div>
+    <div id="arrow">
       <el-popover trigger="hover" :content="link">
         <template #reference>
           <el-icon @click="openLink">
-            <DArrowRight id="arrow" />
+            <DArrowRight />
           </el-icon>
         </template>
       </el-popover>
@@ -80,11 +82,12 @@
     margin-right: .3rem;
   }
 
-  .card-box #edit {
+  .card-box #arrow {
     position: absolute;
-    bottom: 0;
+    top: 50%;
     right: 0;
-    color: #cdcccc;
+    margin-right: .6rem;
+    color: darkgray;
     cursor: pointer;
   }
 
@@ -95,40 +98,40 @@
   .card-inner {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .card-inner img {
-    width: 5vw;
-    height: 5vw;
-    border-radius: 3dvh;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.6rem;
     cursor: pointer;
-  }
-
-  .card-inner .title {
-    font-weight: bold;
-    text-align: left;
-  }
-
-  .card-inner .description {
-    color: #6c757d;
-    text-align: left;
-    margin-top: 8px;
   }
 
   .card-inner #details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px;
+    margin-left: .3rem;
     cursor: pointer;
+    width: 100%;
   }
 
-  .card-inner #arrow {
-    color: darkgray;
-    cursor: pointer;
+  .card-inner .title {
+    align-self: flex-start;
+    font-weight: bold;
+    text-align: left;
+    max-width: 75%;
+  }
+
+  .card-inner .description {
+    color: #6c757d;
+    text-align: left;
+    margin-top: .6rem;
+    align-self: flex-start;
+    max-width: 78%;
   }
 </style>

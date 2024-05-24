@@ -255,6 +255,7 @@
 </script>
 
 <template>
+  <!-- site edit dialog  -->
   <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="20%" style="border-radius:.6rem">
     <el-form>
       <el-form-item :label="SITE_DIALOG.linkLabel">
@@ -284,6 +285,8 @@
       </div>
     </template>
   </el-dialog>
+
+  <!-- web sites -->
   <div class="site-box" v-for="web in webs" :id="web.id">
     <div class="site-tag text-gray text-lg mb-4">
       <TagIcon />
@@ -296,14 +299,16 @@
             <span>{{ tag.label }}</span>
           </DropdownAction>
         </template>
-        <div class="sites-container">
-          <SiteNavCard v-for="site in tag.sites" :title="site.name" :description="site.description" :icon="site.icon"
-            :link="site.link" @edit-site="editSite(web, tag, site)" @delete-site="deleteSite(web, tag, site)"
-            @add-site="addSite(web, tag, site)" />
-          <el-icon class="add-site" @click="addSite(web, tag, undefined)">
+        <el-row :gutter="3">
+          <el-col v-for="site in tag.sites" :xs="24" :sm="24/2" :md="24/3" :lg="24/4" :xl="24/5">
+            <SiteNavCard :title="site.name" :description="site.description" :icon="site.icon"
+                         :link="site.link" @edit-site="editSite(web, tag, site)" @delete-site="deleteSite(web, tag, site)"
+                         @add-site="addSite(web, tag, site)" />
+          </el-col>
+          <el-col :span="1" class="add-site" @click="addSite(web, tag, undefined)">
             <CirclePlus />
-          </el-icon>
-        </div>
+          </el-col>
+        </el-row>
       </el-tab-pane>
     </el-tabs>
   </div>
@@ -311,14 +316,14 @@
 <style scoped>
 
   /* x>>>y --> :deep() y */
-  :deep() .ep-tabs__new-tab {
+  :deep(.ep-tabs__new-tab) {
     margin: 10px;
   }
 
   .add-site {
     font-size: 2rem;
     text-align: center;
-    margin: 0px 1rem;
+    margin: auto 1rem;
     color: darkgray;
     cursor: pointer;
   }
