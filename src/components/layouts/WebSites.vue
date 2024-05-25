@@ -2,8 +2,8 @@
   import { ref } from 'vue'
   import { ElMessage, ElMessageBox, ElNotification } from 'element-plus'
   import { computed } from 'vue';
-  import { fetchSiteInfo, SiteInfo } from '../../common/SiteFetcher';
-  import { Refresh } from '@element-plus/icons-vue'
+  import { fetchSiteInfo, SiteInfo } from '~/common/SiteFetcher';
+  import { Refresh, CirclePlus } from '@element-plus/icons-vue'
   const emit = defineEmits(['updated'])
 
   const props = defineProps({
@@ -306,7 +306,7 @@
                          @add-site="addSite(web, tag, site)" />
           </el-col>
           <el-col :span="1" class="add-site" @click="addSite(web, tag, undefined)">
-            <CirclePlus />
+            <CirclePlus :size="10" />
           </el-col>
         </el-row>
       </el-tab-pane>
@@ -327,9 +327,8 @@
   }
 
   .add-site {
-    font-size: 2rem;
     text-align: center;
-    margin: auto 1rem;
+    margin: auto 0;
     color: darkgray;
     cursor: pointer;
   }
@@ -339,7 +338,7 @@
   }
 
   .site-box {
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0;
   }
 
   .site-tag {
@@ -358,15 +357,5 @@
 
   .site-tag text {
     margin-left: 1rem;
-  }
-
-
-  .sites-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
   }
 </style>
