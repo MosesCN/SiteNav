@@ -19,7 +19,7 @@
           <SiteNavSearch />
           <WebSites :webs="webs" @updated="updatedWebs" />
           <!-- back to top component,  must config the 'target' attribute  -->
-          <el-backtop target=".site-nav-main" :right="100" :bottom="100" />
+          <el-backtop target=".site-nav-main" style="right: 2rem; bottom: 4rem;" />
         </el-main>
         <el-footer>
           <SiteNavCopyright />
