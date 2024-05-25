@@ -3,7 +3,7 @@
     <Hitokoto />
   </div>
   <div>
-    <el-input style="width: 50%" size="large" v-model="searchInput" :placeholder="search_placeholder">
+    <el-input style="width: 60%" size="large" v-model="searchInput" :placeholder="search_placeholder">
       <template #prepend>
         <el-dropdown size="large">
           <el-icon size="28">

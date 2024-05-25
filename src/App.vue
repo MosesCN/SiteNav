@@ -31,11 +31,21 @@
   import { ref } from "vue";
   import { SiteNavData } from "../api/data/SiteNavData";
   import { Fold, Expand } from "@element-plus/icons-vue";
+  import { getWindowSize, WindowSize } from "~/common/Windows";
 
   const webs = ref(SiteNavData.getWebs());
   const menus = ref(SiteNavData.getMenus());
 
-  const collapseMenu = ref(false);
+  const collapseMenu = ref(getWindowSize() < WindowSize.MD);
+
+  window.onresize = ()=>{
+    if (WindowSize.SM === getWindowSize()){
+      collapseMenu.value = true;
+    }else if (getWindowSize() > WindowSize.MD){
+      collapseMenu.value = false;
+    }
+  }
+
   const collapseSideMenu = () => {
     console.log('click collapse')
     collapseMenu.value = !collapseMenu.value;
