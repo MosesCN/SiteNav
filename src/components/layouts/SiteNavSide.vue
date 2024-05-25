@@ -85,7 +85,6 @@
 <style>
   #SiteNavSide {
     text-align: center;
-    height: 100vh;
   }
 
   .remove-border-right {
