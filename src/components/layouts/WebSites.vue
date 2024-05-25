@@ -3,7 +3,7 @@
   import { ElMessage, ElMessageBox, ElNotification } from 'element-plus'
   import { computed } from 'vue';
   import { fetchSiteInfo, SiteInfo } from '../../common/SiteFetcher';
-  import { FolderOpened } from '@element-plus/icons-vue'
+  import { Refresh } from '@element-plus/icons-vue'
   const emit = defineEmits(['updated'])
 
   const props = defineProps({
@@ -256,14 +256,14 @@
 
 <template>
   <!-- site edit dialog  -->
-  <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="20%" style="border-radius:.6rem">
+  <el-dialog v-model="SITE_DIALOG.show" :title="SITE_DIALOG.title" width="35%" style="border-radius:.6rem">
     <el-form>
       <el-form-item :label="SITE_DIALOG.linkLabel">
         <el-col :span="22">
           <el-input v-model="SITE_DIALOG.link" :placeholder="SITE_DIALOG.linkPlaceholder" />
         </el-col>
         <el-col :span="2">
-          <el-button :icon="FolderOpened" circle size="small" @click="fetch_site_info" />
+          <el-button :icon="Refresh" circle size="small" @click="fetch_site_info" />
         </el-col>
       </el-form-item>
       <el-form-item :label="SITE_DIALOG.iconLabel">
@@ -314,6 +314,12 @@
   </div>
 </template>
 <style scoped>
+
+  @media only screen and (max-width: 992px) {
+    .add-site {
+      visibility: hidden;
+    }
+  }
 
   /* x>>>y --> :deep() y */
   :deep(.ep-tabs__new-tab) {

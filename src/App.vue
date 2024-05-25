@@ -104,11 +104,12 @@
   }
 </script>
 <style>
-@media only screen and (max-width: 768px) {
-  .collapseBtn {
-   margin-left: 150px;
+  @media only screen and (max-width: 768px) {
+    .collapseBtn {
+     margin-left: 150px;
+    }
   }
-}
+
   .override-padding {
     padding: unset;
     padding-right: 20px;

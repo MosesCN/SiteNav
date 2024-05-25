@@ -68,6 +68,12 @@
   </el-card>
 </template>
 <style scoped>
+  @media only screen and (max-width: 992px) {
+    #action {
+      visibility: hidden;
+    }
+  }
+
   .card-box {
     position: relative;
   }
