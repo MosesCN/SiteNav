@@ -1936,7 +1936,7 @@
           },
           {
             "id": "m2ne7wsc70c",
-            "icon": "http://www.duzikai.com/favicon.ico",
+            "icon": "https://www.duzikai.com/favicon.ico",
             "name": "独自开",
             "description": "建设一个独立、自由、开源的PaaS平台。\n期待各路程序员加入我们的平台",
             "link": "http://www.duzikai.com/"
@@ -2226,6 +2226,13 @@
             "name": "血鸟导航",
             "description": "血鸟导航，集网址、资源、博客为一体的定制化上网导航网站，设计风格简约优雅，所有设备无缝访问，用户可收藏和添加自定义的网址，定制您自己专属上网主页，收录包含办公、AI工具、直播、素材、视频、音乐、小说、购物等分类的优秀网站大全！",
             "link": "https://www.xieniao.com/"
+          },
+          {
+            "id": "8u3jvay6ktn",
+            "icon": "https://gesdh.cn/favicon.ico",
+            "name": "格姗导航",
+            "description": "格姗导航(gesdh.cn)是一个可自定义、简洁又好用的导航网站，国内屈指可数的自定义导航，用户可以自定义导航、布局设置等。收录大量各类优秀网站，包含热门导航、格式转换、图片素材、PPT资源、桌面壁纸、资源搜索、在线工具、素材资源、自媒体等。网站大全就选格姗导航！",
+            "link": "https://gesdh.cn/"
           }
         ]
       }

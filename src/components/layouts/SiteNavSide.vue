@@ -143,6 +143,7 @@
 
   const handleSelect = (key: string) => {
     console.log(`menu click ${key}`);
+    window.location.hash = ''
     window.location.hash = key;
   };
 
