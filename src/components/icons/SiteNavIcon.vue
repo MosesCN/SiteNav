@@ -9,5 +9,5 @@
 
 <script lang="ts">
   import { DefineComponent } from 'vue'
-  export default { name: 'BaiduSearchIcon' } as DefineComponent
+  export default { name: 'SiteNavIcon' } as DefineComponent
 </script>

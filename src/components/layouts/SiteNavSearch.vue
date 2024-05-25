@@ -3,11 +3,12 @@
     <Hitokoto />
   </div>
   <div>
-    <el-input style="width: fit-content" size="large" v-model="searchInput" placeholder="输入你想搜的任何东西"
-      :prefix-icon="choosenOpt.icon">
-      <template #append>
-        <el-dropdown class="remove-padding margin-left-2" size="large">
-          {{ choosenOpt.name }}
+    <el-input style="width: 50%" size="large" v-model="searchInput" :placeholder="search_placeholder">
+      <template #prepend>
+        <el-dropdown size="large">
+          <el-icon size="28">
+            <component :is="chosenOpt.icon"></component>
+          </el-icon>
           <template #dropdown>
             <el-dropdown-menu>
               <el-dropdown-item @click="optClick(item)" v-for="item in OPTs">
@@ -23,28 +24,20 @@
     </el-input>
 
     <span>
-      <el-button type="primary" size="large" class="margin-left-2" @click="doSearch">GO</el-button>
+      <el-button type="primary" size="large" class="ml-2" @click="doSearch">GO</el-button>
     </span>
   </div>
 </template>
-<style>
-  .search-icon {
-    height: 15px;
-    width: 15px;
-    margin-right: 2px
+<style scoped>
+
+  :deep(.ep-input-group__prepend){
+    padding: 0 10px;
   }
 
-  .margin-left-2 {
-    margin-left: 2px;
+  .ml-2 {
+    margin-left: .2rem;
   }
 
-  .remove-padding {
-    padding: unset;
-  }
-
-  .ep-button {
-    padding: 0px 8px;
-  }
 </style>
 <script lang="ts" setup>
   import { ref } from 'vue'
@@ -53,9 +46,13 @@
 
   const OPTs = SiteNavData.getSearchEngines();
   const searchInput = ref('')
-  const choosenOpt = ref(OPTs[0])
+  const chosenOpt = ref(OPTs[0])
+
+  const placeholder_suffix = ": 输入想搜的任何事物";
+  const search_placeholder = ref(chosenOpt.value.name + placeholder_suffix)
   const optClick = (item: any) => {
-    choosenOpt.value = item
+    chosenOpt.value = item
+    search_placeholder.value = item.name + placeholder_suffix;
   }
   const showWarnMessage = (message: string) => {
     ElMessage({
@@ -66,10 +63,10 @@
   const doSearch = () => {
     if (!searchInput.value) {
       showWarnMessage('请输入您想搜索的东西')
-    } else if (choosenOpt.value.qLink && searchInput.value) {
-      window.open(`${choosenOpt.value.qLink}${searchInput.value}`, '_blank')
+    } else if (chosenOpt.value.qLink && searchInput.value) {
+      window.open(`${chosenOpt.value.qLink}${searchInput.value}`, '_blank')
       searchInput.value = ''
-    } else if (!choosenOpt.value.qLink) {
+    } else if (!chosenOpt.value.qLink) {
       showWarnMessage('我们将尽快支持站内搜索')
     }
   }

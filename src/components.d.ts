@@ -44,6 +44,7 @@ declare module 'vue' {
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
     GoogleSearchIcon: typeof import('./components/icons/GoogleSearchIcon.vue')['default']
     Hitokoto: typeof import('./components/layouts/Hitokoto.vue')['default']
+    JohnSearchIcon: typeof import('./components/icons/JohnSearchIcon.vue')['default']
     SiteNavCard: typeof import('./components/layouts/SiteNavCard.vue')['default']
     SiteNavCopyright: typeof import('./components/layouts/SiteNavCopyright.vue')['default']
     SiteNavHeader: typeof import('./components/layouts/SiteNavHeader.vue')['default']

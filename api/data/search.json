@@ -5,6 +5,11 @@
     "qLink": "https://www.google.com/search?q="
   },
   {
+    "name": "John",
+    "icon": "JohnSearchIcon",
+    "qLink": "https://www.searchforjohn.com/search?q="
+  },
+  {
     "name": "必应",
     "icon": "BingSearchIcon",
     "qLink": "https://cn.bing.com/search?q="
