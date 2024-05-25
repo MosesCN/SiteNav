@@ -41,7 +41,7 @@
 
   <div id="SiteNavSide" :class="{'hidden-aside':isCollapse}">
     <!--  icon  -->
-    <div style="margin: 0.6vh 0">
+    <div class="aside-logo">
       <SiteNavIcon style="width: 3rem; height: 3rem" />
     </div>
 
@@ -83,6 +83,10 @@
 </template>
 
 <style>
+  .aside-logo {
+    margin: 0.6vh 0;
+  }
+
   #SiteNavSide {
     text-align: center;
   }
@@ -101,6 +105,8 @@
       height: 100vh;
       z-index: 999;
       background: var(--ep-bg-color);
+      --ep-transition-duration: .3s;
+      transition: visibility 1s ease-in-out;
     }
 
     .hidden-aside {
