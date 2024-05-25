@@ -30,6 +30,8 @@ const getWindowSize = function() {
         // [1920, +∞)
         return WindowSize.XL;
     }
+    // for more case
+    // 320px, 480px, 768px, 1024px, 1280px, 1366px, 1440px, 1920px
 }
 
 export { isMobile, getWindowSize, WindowSize }

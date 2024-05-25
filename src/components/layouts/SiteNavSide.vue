@@ -114,10 +114,11 @@
   import { ref, computed } from "vue";
   import { ElMessage, ElMessageBox } from "element-plus";
   import { SiteNavData } from "~/../api/data/SiteNavData";
+  import { getWindowSize, WindowSize } from "~/common/Windows";
 
   const ep_icons = SiteNavData.getEpIcons();
 
-  const emit = defineEmits(['addSiteNav', 'deleteSiteNav', 'editSiteNav']);
+  const emit = defineEmits(['addSiteNav', 'deleteSiteNav', 'editSiteNav', 'shouldCollapse']);
 
   const props = defineProps({
     menus: {
@@ -145,6 +146,9 @@
     console.log(`menu click ${key}`);
     window.location.hash = ''
     window.location.hash = key;
+    if (getWindowSize() < WindowSize.MD && !isCollapse.value) {
+      emit("shouldCollapse", true)
+    }
   };
 
   const getRandomId = () => {

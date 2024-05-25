@@ -3,7 +3,7 @@
     <el-container>
       <el-aside width="fit-content">
         <SiteNavSide :menus="menus" :is-collapse="collapseMenu" @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav"
-          @edit-site-nav="editSiteNav" />
+          @edit-site-nav="editSiteNav" @should-collapse="(val: boolean) => collapseMenu = val" />
       </el-aside>
       <el-container class="main-container">
         <el-header class="override-padding">
