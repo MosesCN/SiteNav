@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-  import { ref, computed } from 'vue'
+  import { computed } from 'vue'
   const emit = defineEmits(['editSite', 'deleteSite', 'addSite'])
   import { ElMessage } from 'element-plus'
+  import {DArrowRight, Setting} from "@element-plus/icons-vue";
   const props = defineProps({
     icon: {
       type: String,
@@ -44,7 +45,7 @@
       </DropdownAction>
     </div>
     <div class="card-inner">
-      <img :src="imgSrc" @click="openLink" />
+      <img :src="imgSrc" @click="openLink"  alt="FAIL"/>
       <div id="details" @click="openLink">
         <el-text class="title">{{ title }}</el-text>
         <el-popover trigger="hover" :content="description">
@@ -94,10 +95,6 @@
     right: 0;
     margin-right: .6rem;
     color: darkgray;
-    cursor: pointer;
-  }
-
-  .pointer {
     cursor: pointer;
   }
 
