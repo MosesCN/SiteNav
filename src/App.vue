@@ -2,14 +2,15 @@
   <el-config-provider namespace="ep">
     <el-container>
       <el-aside width="fit-content">
-        <SiteNavSide :menus="menus" :is-collapse="collapseMenu" @add-site-nav="addSiteNav" @delete-site-nav="deleteSiteNav"
-          @edit-site-nav="editSiteNav" @should-collapse="(val: boolean) => collapseMenu = val" />
+        <SiteNavSide :menus="menus" :is-collapse="collapseMenu" @add-site-nav="addSiteNav"
+          @delete-site-nav="deleteSiteNav" @edit-site-nav="editSiteNav"
+          @should-collapse="(val: boolean) => collapseMenu = val" />
       </el-aside>
       <el-container class="main-container">
         <el-header class="override-padding">
           <!-- aside menu switch -->
-          <div :class="{'collapseBtn':!collapseMenu}" class="menu-switch cursor-pointer" @click="collapseSideMenu">
-            <Expand v-if="collapseMenu" size="6"/>
+          <div :class="{ 'collapseBtn': !collapseMenu }" class="menu-switch cursor-pointer" @click="collapseSideMenu">
+            <Expand v-if="collapseMenu" size="6" />
             <Fold v-else size="6" />
           </div>
 
@@ -17,7 +18,14 @@
         </el-header>
         <el-main class="site-nav-main">
           <SiteNavSearch />
-          <WebSites :webs="webs" @updated="updatedWebs" />
+          <Suspense>
+            <template #default>
+              <WebSites :webs="webs" @updated="updatedWebs" />
+            </template>
+            <template #fallback>
+              <div>Loading...</div>
+            </template>
+          </Suspense>
           <!-- back to top component,  must config the 'target' attribute  -->
           <el-backtop target=".site-nav-main" style="right: 2rem; bottom: 4rem;" />
         </el-main>
@@ -30,20 +38,22 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from "vue";
+  import { ref, defineAsyncComponent } from "vue";
   import { SiteNavData } from "../api/data/SiteNavData";
   import { Fold, Expand } from "@element-plus/icons-vue";
   import { getWindowSize, WindowSize } from "~/common/Windows";
+
+  const WebSites = defineAsyncComponent(() => import('./components/layouts/WebSites.vue'));
 
   const webs = ref(SiteNavData.getWebs());
   const menus = ref(SiteNavData.getMenus());
 
   const collapseMenu = ref(getWindowSize() < WindowSize.MD);
 
-  window.onresize = ()=>{
-    if (WindowSize.SM === getWindowSize()){
+  window.onresize = () => {
+    if (WindowSize.SM === getWindowSize()) {
       collapseMenu.value = true;
-    }else if (getWindowSize() > WindowSize.MD){
+    } else if (getWindowSize() > WindowSize.MD) {
       collapseMenu.value = false;
     }
   }
@@ -108,7 +118,7 @@
 <style>
   @media only screen and (max-width: 768px) {
     .collapseBtn {
-     margin-left: 150px;
+      margin-left: 150px;
     }
   }
 
@@ -121,7 +131,7 @@
     float: left;
     text-align: center;
     line-height: var(--ep-header-height);
-    width:var(--ep-header-height);
+    width: var(--ep-header-height);
   }
 
   .menu-switch:hover {
