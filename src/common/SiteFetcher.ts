@@ -28,7 +28,7 @@ const fetchSiteInfo = (url: string) => {
         const item = dom.head.children.item(i)
         if (item?.nodeName == 'TITLE') {
           // console.log(item?.nodeName, '--', item?.name, '--', item?.content)
-          const innerText = item?.innerText;
+          const innerText = (item as HTMLElement)?.innerText;
           const idx = innerText.indexOf('-');
           if (idx > -1) {
             site_info.name = innerText.substring(0, idx).trim();
@@ -37,13 +37,13 @@ const fetchSiteInfo = (url: string) => {
           }
 
         }
-        if (item?.nodeName == 'META' && 'description' == item?.name) {
+        if (item?.nodeName == 'META' && 'description' == (item as HTMLMetaElement)?.name) {
           // console.log(item?.nodeName, '--', item?.name, '--', item?.content)
-          site_info.description = item?.content;
+          site_info.description = (item as HTMLMetaElement)?.content;
         }
-        if (item?.nodeName == 'LINK' && 'icon' == item?.rel) {
+        if (item?.nodeName == 'LINK' && 'icon' == (item as HTMLLinkElement)?.rel) {
           // console.log(item?.nodeName, '--', item?.rel, '--', item?.href)
-          var icon_url = new URL(item?.href);
+          var icon_url = new URL((item as HTMLLinkElement)?.href);
           try {
             const _url = new URL(url);
             site_info.icon = `${_url.protocol}//${_url.hostname}${_url.port ? ':' + _url.port : ''}${icon_url.pathname}`

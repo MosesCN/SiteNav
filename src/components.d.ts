@@ -41,7 +41,6 @@ declare module 'vue' {
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     ElText: typeof import('element-plus/es')['ElText']
-    ElTooltip: typeof import('element-plus/es')['ElTooltip']
     GoogleSearchIcon: typeof import('./components/icons/GoogleSearchIcon.vue')['default']
     Hitokoto: typeof import('./components/layouts/Hitokoto.vue')['default']
     JohnSearchIcon: typeof import('./components/icons/JohnSearchIcon.vue')['default']
