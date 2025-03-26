@@ -115,10 +115,16 @@
     }
   }
 </script>
+
 <style>
+  .el-aside {
+    transition: width 0.3s ease;
+  }
+
   @media only screen and (max-width: 768px) {
     .collapseBtn {
       margin-left: 150px;
+      transition: margin-left 0.3s ease;
     }
   }
 
@@ -128,6 +134,7 @@
   }
 
   .menu-switch {
+    transition: background 0.3s ease;
     float: left;
     text-align: center;
     line-height: var(--ep-header-height);
