@@ -1,6 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+
+import { inject } from "@vercel/analytics"
+inject();
+
 // import "~/styles/element/index.scss";
 
 import ElementPlus from "element-plus";
